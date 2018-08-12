@@ -1,0 +1,7 @@
+# Dossiers
+env
+__pycache__
+
+# Fichiers
+*~
+*.sqlite3
