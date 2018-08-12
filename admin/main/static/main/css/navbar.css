@@ -1,0 +1,105 @@
+#main-nav .navbar-brand {
+    width: 250px;
+}
+
+#main-nav .navbar-nav > .nav-item > .nav-link {
+    color: #868e96;
+}
+
+#main-nav .navbar-nav > .nav-item > .nav-link:hover {
+    color: #adb5bd;
+}
+
+#main-nav .navbar-nav > .nav-item > .nav-link > i:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.content-wrapper {
+    margin-top: calc(40px + 1rem);
+    min-height: calc(100vh - 56px);
+}
+
+/* lg */
+@media (min-width: 992px) {
+    #main-nav.navbar-expand-lg .sidebar {
+        flex-direction: column;
+    }
+
+    #main-nav.navbar-expand-lg .sidebar,
+    #main-nav.navbar-expand-lg #sidebar-toggler {
+        width: 250px;
+
+        transition: width 500ms ease;
+    }
+
+    .navbar-reduite #main-nav.navbar-expand-lg .sidebar,
+    .navbar-reduite #main-nav.navbar-expand-lg #sidebar-toggler {
+        width: calc(20px + 2rem);
+    }
+
+    .content-wrapper {
+        margin-left: 250px;
+
+        transition: margin-left 500ms ease;
+    }
+
+    .navbar-reduite .content-wrapper {
+        margin-left: calc(20px + 2rem);
+    }
+
+    #main-nav.navbar-expand-lg .sidebar {
+        position: fixed;
+        top: calc(40px + 1rem);
+        left: 0px;
+
+        height: calc(100vh - 40px - 1rem);
+
+        background-color: #212529;
+    }
+
+    #main-nav.navbar-expand-lg .sidebar > .nav-item > .nav-link {
+        display: flex;
+    
+        padding: 1rem;
+    }
+
+    #main-nav.navbar-expand-lg .sidebar > .nav-item > .nav-link > i {
+        height: 16px;
+        width: 20px;
+
+        margin-right: auto;
+
+        text-align: center;
+    }
+    
+    #main-nav.navbar-expand-lg .sidebar > .nav-item > .nav-link > span {
+        height: 16px;
+        width: calc(100% - 20px - 1rem);
+
+        line-height: 16px;
+        
+        overflow: hidden;
+    }
+
+    #main-nav.navbar-expand-lg #sidebar-toggler {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+
+        height: calc(16px + 2rem);
+
+        padding: 1rem;
+
+        line-height: 16px;
+
+        transition: width 500ms ease;
+    }
+
+    #main-nav.navbar-expand-lg #sidebar-toggler > i {
+        transition: transform 500ms ease;
+    }
+    
+    .navbar-reduite #main-nav.navbar-expand-lg #sidebar-toggler > i {
+        transform: rotate(-180deg);
+    }
+}
