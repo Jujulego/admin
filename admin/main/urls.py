@@ -5,5 +5,10 @@ from . import views
 
 # Urls
 urlpatterns = [
-    path('', views.index, name='index'),
+    # Accueil
+    path('', views.index, name="index"),
+
+    # Connexion
+    path("login", views.LoginView.as_view(), name="login"),
+    path("logout", views.logout, name="logout"),
 ]
