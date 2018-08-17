@@ -1,15 +1,43 @@
-$(document).ready(function() {
-    // sidebar
-    $("#sidebar-toggler").click(function(e) {
-        $("body").toggleClass("navbar-reduite");
+// jQuery plugin
+$.fn.navbar = function() {
+    // Elements généraux
+    const body = $("body");
 
-        // Fermeture des menus
-        if ($("body").hasClass("navbar-reduite")) {
-            $(".sidebar .collapse").collapse("hide");
+    // Application !
+    this.each(function() {
+        // Elements
+        const menus = $('.sidebar .collapse', this);
+        const tooltips = $('.sidebar [data-toggle="tooltip"]', this);
+        const toggler = $('.sidebar-toggler', this);
+
+        // Fonctions
+        function setup() {
+            // Fermeture des menus et (des)activation des tooltips
+            if (body.hasClass('navbar-reduite')) {
+                menus.collapse('hide');
+                tooltips.tooltip('enable');
+            } else {
+                tooltips.tooltip('disable');
+            }
         }
+
+        // Events
+        toggler.click(function() {
+            body.toggleClass('navbar-reduite');
+            setup();
+        });
+
+        menus.on('show.bs.collapse', function() {
+            body.removeClass('navbar-reduite');
+        });
+
+        // Initialisation
+        setup();
     });
 
-    $(".sidebar .collapse").on("show.bs.collapse", function() {
-        $("body").removeClass("navbar-reduite");
-    })
+    return this;
+};
+
+$(document).ready(function() {
+    $('#main-nav').navbar();
 });
