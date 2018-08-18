@@ -1,0 +1,50 @@
+{% load main sql %}
+
+<div class="d-flex flex-column p-3 h-100">
+    <div class="mb-3">
+        {% with total=sql_queries|extract:"time"|sum %}
+            <h3 class="mb-4">Chronologie :</h3>
+            <div class="progress d-flex">
+                {% if total == 0 %}
+                    {% for query in sql_queries %}
+                        <div class="progress-bar bg-pastels"
+                             data-toggle="tooltip" data-placement="bottom" title="{{ query.sql|truncatechars:50 }}"
+                             style="flex: 1 0 auto;"></div>
+                    {% endfor %}
+                {% else %}
+                    {% for query in sql_queries %}
+                        <div class="progress-bar bg-pastels"
+                             data-toggle="tooltip" data-placement="bottom" title="{{ query.sql|truncatechars:50 }}"
+                             style="flex: {% widthratio query.time total 100 %} 0 auto;"></div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <p class="text-right">en {{ total }} ms</p>
+        {% endwith %}
+    </div>
+    <div class="sql-table">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="couleur"></th>
+                    <th>SQL</th>
+                    <th class="duree">Durée (ms)</th>
+                </tr>
+            </thead>
+            <tbody class="pastels-group">
+                {% for query in sql_queries %}
+                    <tr class="reduit">
+                        <td class="couleur bg-pastels-{{ forloop.counter|mod:7 }}"></td>
+                        <td>
+                            {% with query.sql|sql2html as sql %}
+                                <div class="sql-reduit">{{ sql }}</div>
+                                <div class="sql">{{ sql }}</div>
+                            {% endwith %}
+                        </td>
+                        <td class="duree">{{ query.time }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -2,19 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec6973eb-679e-4a77-9cc6-9ae730d0307c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/main/static/main/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/static/debug/css/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/static/debug/css/sql.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/static/debug/js/debug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/templates/debug/context.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/templates/debug/panel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/templates/debug/sql.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/templatetags/debug.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/debug/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/main/static/main/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/main/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/main/templatetags/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/main/templatetags/sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/admin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/main/static/main/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/main/static/main/css/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/main/static/main/js/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/main/static/main/js/navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/main/static/main/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/main/static/main/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/main/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/main/templates/main/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/main/templates/main/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/main/templates/main/navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/main/templates/main/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/main/templates/main/navbar.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -23,68 +57,148 @@
     <session id="1037418863">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="5" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="3" />
-          <entry key="html" value="6" />
-          <entry key="js" value="2" />
-          <entry key="py" value="7" />
+          <entry key="JavaScript-modules-diagram/C:/Users/julie/git/admin/admin" value="1" />
+          <entry key="JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/main" value="1" />
+          <entry key="JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/main/static" value="1" />
+          <entry key="JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/main/static/main/js" value="1" />
+          <entry key="Python/#C:/Users/julie/git/admin/admin/admin" value="1" />
+          <entry key="Python/#C:/Users/julie/git/admin/admin/main" value="1" />
+          <entry key="css" value="14" />
+          <entry key="html" value="18" />
+          <entry key="js" value="8" />
+          <entry key="py" value="19" />
           <entry key="svg" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="3" />
-          <entry key="HTML" value="6" />
-          <entry key="JavaScript" value="2" />
-          <entry key="Python" value="7" />
+          <entry key="CSS" value="14" />
+          <entry key="HTML" value="18" />
+          <entry key="JavaScript" value="8" />
+          <entry key="Python" value="19" />
           <entry key="SVG" value="1" />
+          <entry key="UML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1121" />
-          <entry key="html" value="1332" />
-          <entry key="js" value="984" />
-          <entry key="py" value="833" />
+          <entry key="Django Console" value="342" />
+          <entry key="css" value="3263" />
+          <entry key="dummy" value="18" />
+          <entry key="html" value="3842" />
+          <entry key="js" value="1405" />
+          <entry key="py" value="2929" />
+          <entry key="txt" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1122" />
-          <entry key="HTML" value="1332" />
-          <entry key="JavaScript" value="983" />
-          <entry key="Python" value="833" />
+          <entry key="CSS" value="3264" />
+          <entry key="HTML" value="3842" />
+          <entry key="JavaScript" value="1404" />
+          <entry key="PLAIN_TEXT" value="59" />
+          <entry key="Python" value="3271" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/main/templates/main/base.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/panel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/main/templates/main/navigation.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/context.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/sql.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/debug/templatetags/debug.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+              <folding>
+                <element signature="e#15#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/css/panel.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/main/templatetags/sql.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+              <folding>
+                <element signature="e#15#42#0" expanded="true" />
+                <marker date="1534625113109" expanded="true" signature="224:229" ph="..." />
+                <marker date="1534625113109" expanded="true" signature="224:1164" ph="..." />
+                <marker date="1534625113109" expanded="true" signature="1213:1218" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/css/sql.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/js/debug.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -94,17 +208,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>#sidebar-toggler</find>
+      <find>content-wrapper</find>
+      <find>&lt;/li&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>.sidebar-toggler</replace>
+      <replace>&quot;,</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -113,15 +232,31 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/admin/settings.py" />
         <option value="$PROJECT_DIR$/admin/main/templates/main/login.html" />
         <option value="$PROJECT_DIR$/admin/main/urls.py" />
         <option value="$PROJECT_DIR$/admin/main/views.py" />
-        <option value="$PROJECT_DIR$/admin/main/static/main/js/main.js" />
-        <option value="$PROJECT_DIR$/admin/main/templates/main/base.html" />
-        <option value="$PROJECT_DIR$/admin/main/static/main/css/navbar.css" />
         <option value="$PROJECT_DIR$/admin/main/static/main/js/navbar.js" />
+        <option value="$PROJECT_DIR$/admin/main/static/main/js/debug.js" />
+        <option value="$PROJECT_DIR$/admin/main/static/main/js/main.js" />
+        <option value="$PROJECT_DIR$/admin/main/static/main/css/debug.css" />
+        <option value="$PROJECT_DIR$/admin/main/templates/main/debug.html" />
+        <option value="$PROJECT_DIR$/admin/admin/settings.py" />
+        <option value="$PROJECT_DIR$/admin/debug/templatetags/sum.py" />
+        <option value="$PROJECT_DIR$/admin/main/templatetags/sum.py" />
+        <option value="$PROJECT_DIR$/admin/main/static/main/css/navbar.css" />
         <option value="$PROJECT_DIR$/admin/main/templates/main/navigation.html" />
+        <option value="$PROJECT_DIR$/admin/main/templates/main/navbar.html" />
+        <option value="$PROJECT_DIR$/admin/main/static/main/css/main.css" />
+        <option value="$PROJECT_DIR$/admin/debug/static/debug/js/sql.js" />
+        <option value="$PROJECT_DIR$/admin/main/templates/main/base.html" />
+        <option value="$PROJECT_DIR$/admin/main/templatetags/main.py" />
+        <option value="$PROJECT_DIR$/admin/debug/static/debug/css/panel.css" />
+        <option value="$PROJECT_DIR$/admin/main/templatetags/sql.py" />
+        <option value="$PROJECT_DIR$/admin/debug/templatetags/debug.py" />
+        <option value="$PROJECT_DIR$/admin/debug/templates/debug/context.html" />
+        <option value="$PROJECT_DIR$/admin/debug/templates/debug/sql.html" />
+        <option value="$PROJECT_DIR$/admin/debug/static/debug/css/sql.css" />
+        <option value="$PROJECT_DIR$/admin/debug/templates/debug/panel.html" />
       </list>
     </option>
   </component>
@@ -133,7 +268,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="950" />
-    <option name="width" value="979" />
+    <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -142,12 +277,18 @@
         <expanded-state>
           <State />
           <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
             <id>Python</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>PyPep8Inspection</id>
+            <id>CssUnknownTarget</id>
           </State>
         </selected-state>
       </profile-state>
@@ -158,6 +299,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,72 +316,82 @@
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
+              <item name="templatetags" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/admin/settings.py" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\julie\git\admin\admin\main" />
+      <recent name="C:\Users\julie\git\admin\admin\debug\static\debug\css" />
+      <recent name="C:\Users\julie\git\admin\admin\debug\templates\debug" />
       <recent name="C:\Users\julie\git\admin\admin\main\static\vendor" />
     </key>
   </component>
@@ -315,6 +467,14 @@
       <option name="presentableId" value="Default" />
       <updated>1534108075097</updated>
     </task>
+    <task id="LOCAL-00001" summary="refacto: navbar en jquery plugin">
+      <created>1534529006593</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1534529006593</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -330,10 +490,9 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17919463" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992908" visible="true" weight="0.18456376" />
+      <window_info id="Structure" order="1" sideWeight="0.50070924" side_tool="true" weight="0.17919463" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
@@ -341,17 +500,18 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932885" weight="0.32765958" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32765958" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013423" side_tool="true" weight="0.8680851" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4986577" weight="0.8680851" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.3295302" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,6 +519,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refacto: navbar en jquery plugin" />
+    <option name="LAST_COMMIT_MESSAGE" value="refacto: navbar en jquery plugin" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/admin/admin/urls.py">
@@ -374,13 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -407,20 +564,6 @@
     <entry file="file://$PROJECT_DIR$/admin/main/static/vendor/fontawesome/svgs/solid/bars.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/main/templates/main/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/main/static/main/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/main/static/main/js/navbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -428,17 +571,378 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/main/static/main/css/navbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="137" column="23" lean-forward="true" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/julie/git/admin/admin">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/admin</OriginalElement>
+          <nodes>
+            <node x="261.0" y="180.0">$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.bundle.js#jquery#351;</node>
+            <node x="115.0" y="305.0">$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.bundle.min.js#jquery#317;</node>
+            <node x="129.0" y="0.0">$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.js#jquery#351;C:/Users/julie/git/admin/admin/main/static/vendor/bootstrap/js/bootstrap.js#popper.js#370;</node>
+            <node x="0.0" y="162.0">$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.min.js#jquery#317;C:/Users/julie/git/admin/admin/main/static/vendor/bootstrap/js/bootstrap.min.js#popper.js#335;</node>
+            <node x="174.0" y="177.0">jquery</node>
+            <node x="25.0" y="48.0">popper.js</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.bundle.js#jquery#351;" target="jquery">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.bundle.min.js#jquery#317;" target="jquery">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.min.js#jquery#317;C:/Users/julie/git/admin/admin/main/static/vendor/bootstrap/js/bootstrap.min.js#popper.js#335;" target="popper.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.js#jquery#351;C:/Users/julie/git/admin/admin/main/static/vendor/bootstrap/js/bootstrap.js#popper.js#370;" target="jquery">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.js#jquery#351;C:/Users/julie/git/admin/admin/main/static/vendor/bootstrap/js/bootstrap.js#popper.js#370;" target="popper.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.min.js#jquery#317;C:/Users/julie/git/admin/admin/main/static/vendor/bootstrap/js/bootstrap.min.js#popper.js#335;" target="jquery">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-168.0" y="91.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/main/templates/main/navigation.html">
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/main/static">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/admin/main/static</OriginalElement>
+          <nodes>
+            <node x="261.0" y="180.0">$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.bundle.js#jquery#351;</node>
+            <node x="115.0" y="305.0">$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.bundle.min.js#jquery#317;</node>
+            <node x="129.0" y="0.0">$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.js#jquery#351;C:/Users/julie/git/admin/admin/main/static/vendor/bootstrap/js/bootstrap.js#popper.js#370;</node>
+            <node x="0.0" y="162.0">$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.min.js#jquery#317;C:/Users/julie/git/admin/admin/main/static/vendor/bootstrap/js/bootstrap.min.js#popper.js#335;</node>
+            <node x="174.0" y="177.0">jquery</node>
+            <node x="25.0" y="48.0">popper.js</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.bundle.js#jquery#351;" target="jquery">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.bundle.min.js#jquery#317;" target="jquery">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.min.js#jquery#317;C:/Users/julie/git/admin/admin/main/static/vendor/bootstrap/js/bootstrap.min.js#popper.js#335;" target="popper.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.js#jquery#351;C:/Users/julie/git/admin/admin/main/static/vendor/bootstrap/js/bootstrap.js#popper.js#370;" target="jquery">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.js#jquery#351;C:/Users/julie/git/admin/admin/main/static/vendor/bootstrap/js/bootstrap.js#popper.js#370;" target="popper.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.min.js#jquery#317;C:/Users/julie/git/admin/admin/main/static/vendor/bootstrap/js/bootstrap.min.js#popper.js#335;" target="jquery">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="204.0" y="178.0" />
+          <SelectedNodes>
+            <node>popper.js</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/main/static/main/js/debug.js" />
+    <entry file="file://$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109272">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/main">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/admin/main</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.bundle.js#jquery#351;</node>
+            <node x="" y="">$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.bundle.min.js#jquery#317;</node>
+            <node x="" y="">$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.js#jquery#351;C:/Users/julie/git/admin/admin/main/static/vendor/bootstrap/js/bootstrap.js#popper.js#370;</node>
+            <node x="" y="">$PROJECT_DIR$/admin/main/static/vendor/bootstrap/js/bootstrap.min.js#jquery#317;C:/Users/julie/git/admin/admin/main/static/vendor/bootstrap/js/bootstrap.min.js#popper.js#335;</node>
+            <node x="" y="">jquery</node>
+            <node x="" y="">popper.js</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8537234042553191" x="204.0" y="178.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/main/static/main/js">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/admin/main/static/main/js</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="610.0" y="161.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Python/#C:/Users/julie/git/admin/admin/main">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Python</ID>
+          <OriginalElement>#C:/Users/julie/git/admin/admin/main</OriginalElement>
+          <nodes>
+            <node x="238.0" y="158.0">main.views.LoginView</node>
+            <node x="0.0" y="79.0">django.apps.config.AppConfig</node>
+            <node x="213.0" y="79.0">django.views.generic.base.View</node>
+            <node x="171.5" y="0.0">object</node>
+            <node x="21.5" y="158.0">main.apps.MainConfig</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="django.apps.config.AppConfig" target="object">
+              <point x="0.0" y="-14.5" />
+              <point x="96.5" y="54.0" />
+              <point x="187.75" y="54.0" />
+              <point x="-16.25" y="14.5" />
+            </edge>
+            <edge source="main.views.LoginView" target="django.views.generic.base.View">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="django.views.generic.base.View" target="object">
+              <point x="0.0" y="-14.5" />
+              <point x="311.5" y="54.0" />
+              <point x="220.25" y="54.0" />
+              <point x="16.25" y="14.5" />
+            </edge>
+            <edge source="main.apps.MainConfig" target="django.apps.config.AppConfig">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-164.0" y="173.0" />
+          <SelectedNodes>
+            <node>main.apps.MainConfig</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Python/#C:/Users/julie/git/admin/admin/admin">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Python</ID>
+          <OriginalElement>#C:/Users/julie/git/admin/admin/admin</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="610.0" y="327.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/main/static/main/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/template/defaulttags.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <caret line="87" column="29" lean-forward="true" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/main/static/main/css/navbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="50" column="27" lean-forward="true" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/main/templates/main/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="74" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/core/management/commands/sqlmigrate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-278">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/core/management/sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-329">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/template/library.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="78" column="54" selection-start-line="78" selection-start-column="47" selection-end-line="78" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/main/static/main/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/main/templates/main/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/js/debug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/main/templatetags/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding>
+            <marker date="1534613057804" expanded="true" signature="85:87" ph="..." />
+            <marker date="1534613057804" expanded="true" signature="138:237" ph="..." />
+            <marker date="1534613057804" expanded="true" signature="212:237" ph="..." />
+            <marker date="1534613057804" expanded="true" signature="283:284" ph="..." />
+            <marker date="1534613057804" expanded="true" signature="283:288" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/templatetags/debug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#15#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/main/templatetags/sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <element signature="e#15#42#0" expanded="true" />
+            <marker date="1534625113109" expanded="true" signature="224:229" ph="..." />
+            <marker date="1534625113109" expanded="true" signature="224:1164" ph="..." />
+            <marker date="1534625113109" expanded="true" signature="1213:1218" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/sql.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/context.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/css/panel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/css/sql.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/panel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>

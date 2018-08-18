@@ -23,6 +23,7 @@ SECRET_KEY = '+be3xa4pvniy_6v7ts#&74nzt(x!4ubtx2=yx2@7++p(08s!x$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+INTERNAL_IPS = ["127.0.0.1"]
 
 ALLOWED_HOSTS = []
 
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'channels',
 
     'main',
+    'debug',
 ]
 
 MIDDLEWARE = [
