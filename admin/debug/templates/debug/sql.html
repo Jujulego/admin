@@ -33,13 +33,10 @@
             </thead>
             <tbody class="pastels-group">
                 {% for query in sql_queries %}
-                    <tr class="reduit">
+                    <tr>
                         <td class="couleur bg-pastels-{{ forloop.counter|mod:7 }}"></td>
                         <td>
-                            {% with query.sql|sql2html as sql %}
-                                <div class="sql-reduit">{{ sql }}</div>
-                                <div class="sql">{{ sql }}</div>
-                            {% endwith %}
+                            <div class="sql">{{ query.sql|sql2html }}</div>
                         </td>
                         <td class="duree">{{ query.time }}</td>
                     </tr>

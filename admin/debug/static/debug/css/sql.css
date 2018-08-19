@@ -33,18 +33,6 @@
     background-color: white;
 }
 
-#debug-sql .sql-table tbody tr:hover {
-    filter: brightness(95%);
-}
-
-#debug-sql .sql-table tbody tr.reduit .sql {
-    display: none;
-}
-
-#debug-sql .sql-table tbody tr:not(.reduit) .sql-reduit {
-    display: none;
-}
-
 #debug-sql .sql-table td:nth-child(2) {
     overflow: hidden;
 }
@@ -59,103 +47,137 @@
     width: 150px;
 }
 
-#debug-sql .sql-table .sql-reduit {
-    width: 150px;
-    white-space: nowrap;
+/* Coloristation */
+.sql * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
-#debug-sql .sql-table .sql code,
-#debug-sql .sql-table .sql-reduit code {
+.sql code {
     color: black;
 }
 
-#debug-sql .sql-table .sql div {
-    margin-left: 1rem;
-}
-
-#debug-sql .sql-table .sql .keyword,
-#debug-sql .sql-table .sql-reduit .keyword {
+.sql .keyword {
     font-weight: bold;
     color: #6A1B9A;
 }
 
-#debug-sql .sql-table .sql .literal,
-#debug-sql .sql-table .sql-reduit .literal {
+.sql .literal {
+    color: #F9A825;
+}
+
+.sql .literal.string {
     color: #689F38;
 }
 
-#debug-sql .sql-table .sql-reduit div {
+.function > .identifier:first-child code {
+    color: #1565C0;
+}
+
+/* Organisation */
+.sql * {
     display: inline-block;
 }
 
-#debug-sql .sql-table .sql-reduit .comma {
+.sql:not(.etendu) {
+    white-space: nowrap;
+}
+
+/* Espaces */
+.sql .keyword,
+.sql .comma {
     margin-right: .5rem;
 }
 
-#debug-sql .sql-table .sql-reduit .keyword,
-#debug-sql .sql-table .sql-reduit .operator {
+.sql .keyword:not(:first-child),
+.sql .operator {
     margin: 0 .5rem;
 }
 
-#debug-sql .sql-table .sql-reduit > .keyword:first-child {
+.sql .keyword + .keyword {
     margin-left: 0;
 }
 
-#debug-sql .sql-table .sql .where {
+.sql .keyword:last-child {
+    margin-right: 0;
+}
+
+/* Etendus */
+.sql.etendu .keyword {
+    display: block;
+
     margin-left: 0;
 }
 
-#debug-sql .sql-table .sql .where > * {
+.sql.etendu .keyword + .identifier,
+.sql.etendu .keyword + .identifier-list,
+.sql.etendu .keyword + .parenthesis {
+    margin-left: 1rem;
+}
+
+.sql.etendu .identifier > .keyword {
     display: inline-block;
-}
 
-#debug-sql .sql-table .sql .where > *:not(.parenthesis) {
-    margin-left: 0;
-    margin-right: .5rem;
-}
-
-#debug-sql .sql-table .sql .identifier {
-    display: inline-block;
-
-    margin-left: 0;
-}
-
-#debug-sql .sql-table .sql .comma {
-    margin-right: .5rem;
-}
-
-#debug-sql .sql-table .sql .operator {
     margin: 0 .5rem;
 }
 
-#debug-sql .sql-table .sql .keyword + .identifier {
-    margin-left: .5rem;
+.sql.etendu .identifier > .keyword:first-child {
+    margin-left: 0;
 }
 
-#debug-sql .sql-table .sql .parenthesis {
+.sql.etendu .identifier > .keyword:last-child {
+    margin-right: 0;
+}
+
+.sql.etendu .identifier > .keyword + .identifier {
+    margin-left: 0;
+}
+
+.sql.etendu .parenthesis {
     display: flex;
     flex-wrap: wrap;
 
     padding-left: 1rem;
 }
 
-#debug-sql .sql-table .sql .parenthesis > * {
+.sql.etendu .parenthesis > * {
+    flex: 0 0 auto;
+
     margin-right: .5rem;
 }
 
-#debug-sql .sql-table .sql .parenthesis > div {
-    margin-left: 0;
-}
-
-#debug-sql .sql-table .sql .parenthesis > code {
+.sql.etendu .parenthesis > code {
     margin-top: auto;
 }
 
-#debug-sql .sql-table .sql .parenthesis > .punctuation {
+.sql.etendu .parenthesis > .punctuation {
     position: relative;
     left: -1rem;
 
     flex: 0 0 100%;
+}
+
+.sql.etendu .function > .parenthesis {
+    display: inline-block;
 
     margin-left: 0;
+    padding-left: 0;
+}
+
+.sql.etendu .function > .parenthesis > * {
+    margin-right: 0;
+}
+
+.sql.etendu .function > .parenthesis > .punctuation {
+    position: static;
+}
+
+.sql.etendu .where {
+    display: block;
+}
+
+.sql.etendu .where > *:not(:first-child) {
+    margin-left: 1rem;
 }
