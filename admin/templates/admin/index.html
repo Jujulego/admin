@@ -1,0 +1,83 @@
+{% extends "admin/base_site.html" %}
+{% load i18n log static %}
+
+{% block content %}
+    {% for app in app_list %}
+        <div class="card mb-3 app-{{ app.app_label }}">
+            <div class="card-header">
+                <a href="{{ app.app_url }}"
+                   title="{% blocktrans with name=app.name %}Models in the {{ name }} application{% endblocktrans %}">
+                    {{ app.name }}
+                </a>
+            </div>
+            <ul class="list-group list-group-flush">
+                {% for model in app.models %}
+                    <li class="list-group-item d-flex">
+                        {% if model.admin_url %}
+                            <a class="my-auto flex-grow-1 model-{{ model.object_name|lower }}" href="{{ model.admin_url }}">
+                                {{ model.name }}
+                            </a>
+                        {% else %}
+                            <span class="my-auto flex-grow-1 model-{{ model.object_name|lower }}">
+                                {{ model.name }}
+                            </span>
+                        {% endif %}
+
+                        <div class="btn-group btn-group-sm" role="group">
+                            {% if model.add_url %}
+                                <a class="btn btn-secondary" href="{{ model.add_url }}"><i class="fas fa-plus"></i></a>
+                            {% endif %}
+                            {% if model.admin_url %}
+                                {% if model.view_only %}
+                                    <a class="btn btn-secondary" href="{{ model.admin_url }}"><i class="far fa-eye"></i></a>
+                                {% else %}
+                                    <a class="btn btn-secondary" href="{{ model.admin_url }}"><i class="fas fa-edit"></i></a>
+                                {% endif %}
+                            {% endif %}
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% empty %}
+        <div class="alert alert-warning">{% trans "You don't have permission to view or edit anything." %}</div>
+    {% endfor %}
+{% endblock %}
+
+{% block sidebar %}
+<div class="card">
+    <div class="card-header">{% trans 'My actions' %}</div>
+    {% get_admin_log 10 as admin_log for_user user %}
+    {% if not admin_log %}
+        <div class="card-body">{% trans 'None available' %}</div>
+    {% else %}
+        <ul class="list-group list-group-flush">
+            {% for entry in admin_log %}
+                <li class="list-group-item d-flex">
+                    {% if entry.is_addition %}
+                        <i class="fas fa-plus fa-lg text-success my-auto"></i>
+                    {% elif entry.is_change %}
+                        <i class="fas fa-edit fa-lg text-warning my-auto"></i>
+                    {% elif entry.is_deletion %}
+                        <i class="fas fa-trash fa-lg text-danger my-auto"></i>
+                    {% endif %}
+
+                    <div class="pl-3">
+                        {% if entry.is_deletion or not entry.get_admin_url %}
+                            {{ entry.object_repr }}
+                        {% else %}
+                            <a href="{{ entry.get_admin_url }}">{{ entry.object_repr }}</a>
+                        {% endif %}
+                        <br />
+                        {% if entry.content_type %}
+                            <span class="mini quiet">{% filter capfirst %}{{ entry.content_type }}{% endfilter %}</span>
+                        {% else %}
+                            <span class="mini quiet">{% trans 'Unknown content' %}</span>
+                        {% endif %}
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>
+{% endblock %}

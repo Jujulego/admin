@@ -1,8 +1,15 @@
+/* Contenu */
 .content-wrapper {
     position: relative;
+
+    padding: 1rem;
 }
 
-/* pastels */
+header {
+    padding: 1rem 1.5rem 1.25rem;
+}
+
+/* Pastels */
 .bg-pastels:hover,
 .bg-pastels-1:hover,
 .bg-pastels-2:hover,
