@@ -1,0 +1,19 @@
+<div id="toasts-panel" class="panel">
+    {% for msg in messages %}
+        <div class="alert alert-{% if msg.level == DEFAULT_MESSAGE_LEVELS.ERROR %}danger{% elif msg.level == DEFAULT_MESSAGE_LEVELS.WARNING %}warning{% elif msg.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}success{% else %}info{% endif %}{% if msg.extra_tags %} {{ msg.extra_tags }}{% endif %}">
+            {{ msg|capfirst }}
+        </div>
+    {% endfor %}
+
+    <div class="template">
+        <div class="alert"></div>
+    </div>
+</div>
+
+<div id="toasts-preview" class="alert fade" role="alert">
+    <span></span>
+
+    <button type="button">
+        <i class="fas fa-times"></i>
+    </button>
+</div>
