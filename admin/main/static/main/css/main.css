@@ -5,7 +5,16 @@
 .content-wrapper {
     position: relative;
 
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    height: 100%;
+
     padding: 1rem;
+
+    overflow: auto;
 }
 
 header {
@@ -88,6 +97,6 @@ header {
     background-color: #ffc107;
 }
 
-.bg-pastels:nth-child(7n+7), .bg-pastels-7 {
+.bg-pastels:nth-child(7n), .bg-pastels-7 {
     background-color: #ff5722;
 }

@@ -29,7 +29,7 @@ const Toasts = {
     },
 
     load: function() {
-        // Analyse childrens to get Django's messages
+        // Analyse children to get Django's messages
         let msgs = this.panel.children().not(".template");
 
         msgs.each(function() {

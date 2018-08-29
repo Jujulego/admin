@@ -1,25 +1,29 @@
-{% load debug %}
+{% load debug static %}
 {% context as ctx %}
 
-<div class="mx-3 my-3">
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th class="text-center">Nom</th>
-            <th class="text-center">Valeur</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for c in ctx %}
-            {% for n, v in c.items %}
-                {% if n != "ctx" %}
-                    <tr>
-                        <td>{{ n }}</td>
-                        <td><code>{{ v }}</code></td>
-                    </tr>
-                {% endif %}
+<div id="debug-context" class="mx-3 my-3">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="text-center nom">Nom</th>
+                <th class="text-center valeur">Valeur</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for c in ctx %}
+                {% for n, v in c.items %}
+                    {% if n != "ctx" and n != "True" and n != "False" and n != "None" %}
+                        <tr>
+                            <td class="nom"><span>{{ n }}</span></td>
+                            <td class="valeur">
+                                <div class="python">{{ v|json|force_escape }}</div>
+                            </td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
             {% endfor %}
-        {% endfor %}
-    </tbody>
-</table>
+        </tbody>
+    </table>
 </div>
+
+<script src="{% static "debug/js/context.js" %}"></script>

@@ -34,7 +34,7 @@
             <tbody class="pastels-group">
                 {% for query in sql_queries %}
                     <tr>
-                        <td class="couleur bg-pastels-{{ forloop.counter|mod:7 }}"></td>
+                        <td class="couleur bg-pastels-{{ forloop.counter0|mod:7|add:1 }}"></td>
                         <td>
                             <div class="sql">{{ query.sql|sql2html }}</div>
                         </td>

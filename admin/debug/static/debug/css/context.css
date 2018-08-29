@@ -1,0 +1,126 @@
+#debug-context table {
+    table-layout: fixed;
+}
+
+#debug-context table thead th.nom {
+    min-width: 150px;
+}
+
+#debug-context table tbody td.valeur {
+    overflow: hidden;
+}
+
+/* Base */
+.python *,
+.python *::before,
+.python *::after {
+    display: inline-block;
+}
+
+.python span,
+.python code,
+.python *::before,
+.python *::after {
+    display: inline;
+
+    font-size: 87.5%;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+.python:empty::before {
+    content: "None";
+
+    font-size: 87.5%;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+.python:empty,
+.python .literal {
+    color: #F9A825;
+}
+
+.python .literal.string {
+    color: #689F38;
+}
+
+.python .literal.string::before,
+.python .literal.string::after {
+    content: "\"";
+}
+
+.python .literal.boolean {
+    text-transform: capitalize;
+}
+
+.python .list::before {
+    content: "[";
+}
+
+.python .list::after {
+    content: "]";
+}
+
+.python .object::before {
+    content: "{";
+}
+
+.python .object::after {
+    content: "}";
+}
+
+.python .separator {
+    padding-left: .125rem;
+    padding-right: .5rem;
+}
+
+.python .object .pair:last-child .separator:last-child {
+    display: none;
+}
+
+/* Version courte */
+.python:not(.etendu) {
+    white-space: nowrap;
+}
+
+/* Version étendue */
+.python.etendu .list:not(:empty)::before,
+.python.etendu .list:not(:empty)::after,
+.python.etendu .object::before,
+.python.etendu .object::after {
+    position: relative;
+    display: block;
+
+    left: -1rem;
+}
+
+.python.etendu .list:not(:empty),
+.python.etendu .object {
+    margin-left: 1rem;
+}
+
+.python.etendu .list > .list + .separator,
+.python.etendu .list > .object + .separator {
+    display: none;
+}
+
+.python.etendu .list > .list:not(:last-child)::after {
+    content: "],";
+}
+
+.python.etendu .list > .object:not(:last-child)::after {
+    content: "},";
+}
+
+.python.etendu .object {
+    display: table;
+}
+
+.python.etendu .object > .pair {
+    display: table-row;
+}
+
+.python.etendu .object > .pair > * {
+    display: table-cell;
+
+    vertical-align: top;
+}

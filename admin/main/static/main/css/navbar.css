@@ -34,8 +34,6 @@
 
     margin-top: calc(40px + 1rem);
 
-    overflow: auto;
-
     transition: margin-left 500ms ease;
 }
 
