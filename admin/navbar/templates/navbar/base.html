@@ -1,0 +1,60 @@
+{% load i18n static %}
+{% get_current_language as LANGUAGE_CODE %}{% get_current_language_bidi as LANGUAGE_BIDI %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+<head>
+    <!-- Métadonnées -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+    {% block meta %}{% endblock %}
+
+    <title>{% block title %}Base{% endblock %}</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'vendor/fontawesome/css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'navbar/css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'debug/css/panel.css' %}" />
+
+    {% block css %}{% endblock %}
+
+    <!-- JS -->
+    <script src="{% static 'vendor/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'vendor/popper.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    {% block jslib %}{% endblock %}
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    {% include "navbar/navbar.html" %}
+
+    <!-- Modals -->
+    {% block modals %}
+        {% include "navbar/modals/logout.html" %}
+    {% endblock %}
+
+    <!-- Contenu -->
+    <div class="content-wrapper">
+        <div class="content">
+            {% block contenu %}{% endblock %}
+        </div>
+
+        <!-- Panneaux -->
+        <div id="panel-overlay"></div>
+        {% for item in navbar.panel %}
+            {% include item.panel %}
+        {% endfor %}
+    </div>
+
+    <!-- JS -->
+    <script src="{% static 'navbar/js/main.js' %}"></script>
+    <script src="{% static 'navbar/js/toasts.js' %}"></script>
+    <script src="{% static 'navbar/js/navbar.js' %}"></script>
+
+    {% block jsscript %}{% endblock %}
+</body>
+</html>

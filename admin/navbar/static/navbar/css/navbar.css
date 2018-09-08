@@ -135,6 +135,14 @@
     line-height: 1;
 }
 
+#main-nav .panelbar {
+    flex-direction: row;
+}
+
+#main-nav .panelbar button {
+    padding: .5rem;
+}
+
 #main-nav .sidebar .nav-item > .nav-link[data-toggle="collapse"]::after {
     height: 16px;
     width: 16px;

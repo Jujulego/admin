@@ -28,7 +28,7 @@
       <list>
         <option value="$MODULE_DIR$/admin/main/templates" />
         <option value="$MODULE_DIR$/admin/debug/templates" />
-        <option value="$MODULE_DIR$/admin/templates" />
+        <option value="$MODULE_DIR$/admin/chat/templates" />
       </list>
     </option>
   </component>

@@ -38,8 +38,8 @@ INSTALLED_APPS = [
 
     'channels',
 
-    'main',
-    'debug',
+    'navbar.apps.NavbarConfig',
+    'debug.apps.DebugConfig',
 ]
 
 MIDDLEWARE = [
@@ -65,6 +65,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                'navbar.context.navbar'
             ],
         },
     },

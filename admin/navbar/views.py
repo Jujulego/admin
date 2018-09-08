@@ -13,7 +13,7 @@ class LoginView(View):
         if req.user.is_authenticated:
             return redirect(req.GET.get("next", "index"))
 
-        return render(req, "main/login.html")
+        return render(req, "navbar/login.html")
 
     def post(self, req):
         # Connexion
@@ -29,13 +29,13 @@ class LoginView(View):
 
         else:
             # Echec ...
-            return render(req, "main/login.html", {
+            return render(req, "navbar/login.html", {
                 "erreur": True,
             })
 
 @login_required
 def index(req):
-    return render(req, "main/base.html")
+    return render(req, "navbar/base.html")
 
 @login_required
 def logout(req):

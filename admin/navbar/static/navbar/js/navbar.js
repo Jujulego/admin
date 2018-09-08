@@ -35,6 +35,28 @@ $.fn.navbar = function() {
         setup();
     });
 
+    this.each(function() {
+        // Elements
+        const tooltips = $('[data-toggle="tooltip"]', this);
+        const toggler = $(".navbar-toggler", this);
+
+        // Fonctions
+        function setup() {
+            // Fermeture des menus et (des)activation des tooltips
+            if (toggler.css('display') === 'none') {
+                tooltips.tooltip('enable');
+            } else {
+                tooltips.tooltip('disable');
+            }
+        }
+
+        // Events
+        $(window).resize(setup);
+
+        // Initialisation
+        setup();
+    });
+
     return this;
 };
 

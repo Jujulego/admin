@@ -2,5 +2,5 @@
 from django.apps import AppConfig
 
 # Configuration
-class MainConfig(AppConfig):
-    name = 'main'
+class NavbarConfig(AppConfig):
+    name = 'navbar'

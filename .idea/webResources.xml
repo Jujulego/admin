@@ -8,6 +8,7 @@
             <path value="file://$PROJECT_DIR$/admin/main/static" />
             <path value="file://$PROJECT_DIR$/admin/debug/static" />
             <path value="file://$PROJECT_DIR$/admin/static" />
+            <path value="file://$PROJECT_DIR$/admin/navbar/static" />
           </resourceRoots>
         </entryData>
       </entry>

@@ -1,0 +1,6 @@
+<li class="nav-item"
+    data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="{{ item.tooltip|default:item.name }}">
+    <a class="nav-link nav-expand-hide-span" {% if item.is_modal %}data-toggle="modal" data-target="{{ item.target }}"{% else %}href="{{ item.url }}"{% endif %}>
+        <i class="{{ item.icon }} fa-fw"></i><span class="d-inline">{{ item.name }}</span>
+    </a>
+</li>

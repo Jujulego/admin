@@ -1,0 +1,6 @@
+{% extends "navbar/items/panel.html" %}
+
+{% block content %}
+    {{ block.super }}
+    <span class="badge badge-warning fade {% if messages %}show{% endif %}">{{ messages|length }}</span>
+{% endblock %}
