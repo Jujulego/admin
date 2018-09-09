@@ -26,9 +26,9 @@
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/admin/main/templates" />
         <option value="$MODULE_DIR$/admin/debug/templates" />
         <option value="$MODULE_DIR$/admin/chat/templates" />
+        <option value="$MODULE_DIR$/admin/navbar/templates" />
       </list>
     </option>
   </component>

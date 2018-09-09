@@ -5,5 +5,5 @@ from navbar.navbar import *
 
 # Items
 navbar = [
-    item("Chat", "fas fa-comments", url = reverse("chat:index"))
+    item("Chat", "fas fa-comments", 0, Position.TOP, url = reverse("chat:index"))
 ]

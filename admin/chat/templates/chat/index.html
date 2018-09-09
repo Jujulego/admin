@@ -3,10 +3,25 @@
 {% block title %}Chat Rooms{% endblock %}
 
 {% block contenu %}
-    What chat room would you like to enter?<br/>
-    <input id="room-name-input" type="text" size="100"/><br/>
-    <input id="room-name-submit" type="button" value="Enter"/>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-auto">
+                <label class="my-1" for="room-name-input">What chat room would you like to enter ?</label>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <input id="room-name-input" class="form-control" type="text" size="100" />
 
+                    <div class="input-group-append">
+                        <button id="room-name-submit" class="btn btn-primary" type="submit">Enter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block jsscript %}
     <script>
         document.querySelector('#room-name-input').focus();
         document.querySelector('#room-name-input').onkeyup = function(e) {

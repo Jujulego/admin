@@ -3,9 +3,24 @@
 {% block title %}Chat Room{% endblock %}
 
 {% block contenu %}
-    <textarea id="chat-log" cols="100" rows="20"></textarea><br/>
-    <input id="chat-message-input" type="text" size="100"/><br/>
-    <input id="chat-message-submit" type="button" value="Send"/>
+    <div class="container-fluid">
+        <div class="row mb-3">
+            <div class="col">
+                <textarea id="chat-log" class="form-control" cols="100" rows="20"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="input-group">
+                    <input id="chat-message-input" class="form-control" type="text" size="100" />
+
+                    <div class="input-group-append">
+                        <button id="chat-message-submit" class="btn btn-primary" type="button">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block jsscript %}

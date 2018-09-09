@@ -26,13 +26,18 @@ def navbar(request):
     }
 
     for it in items:
-        if it["position"] == Position.TOP:
-            nav["top"].append(it)
+        if it["is_shown"](request):
+            if it["position"] == Position.TOP:
+                nav["top"].append(it)
 
-        elif it["position"] == Position.SIDEBAR:
-            nav["sidebar"].append(it)
+            elif it["position"] == Position.SIDEBAR:
+                nav["sidebar"].append(it)
 
-        elif it["position"] == Position.PANEL:
-            nav["panel"].append(it)
+            elif it["position"] == Position.PANEL:
+                nav["panel"].append(it)
+
+    nav["top"].sort(key = lambda o : o["ordre"])
+    nav["sidebar"].sort(key = lambda o : o["ordre"])
+    nav["panel"].sort(key = lambda o : o["ordre"])
 
     return { "navbar": nav }
