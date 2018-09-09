@@ -1,0 +1,26 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Redis server" type="docker-deploy" factoryName="docker-image" singleton="true" server-name="Docker">
+    <deployment type="docker-image">
+      <settings>
+        <option name="JSONFilePath" value="" />
+        <option name="command" value="" />
+        <option name="commandLineOptions" value="-d" />
+        <option name="containerName" value="" />
+        <option name="entrypoint" value="" />
+        <option name="imageTag" value="sha256:481995377a044d40ca3358e4203fe95eca1d58b98a1d4c2d9cec51c0c4569613" />
+        <option name="portBindings">
+          <list>
+            <DockerPortBindingImpl>
+              <option name="containerPort" value="6379" />
+              <option name="hostPort" value="6379" />
+            </DockerPortBindingImpl>
+          </list>
+        </option>
+        <option name="startBrowserSettings">
+          <browser url="http://192.168.99.100" />
+        </option>
+      </settings>
+    </deployment>
+    <method v="2" />
+  </configuration>
+</component>

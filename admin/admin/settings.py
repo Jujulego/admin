@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'channels',
 
     'navbar.apps.NavbarConfig',
+    'chat.apps.ChatConfig',
     'debug.apps.DebugConfig',
 ]
 
@@ -74,6 +75,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'admin.wsgi.application'
 ASGI_APPLICATION = 'admin.routing.application'
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("192.168.99.100", 6379)],
+        },
+    },
+}
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
