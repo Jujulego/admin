@@ -6,7 +6,7 @@ $.fn.navbar = function() {
     // Application !
     this.each(function() {
         // Elements
-        const tooltips = $('[data-toggle="tooltip"]', this);
+        const tooltips = $('[data-toggle="tooltip"]', this).not('.panelbar [data-toggle="tooltip"]');
         const toggler = $(".navbar-toggler", this);
 
         // Fonctions

@@ -3,8 +3,8 @@
 
     <!-- Panels -->
     <ul class="navbar-nav ml-auto panelbar">
-        {% for item in navbar.panel %}
-            {% include item.template|default:"navbar/items/panel.html" %}
+        {% for item in navbar.panels %}
+            {% include item.template|default_if_none:"navbar/items/panel.html" %}
         {% endfor %}
     </ul>
 
@@ -18,7 +18,7 @@
         <!-- Sidebar -->
         <ul class="sidebar navbar-nav">
             {% for item in navbar.sidebar %}
-                {% include item.template|default:"navbar/items/sidebar.html" %}
+                {% include item.template|default_if_none:"navbar/items/sidebar.html" %}
             {% endfor %}
         </ul>
 
@@ -28,8 +28,8 @@
 
         <!-- Top links -->
         <ul class="navbar-nav ml-auto">
-            {% for item in navbar.top %}
-                {% include item.template|default:"navbar/items/top.html" %}
+            {% for item in navbar.top_links %}
+                {% include item.template|default_if_none:"navbar/items/top.html" %}
             {% endfor %}
         </ul>
     </div>

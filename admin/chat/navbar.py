@@ -1,9 +1,14 @@
 # Importations
 from django.urls import reverse
 
-from navbar.navbar import *
+from navbar import Item, Position
+from navbar.navbars import navbar
 
-# Items
-navbar = [
-    item("Chat", "fas fa-comments", 0, Position.TOP, url = reverse("chat:index"))
-]
+# Entrées
+@navbar.register
+class ChatItem(Item):
+    # Attributs
+    name = "Chat"
+    icon = "fas fa-comments"
+    url = reverse("chat:index")
+    position = Position.TOP

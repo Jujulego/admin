@@ -1,50 +1,42 @@
 # Importations
 from django.urls import reverse
+from .items import Item, Modal, Panel
+from .decorators import if_staff
+from .navbars import navbar
 
-# Enumérations
-class Position:
-    TOP = 0
-    SIDEBAR = 1
-    PANEL = 2
+# Classes
+@navbar.register
+class HomeItem(Item):
+    # Attributs
+    name = "Accueil"
+    icon = "fas fa-home"
+    url = reverse("index")
 
-# Classe
-def item(name, icon, ordre = 0, position = Position.SIDEBAR, **kwargs):
-    base = {
-        "name": name,
-        "icon": icon,
-        "ordre": ordre,
-        "position": position,
+@navbar.register
+@if_staff
+class AdminItem(Item):
+    # Attributs
+    name = "Administration"
+    icon = "fas fa-cogs"
+    url = reverse("admin:index")
 
-        "is_modal": False,
-        "is_shown": lambda req : True
-    }
+    ordre = 100
 
-    base.update(kwargs)
+@navbar.register
+class LogoutModal(Modal):
+    # Attributs
+    name = "Logout"
+    icon = "fas fa-sign-out-alt"
+    target = "#logout-modal"
 
-    return base
+    ordre = 100
 
-def modal(name, icon, target, ordre = 0, position = Position.TOP, **kwargs):
-    return item(name, icon, ordre, position, **kwargs, is_modal = True, target = target)
+@navbar.register
+class ToastsPanel(Panel):
+    # Attributs
+    name = "Messages"
+    icon = "fas fa-envelope"
+    target = "#toasts-panel"
 
-def panel(name, icon, target, panel, ordre = 0, **kwargs):
-    return item(name, icon, ordre, Position.PANEL, **kwargs, target = target, panel = panel)
-
-__all__ = [
-    "Position",
-    "item",
-    "modal",
-    "panel"
-]
-
-# Elements
-navbar = [
-    # Top
-    modal("Logout", "fas fa-sign-out-alt", "#logout-modal", 100),
-
-    # Sidebar
-    item("Accueil", "fas fa-home", url = reverse("index")),
-    item("Administration", "fas fa-cogs", 100, url = reverse("admin:index"), is_shown = lambda req : req.user.is_staff),
-
-    # Panels
-    panel("Messages", "fas fa-envelope", "#toasts-panel" , "navbar/panel/toasts.html", template = "navbar/items/toasts.html"),
-]
+    panel = "navbar/panel/toasts.html"
+    template = "navbar/items/toasts.html"

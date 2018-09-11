@@ -1,9 +1,19 @@
 # Importations
 from django.conf import settings
-from navbar.navbar import panel
+
+from navbar import Panel
+from navbar.navbars import navbar
 
 # Entrées
-navbar = [
-    # Panels
-    panel("Debug", "fas fa-bug", "#debug-panel", "debug/panel.html", is_shown = lambda req: settings.DEBUG),
-]
+@navbar.register
+class DebugPanel(Panel):
+    # Attributs
+    name = "Debug"
+    icon = "fas fa-bug"
+    target = "#debug-panel"
+
+    panel = "debug/panel.html"
+
+    # Méthodes
+    def is_shown(self, req):
+        return settings.DEBUG
