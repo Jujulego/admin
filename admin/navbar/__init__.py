@@ -4,5 +4,7 @@ from . import decorators
 
 __all__ = [
     "Item", "Modal", "Panel", "Position",
-    "decorators"
+    "decorators", "functions"
 ]
+
+default_app_config = 'navbar.apps.NavbarConfig'

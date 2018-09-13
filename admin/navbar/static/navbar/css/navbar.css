@@ -85,7 +85,8 @@
     transition: transform 250ms ease;
 }
 
-#main-nav .navbar-toggler.collapsed span:nth-child(1), #main-nav .navbar-toggler.collapsed span:nth-child(3) {
+#main-nav .navbar-toggler.collapsed span:nth-child(1),
+#main-nav .navbar-toggler.collapsed span:nth-child(3) {
     transform: translate(0px, 0px) rotate(0deg);
 }
 
@@ -114,11 +115,13 @@
 }
 
 #main-nav .nav-item > .nav-link > span {
-    height: 16px;
-    line-height: 16px;
+    position: relative;
+    top: -.25rem;
+
     width: calc(100% - 20px - 1rem);
 
-    overflow: hidden;
+    overflow-x: hidden;
+    white-space: nowrap;
 }
 
 #main-nav .nav-item > .nav-link[data-toggle="collapse"] > span {
@@ -217,7 +220,7 @@
     }
 
     #main-nav.navbar-expand-sm .sidebar .nav-item > .nav-link {
-        padding: 1rem;
+        padding: 1rem 1rem .75rem;
     }
 
     #main-nav.navbar-expand-sm .sidebar .nav-item > .nav-link[data-toggle="collapse"]::after {
@@ -295,7 +298,7 @@
     }
 
     #main-nav.navbar-expand-md .sidebar .nav-item > .nav-link {
-        padding: 1rem;
+        padding: 1rem 1rem .75rem;
     }
 
     #main-nav.navbar-expand-md .sidebar .nav-item > .nav-link[data-toggle="collapse"]::after {
@@ -373,7 +376,7 @@
     }
 
     #main-nav.navbar-expand-lg .sidebar .nav-item > .nav-link {
-        padding: 1rem;
+        padding: 1rem 1rem .75rem;
     }
 
     #main-nav.navbar-expand-lg .sidebar .nav-item > .nav-link[data-toggle="collapse"]::after {
@@ -451,7 +454,7 @@
     }
 
     #main-nav.navbar-expand-xl .sidebar .nav-item > .nav-link {
-        padding: 1rem;
+        padding: 1rem 1rem .75rem;
     }
 
     #main-nav.navbar-expand-xl .sidebar .nav-item > .nav-link[data-toggle="collapse"]::after {
@@ -478,4 +481,14 @@
     .navbar-reduite #main-nav.navbar-expand-xl .sidebar-toggler > i {
         transform: rotate(-180deg);
     }
+}
+
+#main-nav .sidebar .nav-item > .nav-link[data-toggle="collapse"] {
+    padding-bottom: 0;
+
+    transition: padding-bottom 250ms ease;
+}
+
+#main-nav .sidebar .nav-item > .nav-link.collapsed[data-toggle="collapse"] {
+    padding-bottom: .5rem;
 }
