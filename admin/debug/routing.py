@@ -5,5 +5,5 @@ from . import consumers
 
 # URLs
 websocket_urlpatterns = [
-    path('ws/chat/<room_name>/', consumers.AsyncChatConsumer),
+    path('ws/debug/', consumers.DebugConsumer),
 ]

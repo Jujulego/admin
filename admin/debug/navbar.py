@@ -17,3 +17,16 @@ class DebugPanel(Panel):
     # Méthodes
     def is_shown(self, req):
         return settings.DEBUG
+
+@navbar.register
+class TerminalPanel(Panel):
+    # Attributs
+    name = "Terminal"
+    icon = "fas fa-terminal"
+    target = "#terminal-panel"
+
+    panel = "debug/terminal.html"
+
+    # Méthodes
+    def is_shown(self, req):
+        return settings.DEBUG

@@ -4,7 +4,7 @@
       <settings>
         <option name="JSONFilePath" value="" />
         <option name="command" value="" />
-        <option name="commandLineOptions" value="-d" />
+        <option name="commandLineOptions" value="" />
         <option name="containerName" value="" />
         <option name="entrypoint" value="" />
         <option name="imageTag" value="sha256:481995377a044d40ca3358e4203fe95eca1d58b98a1d4c2d9cec51c0c4569613" />

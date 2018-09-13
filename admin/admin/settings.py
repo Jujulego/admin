@@ -39,8 +39,10 @@ INSTALLED_APPS = [
     'channels',
 
     'navbar.apps.NavbarConfig',
-    'chat.apps.ChatConfig',
     'debug.apps.DebugConfig',
+
+    'aframe.apps.AFrameConfig',
+    'chat.apps.ChatConfig',
 ]
 
 MIDDLEWARE = [

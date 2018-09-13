@@ -31,8 +31,6 @@ class Navbar:
                 self._panels.append(item)
                 self._panels.sort()
 
-            print(item.is_shown)
-
         # Utilisation sous forme décorateur
         return classes[0]
 

@@ -1,5 +1,6 @@
 @import "context.css";
 @import "sql.css";
+@import "terminal.css";
 
 #debug-panel {
     width: 90%;
