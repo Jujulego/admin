@@ -5,5 +5,5 @@ from . import consumers
 
 # URLs
 websocket_urlpatterns = [
-    path('ws/debug/', consumers.DebugConsumer),
+    path('ws/terminal', consumers.TerminalConsumer, name="terminal"),
 ]

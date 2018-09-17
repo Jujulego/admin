@@ -1,0 +1,55 @@
+{% load static %}
+
+<div id="terminal-panel" class="panel">
+    <!-- Toolbar -->
+    <div id="terminal-toolbar">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" role="tab"
+                    data-toggle="tab" href="#terminal-0">
+                    <span>Terminal</span><i class="fas fa-times"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="toolbar" role="toolbar">
+            <div class="btn-toolbar">
+                <button id="terminal-btn-add" class="btn btn-link">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terminal -->
+    <div id="terminal-tabs" class="tab-content">
+        <div id="terminal-0" class="tab-pane show active terminal" role="tabpanel">
+            <div>
+                <pre></pre>
+            </div>
+            <form>
+                <label><span>&gt;&gt;&gt; </span><input type="text" /></label>
+            </form>
+        </div>
+    </div>
+
+    <!-- Templates -->
+    <div class="template">
+        <li class="nav-item">
+            <a class="nav-link" role="tab"
+                data-toggle="tab">
+                <span>Terminal</span><i class="fas fa-times"></i>
+            </a>
+        </li>
+        <div class="tab-pane show active terminal" role="tabpanel">
+            <div>
+                <pre></pre>
+            </div>
+            <form>
+                <label><span>&gt;&gt;&gt; </span><input type="text" /></label>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="{% static "terminal/js/terminal.js" %}"></script>

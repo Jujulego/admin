@@ -1,0 +1,155 @@
+@import "anims.css";
+
+#terminal-panel {
+    display: flex;
+    width: 75%;
+    height: calc(100% + 1px);
+
+    flex-direction: column;
+
+    border: none;
+}
+
+#terminal-panel.show {
+    bottom: -1px;
+}
+
+#terminal-toolbar {
+    display: flex;
+
+    border-bottom: 1px solid #dee2e6;
+
+    background-color: #2c3136;
+}
+
+#terminal-toolbar .nav-tabs {
+    flex: 1;
+    flex-wrap: nowrap;
+
+    border: none;
+
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+#terminal-toolbar .nav-tabs .nav-item {
+    flex: 0 1 20%;
+}
+
+#terminal-toolbar .nav-tabs .nav-item .nav-link {
+    display: flex;
+
+    border-radius: 0;
+
+    padding-right: .5rem;
+}
+
+#terminal-toolbar .nav-tabs .nav-item .nav-link span {
+    flex: 1;
+}
+
+#terminal-toolbar .nav-tabs .nav-item .nav-link i.fa-times {
+    width: 16px;
+    height: 16px;
+
+    align-self: center;
+
+    margin-left: .5rem;
+}
+
+#terminal-toolbar .nav-tabs .nav-item:only-child .nav-link i.fa-times {
+    display: none;
+}
+
+#terminal-toolbar .toolbar button {
+    width: 41px;
+
+    padding: .5rem;
+
+    color: #868e96;
+}
+
+#terminal-tabs {
+    flex: 1;
+
+    border-bottom: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+
+    overflow: hidden;
+}
+
+#terminal-tabs .terminal {
+    height: 100%;
+
+    flex-wrap: nowrap;
+    flex-direction: column;
+    overflow: auto;
+
+    background-color: #0c0c0c;
+}
+
+#terminal-tabs .terminal.show {
+    display: flex;
+}
+
+#terminal-tabs .terminal pre,
+#terminal-tabs .terminal label {
+    margin: 0;
+
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 16px;
+
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    white-space: pre;
+}
+
+#terminal-tabs .terminal pre {
+    min-height: 100%;
+
+    overflow: visible;
+}
+
+#terminal-tabs .terminal label {
+    display: flex;
+}
+
+#terminal-tabs .terminal label input {
+    flex: 1;
+
+    border: none;
+
+    background-color: #0c0c0c;
+
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#terminal-tabs .terminal .bleu {
+    color: #3b78ff;
+}
+
+#terminal-tabs .terminal .vert {
+    color: #13a10e;
+}
+
+#terminal-tabs .terminal .violet {
+    color: #631798;
+}
+
+#terminal-tabs .terminal .jaune {
+    color: #c19c00;
+}
+
+#terminal-tabs .terminal .log .connecting::before {
+    content: "OK !";
+
+    animation: terminal-connecting 8s infinite;
+    animation-play-state: paused;
+    animation-fill-mode: none;
+}
+
+#terminal-tabs .terminal .log:last-of-type .connecting::before {
+    animation-play-state: running;
+}
