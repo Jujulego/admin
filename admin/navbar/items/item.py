@@ -21,6 +21,9 @@ class Item:
     is_modal = False
     target = None
 
+    css = []
+    js = []
+
     # Méthodes spéciales
     def __init__(self):
         # Checks

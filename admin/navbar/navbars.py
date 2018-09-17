@@ -47,5 +47,13 @@ class Navbar:
     def panels(self):
         return [it for it in self._panels if self.request is None or it.is_shown(self.request)]
 
+    @property
+    def css(self):
+        return [f for it in self._items for f in it.css]
+
+    @property
+    def js(self):
+        return [f for it in self._items for f in it.js]
+
 # Default navbar
 navbar = Navbar()

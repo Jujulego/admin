@@ -216,11 +216,13 @@
 
         height: calc(100vh - 56px - 3rem);
 
+        padding-top: .25rem;
+
         background-color: #212529;
     }
 
     #main-nav.navbar-expand-sm .sidebar .nav-item > .nav-link {
-        padding: 1rem 1rem .75rem;
+        padding: .75rem 1rem .5rem;
     }
 
     #main-nav.navbar-expand-sm .sidebar .nav-item > .nav-link[data-toggle="collapse"]::after {
@@ -294,11 +296,13 @@
 
         height: calc(100vh - 56px - 3rem);
 
+        padding-top: .25rem;
+
         background-color: #212529;
     }
 
     #main-nav.navbar-expand-md .sidebar .nav-item > .nav-link {
-        padding: 1rem 1rem .75rem;
+        padding: .75rem 1rem .5rem;
     }
 
     #main-nav.navbar-expand-md .sidebar .nav-item > .nav-link[data-toggle="collapse"]::after {
@@ -372,11 +376,13 @@
 
         height: calc(100vh - 56px - 3rem);
 
+        padding-top: .25rem;
+
         background-color: #212529;
     }
 
     #main-nav.navbar-expand-lg .sidebar .nav-item > .nav-link {
-        padding: 1rem 1rem .75rem;
+        padding: .75rem 1rem .5rem;
     }
 
     #main-nav.navbar-expand-lg .sidebar .nav-item > .nav-link[data-toggle="collapse"]::after {
@@ -450,11 +456,13 @@
 
         height: calc(100vh - 56px - 3rem);
 
+        padding-top: .25rem;
+
         background-color: #212529;
     }
 
     #main-nav.navbar-expand-xl .sidebar .nav-item > .nav-link {
-        padding: 1rem 1rem .75rem;
+        padding: .75rem 1rem .5rem;
     }
 
     #main-nav.navbar-expand-xl .sidebar .nav-item > .nav-link[data-toggle="collapse"]::after {

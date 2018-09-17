@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec6973eb-679e-4a77-9cc6-9ae730d0307c" name="Default Changelist" comment="add: base aframe">
-      <change afterPath="$PROJECT_DIR$/admin/navbar/items/functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/navbar/items/menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/menu.html" afterDir="false" />
+    <list default="true" id="ec6973eb-679e-4a77-9cc6-9ae730d0307c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vagrant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/navbar/static/vendor/jquery-easing/jquery.easing.compatibility.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/navbar/static/vendor/jquery-easing/jquery.easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/navbar/static/vendor/jquery-easing/jquery.easing.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/admin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/aframe/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/aframe/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/chat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/chat/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/debug/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/debug/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/items/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/items/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin/routing.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin/routing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/aframe/templates/aframe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/aframe/templates/aframe/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/debug/consumers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/debug/navbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/debug/navbar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/debug/routing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/debug/static/debug/css/terminal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/debug/templates/debug/context.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/debug/templates/debug/context.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/debug/templates/debug/panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/debug/templates/debug/panel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/debug/templates/debug/terminal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/navbar/items/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/items/item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/navbar/navbars.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/navbars.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/navbar/static/navbar/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/css/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/panel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/toasts.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/toasts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/top.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/navbar/templates/navbar/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/templates/navbar/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,33 +58,35 @@
     <session id="1037418863">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="37" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="6" />
-          <entry key="project.open.time.7" value="7" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="9" />
+          <entry key="project.open.time.7" value="10" />
           <entry key="project.open.time.8" value="8" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="32" />
+          <entry key="project.opened" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="JavaScript-modules-diagram/C:/Users/julie/git/admin/admin" value="2" />
+          <entry key="JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/debug/static" value="1" />
           <entry key="JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/main" value="1" />
           <entry key="JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/main/static" value="1" />
           <entry key="JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/main/static/main/js" value="1" />
           <entry key="Python/#C:/Users/julie/git/admin/admin/admin" value="1" />
           <entry key="Python/#C:/Users/julie/git/admin/admin/main" value="1" />
+          <entry key="Python/#C:/Users/julie/git/admin/admin/navbar" value="1" />
           <entry key="cfg" value="1" />
-          <entry key="css" value="47" />
-          <entry key="html" value="157" />
-          <entry key="js" value="24" />
-          <entry key="py" value="177" />
+          <entry key="css" value="52" />
+          <entry key="html" value="169" />
+          <entry key="js" value="32" />
+          <entry key="py" value="208" />
           <entry key="svg" value="1" />
           <entry key="urlpath" value="1" />
           <entry key="xml" value="2" />
@@ -87,35 +94,35 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="47" />
+          <entry key="CSS" value="52" />
           <entry key="DjangoUrlPath" value="1" />
-          <entry key="HTML" value="157" />
+          <entry key="HTML" value="169" />
           <entry key="Ini" value="1" />
-          <entry key="JavaScript" value="24" />
-          <entry key="Python" value="177" />
+          <entry key="JavaScript" value="32" />
+          <entry key="Python" value="208" />
           <entry key="SVG" value="1" />
-          <entry key="UML" value="7" />
+          <entry key="UML" value="9" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Django Console" value="1517" />
-          <entry key="css" value="9805" />
-          <entry key="dummy" value="30" />
-          <entry key="html" value="12508" />
-          <entry key="js" value="7198" />
-          <entry key="py" value="15642" />
-          <entry key="txt" value="237" />
+          <entry key="Django Console" value="1580" />
+          <entry key="css" value="10642" />
+          <entry key="dummy" value="43" />
+          <entry key="html" value="13067" />
+          <entry key="js" value="12324" />
+          <entry key="py" value="16647" />
+          <entry key="txt" value="295" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="9806" />
-          <entry key="HTML" value="12508" />
-          <entry key="JavaScript" value="7197" />
-          <entry key="PLAIN_TEXT" value="267" />
-          <entry key="Python" value="17159" />
+          <entry key="CSS" value="10643" />
+          <entry key="HTML" value="13067" />
+          <entry key="JavaScript" value="12323" />
+          <entry key="PLAIN_TEXT" value="338" />
+          <entry key="Python" value="18227" />
         </counts>
       </usages-collector>
     </session>
@@ -124,82 +131,15 @@
     <favorites_list name="admin" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/items/menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/admin/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/items/sidebar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/items/panel.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/items/toasts.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/items/top.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/items/menu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding>
-                <marker date="1536856413825" expanded="true" signature="65:70" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -208,6 +148,7 @@
       <find>#sidebar-toggler</find>
       <find>content-wrapper</find>
       <find>&lt;/li&gt;</find>
+      <find>import</find>
     </findStrings>
     <replaceStrings>
       <replace>.sidebar-toggler</replace>
@@ -221,49 +162,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/navbar/navbar/position.py" />
-        <option value="$PROJECT_DIR$/admin/navbar/navbar/__init__.py" />
-        <option value="$PROJECT_DIR$/admin/navbar/navbar/item.py" />
-        <option value="$PROJECT_DIR$/admin/chat/consumers.py" />
-        <option value="$PROJECT_DIR$/admin/chat/templates/chat/index.html" />
-        <option value="$PROJECT_DIR$/admin/chat/templates/chat/room.html" />
-        <option value="$PROJECT_DIR$/admin/navbar/items/modal.py" />
-        <option value="$PROJECT_DIR$/admin/navbar/items/panel.py" />
-        <option value="$PROJECT_DIR$/admin/navbar/context.py" />
-        <option value="$PROJECT_DIR$/admin/navbar/apps.py" />
         <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/navbar.html" />
         <option value="$PROJECT_DIR$/admin/chat/navbar.py" />
-        <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/base.html" />
         <option value="$PROJECT_DIR$/admin/navbar/navbar.py" />
         <option value="$PROJECT_DIR$/admin/navbar/decorators.py" />
         <option value="$PROJECT_DIR$/admin/navbar/static/navbar/js/navbar.js" />
-        <option value="$PROJECT_DIR$/admin/debug/consumers.py" />
-        <option value="$PROJECT_DIR$/admin/navbar/navbars.py" />
         <option value="$PROJECT_DIR$/admin/chat/routing.py" />
-        <option value="$PROJECT_DIR$/admin/admin/routing.py" />
-        <option value="$PROJECT_DIR$/admin/debug/routing.py" />
-        <option value="$PROJECT_DIR$/admin/debug/templates/debug/panel.html" />
         <option value="$PROJECT_DIR$/admin/debug/static/debug/css/panel.css" />
-        <option value="$PROJECT_DIR$/admin/debug/static/debug/css/terminal.css" />
-        <option value="$PROJECT_DIR$/admin/debug/templates/debug/terminal.html" />
         <option value="$PROJECT_DIR$/admin/aframe/apps.py" />
         <option value="$PROJECT_DIR$/admin/aframe/views.py" />
         <option value="$PROJECT_DIR$/admin/aframe/urls.py" />
-        <option value="$PROJECT_DIR$/admin/admin/urls.py" />
         <option value="$PROJECT_DIR$/admin/aframe/navbar.py" />
         <option value="$PROJECT_DIR$/admin/navbar/static/navbar/css/main.css" />
         <option value="$PROJECT_DIR$/admin/aframe/static/aframe/aframe.js" />
-        <option value="$PROJECT_DIR$/admin/aframe/templates/aframe/index.html" />
         <option value="$PROJECT_DIR$/admin/aframe/__init__.py" />
         <option value="$PROJECT_DIR$/admin/chat/__init__.py" />
         <option value="$PROJECT_DIR$/admin/debug/__init__.py" />
         <option value="$PROJECT_DIR$/admin/uwsgi/__init__.py" />
         <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/items/top.html" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/css/navbar.css" />
-        <option value="$PROJECT_DIR$/admin/admin/settings.py" />
-        <option value="$PROJECT_DIR$/admin/debug/navbar.py" />
         <option value="$PROJECT_DIR$/admin/navbar/items/fonctions.py" />
-        <option value="$PROJECT_DIR$/admin/navbar/items/item.py" />
         <option value="$PROJECT_DIR$/admin/navbar/items/functions.py" />
         <option value="$PROJECT_DIR$/admin/navbar/items/__init__.py" />
         <option value="$PROJECT_DIR$/admin/navbar/__init__.py" />
@@ -272,6 +189,30 @@
         <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/items/panel.html" />
         <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/items/toasts.html" />
         <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/items/menu.html" />
+        <option value="$PROJECT_DIR$/admin/debug/static/debug/js/debug.js" />
+        <option value="$PROJECT_DIR$/admin/aframe/templates/aframe/index.html" />
+        <option value="$PROJECT_DIR$/admin/admin/settings.py" />
+        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/css/navbar.css" />
+        <option value="$PROJECT_DIR$/admin/debug/routing.py" />
+        <option value="$PROJECT_DIR$/admin/debug/static/debug/css/anims.css" />
+        <option value="$PROJECT_DIR$/admin/debug/templates/debug/terminal.html" />
+        <option value="$PROJECT_DIR$/admin/debug/consumers.py" />
+        <option value="$PROJECT_DIR$/admin/debug/static/debug/js/terminal.js" />
+        <option value="$PROJECT_DIR$/admin/debug/static/debug/css/terminal.css" />
+        <option value="$PROJECT_DIR$/admin/terminal/consumers.py" />
+        <option value="$PROJECT_DIR$/admin/terminal/routing.py" />
+        <option value="$PROJECT_DIR$/admin/terminal/static/debug/js/terminal.js" />
+        <option value="$PROJECT_DIR$/admin/terminal/__init__.py" />
+        <option value="$PROJECT_DIR$/admin/terminal/templates/terminal/terminal.html" />
+        <option value="$PROJECT_DIR$/admin/navbar/items/item.py" />
+        <option value="$PROJECT_DIR$/admin/navbar/navbars.py" />
+        <option value="$PROJECT_DIR$/admin/debug/navbar.py" />
+        <option value="$PROJECT_DIR$/admin/debug/templates/debug/panel.html" />
+        <option value="$PROJECT_DIR$/admin/debug/templates/debug/context.html" />
+        <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/base.html" />
+        <option value="$PROJECT_DIR$/admin/terminal/navbar.py" />
+        <option value="$PROJECT_DIR$/admin/admin/urls.py" />
+        <option value="$PROJECT_DIR$/admin/admin/routing.py" />
       </list>
     </option>
   </component>
@@ -288,9 +229,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -298,18 +239,12 @@
         <expanded-state>
           <State />
           <State>
-            <id>CSS</id>
-          </State>
-          <State>
-            <id>Invalid elementsCSS</id>
-          </State>
-          <State>
-            <id>Python</id>
+            <id>Django</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>CssUnknownTarget</id>
+            <id>Dockerfile</id>
           </State>
         </selected-state>
       </profile-state>
@@ -320,6 +255,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -332,48 +268,10 @@
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar" type="462c0819:PsiDirectoryNode" />
-              <item name="items" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar" type="462c0819:PsiDirectoryNode" />
-              <item name="items" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -381,8 +279,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsDialog.application.dockerMachine" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -393,19 +298,19 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\julie\git\admin\admin\aframe" />
-      <recent name="C:\Users\julie\git\admin\admin\navbar" />
-      <recent name="C:\Users\julie\git\admin\admin\chat" />
-      <recent name="C:\Users\julie\git\admin\admin\templates\admin" />
-      <recent name="C:\Users\julie\git\admin\admin\templates\admin\widgets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\julie\git\admin\admin\navbar\templates\navbar\panel" />
       <recent name="C:\Users\julie\git\admin\admin\navbar\templates\main\modals" />
       <recent name="C:\Users\julie\git\admin\admin\debug\static\debug\js" />
       <recent name="C:\Users\julie\git\admin\admin\main" />
       <recent name="C:\Users\julie\git\admin\admin\debug\static\debug\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\julie\git\admin\admin\terminal" />
+      <recent name="C:\Users\julie\git\admin\admin\navbar\static\vendor\jquery-easing" />
+      <recent name="C:\Users\julie\git\admin\admin\aframe" />
+      <recent name="C:\Users\julie\git\admin\admin\navbar" />
+      <recent name="C:\Users\julie\git\admin\admin\chat" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -578,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536840006158</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add: navbar menus&#10;fix: use of &quot;default_app_config&quot;">
+      <created>1536856563058</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1536856563058</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -592,14 +504,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49085367" visible="true" weight="0.18590604" />
-      <window_info id="Structure" order="1" sideWeight="0.50914633" side_tool="true" weight="0.32348993" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48794326" visible="true" weight="0.19731544" />
+      <window_info id="Structure" order="1" sideWeight="0.5120567" side_tool="true" weight="0.1885906" />
       <window_info id="Favorites" order="2" sideWeight="0.50914633" side_tool="true" weight="0.32348993" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.8780142" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.52056736" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5744681" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -618,6 +529,31 @@
       <window_info anchor="right" id="Database" order="3" weight="0.3295302" />
       <window_info anchor="right" id="SciView" order="4" weight="0.3295302" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48794326" visible="true" weight="0.4281879" />
+      <window_info id="Structure" order="1" sideWeight="0.5120567" side_tool="true" weight="0.1885906" />
+      <window_info id="Favorites" order="2" sideWeight="0.50914633" side_tool="true" weight="0.32348993" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.8780142" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5744681" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32765958" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932885" weight="0.6836879" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4986577" weight="0.7673759" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013423" side_tool="true" weight="0.7673759" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4986577" weight="0.59432626" />
+      <window_info anchor="bottom" id="Docker" order="11" weight="0.529078" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32765958" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.3295302" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -661,303 +597,14 @@
     <MESSAGE value="add: base terminal" />
     <MESSAGE value="add: base uwsgi" />
     <MESSAGE value="add: base aframe" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: base aframe" />
+    <MESSAGE value="add: navbar menus&#10;fix: use of &quot;default_app_config&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: navbar menus&#10;fix: use of &quot;default_app_config&quot;" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/channels/routing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="101" column="8" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/navbars.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding>
-            <marker date="1536699619260" expanded="true" signature="66:67" ph="..." />
-            <marker date="1536699619260" expanded="true" signature="66:71" ph="..." />
-            <marker date="1536699619260" expanded="true" signature="115:124" ph="..." />
-            <marker date="1536699619260" expanded="true" signature="875:881" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/chat/consumers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/chat/routing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin/routing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/context.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/debug/routing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/css/sql.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/css/panel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/sql.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/panel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/debug/consumers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/terminal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/css/terminal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/aframe/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/aframe/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/js/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/aframe/navbar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#15#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/aframe/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="e#15#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/aframe/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_aframe.io_releases_0.5.0_aframe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1479" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/modals/logout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-924">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/aframe/static/aframe/aframe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/aframe/templates/aframe/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/contrib/admin/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="33" selection-start-line="28" selection-end-line="29" />
-          <folding>
-            <element signature="e#117#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/aframe/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" selection-start-column="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/chat/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/debug/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="44" selection-start-column="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/uwsgi/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="44" selection-start-column="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/navbar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/debug/navbar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-          <folding>
-            <element signature="e#15#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/navbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="484" lean-forward="true" selection-start-line="484" selection-end-line="484" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/items/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="e#15#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/navbar/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <element signature="e#15#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/items/item.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -971,34 +618,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
-          <folding>
-            <element signature="e#15#47#0" expanded="true" />
-            <marker date="1536856201845" expanded="true" signature="962:967" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin/settings.py">
+    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/items/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/items/menu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <marker date="1536856413825" expanded="true" signature="65:70" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/items/top.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        <state relative-caret-position="153">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1023,10 +649,289 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/items/menu.html">
+    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/items/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/navbar/items/menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Python/#C:/Users/julie/git/admin/admin/navbar">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Python</ID>
+          <OriginalElement>#C:/Users/julie/git/admin/admin/navbar</OriginalElement>
+          <nodes>
+            <node x="" y="">navbar.items.item.Item</node>
+            <node x="" y="">object</node>
+            <node x="" y="">navbar.navbar.ToastsPanel</node>
+            <node x="" y="">django.apps.config.AppConfig</node>
+            <node x="" y="">django.views.generic.base.View</node>
+            <node x="" y="">enum.Flag</node>
+            <node x="" y="">navbar.items.modal.Modal</node>
+            <node x="" y="">navbar.navbars.Navbar</node>
+            <node x="" y="">navbar.views.LoginView</node>
+            <node x="" y="">navbar.items.item.Position</node>
+            <node x="" y="">enum.Enum</node>
+            <node x="" y="">enum.EnumMeta</node>
+            <node x="" y="">navbar.navbar.AdminItem</node>
+            <node x="" y="">navbar.navbar.LogoutModal</node>
+            <node x="" y="">navbar.items.menu.Menu</node>
+            <node x="" y="">navbar.items.panel.Panel</node>
+            <node x="" y="">navbar.apps.NavbarConfig</node>
+            <node x="" y="">navbar.navbar.HomeItem</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8975903614457831" x="820.0" y="133.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/js/context.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2063" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_aframe.io_releases_0.5.0_aframe.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/aframe/templates/aframe/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/js/debug.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/debug/static">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/admin/debug/static</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/admin/debug/static/debug/css/context.css</node>
+            <node x="" y="">$PROJECT_DIR$/admin/debug/static/debug/css/panel.css</node>
+            <node x="" y="">$PROJECT_DIR$/admin/debug/static/debug/css/sql.css</node>
+            <node x="" y="">$PROJECT_DIR$/admin/debug/static/debug/css/terminal.css</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="156.0" y="98.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/navbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="501" column="1" lean-forward="true" selection-start-line="501" selection-start-column="1" selection-end-line="501" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/chat/consumers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/chat/templates/chat/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/chat/templates/chat/room.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/terminal.html" />
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/channels/generic/websocket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="152" column="8" selection-start-line="152" selection-start-column="8" selection-end-line="152" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/navbar/static/vendor/jquery-easing/jquery.easing.compatibility.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/js/terminal.js" />
+    <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/css/anims.css" />
+    <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/css/terminal.css" />
+    <entry file="file://$PROJECT_DIR$/admin/debug/consumers.py" />
+    <entry file="file://$PROJECT_DIR$/admin/terminal/static/debug/js/debug.js" />
+    <entry file="file://$PROJECT_DIR$/admin/debug/routing.py" />
+    <entry file="file://$PROJECT_DIR$/admin/terminal/consumers.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/terminal/static/terminal/js/terminal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="42" column="74" selection-start-line="42" selection-start-column="74" selection-end-line="42" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="44" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/terminal/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" selection-start-column="50" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/terminal/templates/terminal/terminal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/navbar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/navbar/items/item.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/navbar/navbars.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/navbar/navbar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/sql.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/panel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/terminal/routing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/context.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/chat/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/terminal/navbar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#221#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin/routing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding>
+            <element signature="e#15#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#15#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

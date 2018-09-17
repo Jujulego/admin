@@ -31,6 +31,7 @@
         <option value="$MODULE_DIR$/admin/chat/templates" />
         <option value="$MODULE_DIR$/admin/navbar/templates" />
         <option value="$MODULE_DIR$/admin/aframe/templates" />
+        <option value="$MODULE_DIR$/admin/terminal/templates" />
       </list>
     </option>
   </component>

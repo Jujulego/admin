@@ -14,18 +14,13 @@ class DebugPanel(Panel):
 
     panel = "debug/panel.html"
 
-    # Méthodes
-    def is_shown(self, req):
-        return settings.DEBUG
-
-@navbar.register
-class TerminalPanel(Panel):
-    # Attributs
-    name = "Terminal"
-    icon = "fas fa-terminal"
-    target = "#terminal-panel"
-
-    panel = "debug/terminal.html"
+    css = [
+        'debug/css/panel.css'
+    ]
+    js = [
+        'debug/js/debug.js',
+        'debug/js/context.js'
+    ]
 
     # Méthodes
     def is_shown(self, req):
