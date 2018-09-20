@@ -11,6 +11,7 @@
             <path value="file://$PROJECT_DIR$/admin/navbar/static" />
             <path value="file://$PROJECT_DIR$/admin/aframe/static" />
             <path value="file://$PROJECT_DIR$/admin/terminal/static" />
+            <path value="file://$PROJECT_DIR$/admin/uwsgi/static" />
           </resourceRoots>
         </entryData>
       </entry>

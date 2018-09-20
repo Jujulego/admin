@@ -40,3 +40,10 @@ class ToastsPanel(Panel):
 
     panel = "navbar/panel/toasts.html"
     template = "navbar/items/toasts.html"
+
+    css = [
+        "navbar/css/toasts.css",
+    ]
+    js = [
+        "navbar/js/toasts.js",
+    ]

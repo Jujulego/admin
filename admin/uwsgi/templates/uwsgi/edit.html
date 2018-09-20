@@ -1,0 +1,128 @@
+{% extends "navbar/base.html" %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "vendor/codemirror/lib/codemirror.css" %}" />
+{% endblock %}
+
+{% block jslib %}
+    <script src="{% static "vendor/codemirror/lib/codemirror.js" %}"></script>
+    <script src="{% static "vendor/codemirror/mode/javascript/javascript.js" %}"></script>
+    <script src="{% static "vendor/codemirror/mode/properties/properties.js" %}"></script>
+    <script src="{% static "vendor/codemirror/mode/xml/xml.js" %}"></script>
+    <script src="{% static "vendor/codemirror/mode/yaml/yaml.js" %}"></script>
+{% endblock %}
+
+{% block contenu %}
+    <form id="vassal" class="container-fluid">
+        {% csrf_token %}
+        <div class="row">
+            <nav class="col" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% url "uwsgi:index" %}">Uwsgi</a></li>
+                    {% if vassal %}
+                        <li class="breadcrumb-item active" aria-current="page">{{ vassal.nom }}</li>
+                    {% else %}
+                        <li class="breadcrumb-item active" aria-current="page">Créer un vassal</li>
+                    {% endif %}
+                </ol>
+            </nav>
+            <div class="col-auto mr-3">
+                <div class="btn-group mt-1">
+                    <button class="btn btn-primary" type="submit"><i class="fas fa-save"></i></button>
+                    {% if vassal %}
+                        <button class="btn btn-danger btn-suppr" type="button"><i class="fas fa-trash"></i></button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="icon fas fa-info"></i>Informations générales
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="nom">Nom</label>
+                            <div class="col-sm-9">
+                                <input id="nom" class="form-control" type="text" name="nom" placeholder="Nom" value="{{ vassal.nom|default:"" }}" required />
+                            </div>
+                        </div>
+                        <div class="form-group row mb-0">
+                            <label class="col-sm-3 col-form-label" for="datemodif">Dernière modification</label>
+                            <div class="col-sm-9 input-group">
+                                {% if vassal %}
+                                    <input id="datemodif" class="form-control" type="date" readonly value="{{ vassal.date_modif|date:"Y-m-j" }}" />
+                                    <input id="datemodif" class="form-control" type="time" readonly value="{{ vassal.date_modif|date:"H:i" }}" />
+                                {% else %}
+                                    <input id="datemodif" class="form-control" type="date" readonly value="{% now "Y-m-j" %}" />
+                                    <input id="datemodif" class="form-control" type="time" readonly value="{% now "H:i" %}" />
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="icon fas fa-server"></i>Serveur
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group row mb-0">
+                            <label class="col col-form-label" for="actif">Actif</label>
+                            <div class="col-auto d-flex align-items-center">
+                                <label class="switch" tabindex="0">
+                                    <input id="actif" type="checkbox" name="actif" {% if vassal and vassal.actif %}checked{% endif %} />
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header card-header-toolbar">
+                        <i class="icon fas fa-edit"></i><span class="title">Config</span>
+                        <div class="btn-toolbar">
+                            <label class="m-0">
+                                <select id="language" class="custom-select" name="language" required>
+                                    <option value=".ini"  {% if vassal and vassal.format == ".ini"  %}selected{% endif %}>INI</option>
+                                    <option value=".json" {% if vassal and vassal.format == ".json" %}selected{% endif %}>JSON</option>
+                                    <option value=".xml"  {% if vassal and vassal.format == ".xml"  %}selected{% endif %}>XML</option>
+                                    <option value=".yaml" {% if vassal and vassal.format == ".yaml" %}selected{% endif %}>YAML</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="config" class="card-body card-body-cm"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3 justify-content-center">
+            {% if vassal %}
+                <div class="col-4">
+                    <button class="btn btn-block btn-primary" type="submit">Enregistrer</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-block btn-danger btn-suppr" type="button">Supprimer</button>
+                </div>
+            {% else %}
+                <div class="col-8">
+                    <button class="btn btn-block btn-primary" type="submit">Creer</button>
+                </div>
+            {% endif %}
+        </div>
+    </form>
+{% endblock %}
+
+{% block jsscript %}
+    <script>
+        const config = "{{ vassal.config|escapejs }}";
+    </script>
+    <script src="{% static "uwsgi/js/edit.js" %}"></script>
+{% endblock %}

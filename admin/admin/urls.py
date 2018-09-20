@@ -9,4 +9,5 @@ urlpatterns = [
     path('', include("navbar.urls")),
     #path('aframe/', include("aframe.urls", namespace="aframe")),
     #path('chat/', include("chat.urls", namespace="chat")),
+    path('uwsgi/', include("uwsgi.urls", namespace="uwsgi")),
 ]

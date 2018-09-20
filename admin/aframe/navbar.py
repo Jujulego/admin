@@ -6,7 +6,7 @@ from navbar.navbars import navbar
 
 # Entrées
 @navbar.register
-class ChatItem(Item):
+class AFrameItem(Item):
     # Attributs
     name = "AFrame"
     icon = "fas fa-cubes"

@@ -1,0 +1,52 @@
+.card .card-header > i.icon:first-child {
+    margin-right: 1rem;
+}
+
+/* Carte avec une toolbar */
+.card-header-toolbar {
+    display: flex;
+    align-items: center;
+}
+
+.card-header-toolbar .title {
+    flex-grow: 1;
+}
+
+.card-header-toolbar .btn-toolbar {
+    margin-top: -.25rem;
+    margin-right: -.5rem;
+    margin-bottom: -.25rem;
+}
+
+.card-header-toolbar .btn-toolbar .btn-light {
+    background-color: #dee2e6;
+}
+
+/* Cartes contenant un tableau */
+.card .card-body.table-bordered,
+.card .card-body.table-bordered td:first-child,
+.card .card-body.table-bordered th:first-child {
+    border-left: none;
+}
+
+.card .card-body.table-bordered,
+.card .card-body.table-bordered td:last-child,
+.card .card-body.table-bordered th:last-child {
+    border-right: none;
+}
+
+.card .card-body.table-bordered,
+.card .card-body.table-bordered :last-child tr:last-child td,
+.card .card-body.table-bordered :last-child tr:last-child td {
+    border-bottom: none;
+}
+
+/* Cartes avec un CodeMirror */
+.card .card-body-cm {
+    padding: 0;
+}
+
+.card .card-body-cm:last-child .CodeMirror {
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}

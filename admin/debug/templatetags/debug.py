@@ -41,5 +41,4 @@ def _(data):
         return encoder.encode(data)
 
     except TypeError as err:
-        print(err)
         return encoder.encode(repr(data))

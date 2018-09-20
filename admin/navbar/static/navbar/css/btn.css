@@ -1,0 +1,106 @@
+.btn:hover {
+    filter: brightness(90%);
+}
+
+/* btn-toggle */
+.btn-toggle {
+    position: relative;
+
+    margin: 0;
+    border-radius: .25rem;
+
+    background-color: var(--gray);
+}
+
+.btn-toggle input {
+    display: none;
+}
+
+.btn-toggle span {
+    position: relative;
+    display: inline-block;
+
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+
+    color: var(--white);
+}
+
+.btn-toggle:hover {
+    filter: brightness(90%);
+}
+
+.btn-toggle input:checked + span {
+    background-color: var(--primary);
+}
+
+/* switch */
+.switch {
+    position: relative;
+    height: 1.3rem;
+    width: 2.6rem;
+
+    margin: 0;
+    border-radius: .65rem;
+
+    cursor: pointer;
+}
+
+.switch input {
+    display: none;
+}
+
+.switch .slider {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    padding: .15rem;
+    border-radius: .65rem;
+
+    background-color: var(--gray);
+    transition: background-color 400ms;
+}
+
+.switch .slider::before {
+    position: absolute;
+    left: .15rem;
+
+    height: 1rem;
+    width: 1rem;
+
+    border-radius: .5rem;
+
+    content: "";
+    background-color: white;
+    transition: left 400ms;
+}
+
+.switch input:checked + .slider {
+    background-color: var(--primary);
+}
+
+.switch input:checked + .slider::before {
+    left: 1.45rem;
+}
+
+/* Focus */
+.btn-toggle:focus,
+.switch:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+/* btn-group */
+.btn-group > .btn-toggle:not(:first-child),
+.btn-group > .btn-toggle:not(:first-child) span {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn-group > .btn-toggle:not(:last-child),
+.btn-group > .btn-toggle:not(:last-child) span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}

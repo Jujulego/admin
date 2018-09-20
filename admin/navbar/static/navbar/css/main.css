@@ -1,5 +1,7 @@
+@import "card.css";
+@import "btn.css";
+
 @import "navbar.css";
-@import "toasts.css";
 
 /* Contenu */
 .content-wrapper {
@@ -13,6 +15,10 @@
     height: 100%;
 
     overflow: auto;
+}
+
+.content > .container-fluid {
+    margin-top: 1rem;
 }
 
 header {

@@ -1,0 +1,49 @@
+{% extends "navbar/base.html" %}
+
+{% block contenu %}
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Uwsgi</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header card-header-toolbar">
+                        <i class="icon fas fa-server"></i><span class="title">Vassals</span>
+                        <div class="btn-toolbar">
+                            <a class="btn btn-light btn-sm" href="{% url "uwsgi:creer" %}">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <table class="card-body table table-bordered table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Actif</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for v in vassals %}
+                                <tr>
+                                    <td><a href="{% url "uwsgi:edit" v.id %}">{{ v.nom }}</a></td>
+                                    <td>{{ v.actif }}</td>
+                                </tr>
+                            {% empty %}
+                                <tr>
+                                    <td class="text-center font-italic" colspan="2">
+                                        Aucun vassal existant !
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
