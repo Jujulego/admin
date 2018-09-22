@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'channels',
-
     'navbar',
     'debug',
+
     'uwsgi',
 ]
 

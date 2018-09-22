@@ -23,6 +23,16 @@
 }
 
 /* Cartes contenant un tableau */
+.card .card-body.table thead {
+    background-color: rgba(0, 0, 0, .02);
+}
+
+.card .card-body.table-bordered,
+.card .card-body.table thead tr:first-child td,
+.card .card-body.table thead tr:first-child th {
+    border-top: none;
+}
+
 .card .card-body.table-bordered,
 .card .card-body.table-bordered td:first-child,
 .card .card-body.table-bordered th:first-child {

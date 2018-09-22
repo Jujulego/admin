@@ -33,6 +33,7 @@
         <option value="$MODULE_DIR$/admin/aframe/templates" />
         <option value="$MODULE_DIR$/admin/terminal/templates" />
         <option value="$MODULE_DIR$/admin/uwsgi/templates" />
+        <option value="$MODULE_DIR$/admin/bootstrap/templates" />
       </list>
     </option>
   </component>

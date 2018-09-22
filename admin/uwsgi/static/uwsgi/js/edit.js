@@ -2,7 +2,7 @@ $(document).ready(function() {
     // Elements
     const select = $("#language");
     const vassal = $("#vassal");
-    const suppr = $(".btn-suppr");
+    const suppr = $("#confirm-btn");
 
     const editor = CodeMirror(document.getElementById("config"), {
         mode: "properties",
@@ -63,6 +63,8 @@ $(document).ready(function() {
             success: function(data) {
                 if (data.redirect !== undefined) {
                     window.location.href = window.location.origin + data.redirect;
+                } else {
+                    Toasts.sync();
                 }
             },
         })

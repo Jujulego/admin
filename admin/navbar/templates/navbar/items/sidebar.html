@@ -1,4 +1,4 @@
-<li class="nav-item" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="{{ item.tooltip|default:item.name }}">
+<li id="{% block id %}{% endblock %}" class="nav-item" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="{{ item.tooltip|default:item.name }}">
     <a class="nav-link" href="{{ item.url }}">
         {% block contenu %}<i class="{{ item.icon }} fa-fw"></i><span>{{ item.name }}</span>{% endblock %}
     </a>

@@ -13,6 +13,29 @@
     <script src="{% static "vendor/codemirror/mode/yaml/yaml.js" %}"></script>
 {% endblock %}
 
+{% if vassal %}
+    {% block modals %}
+        {{ block.super }}
+        <div id="confirm-modal" class="modal fade" tabindex="0" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Vous êtes sûrs ?</h5>
+                        <button class="close" type="button" data-dismiss="modal"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        Le vassal <i>{{ vassal.nom }}</i> sera définitivement perdu.
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuler</button>
+                        <button id="confirm-btn" class="btn btn-danger" type="button">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+{% endif %}
+
 {% block contenu %}
     <form id="vassal" class="container-fluid">
         {% csrf_token %}
@@ -31,7 +54,7 @@
                 <div class="btn-group mt-1">
                     <button class="btn btn-primary" type="submit"><i class="fas fa-save"></i></button>
                     {% if vassal %}
-                        <button class="btn btn-danger btn-suppr" type="button"><i class="fas fa-trash"></i></button>
+                        <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#confirm-modal"><i class="fas fa-trash"></i></button>
                     {% endif %}
                 </div>
             </div>
@@ -109,7 +132,7 @@
                     <button class="btn btn-block btn-primary" type="submit">Enregistrer</button>
                 </div>
                 <div class="col-4">
-                    <button class="btn btn-block btn-danger btn-suppr" type="button">Supprimer</button>
+                    <button class="btn btn-block btn-danger" type="button" data-toggle="modal" data-target="#confirm-modal">Supprimer</button>
                 </div>
             {% else %}
                 <div class="col-8">

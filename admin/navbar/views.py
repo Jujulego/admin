@@ -1,7 +1,7 @@
 # Importations
-from django.contrib import auth
+from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
-
+from django.http import JsonResponse
 from django.shortcuts import render, redirect
 from django.views import View
 
@@ -36,6 +36,17 @@ class LoginView(View):
 @login_required
 def index(req):
     return render(req, "navbar/base.html")
+
+@login_required
+def get_messages(req):
+    storage = messages.get_messages(req)
+
+    return JsonResponse({
+        "messages": [{
+            "message": m.message,
+            "level":   m.level_tag,
+        } for m in storage]
+    })
 
 @login_required
 def logout(req):

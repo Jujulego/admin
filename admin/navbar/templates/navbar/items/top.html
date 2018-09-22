@@ -1,4 +1,4 @@
-<li class="nav-item"
+<li id="{% block id %}{% endblock %}" class="nav-item"
     data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="{{ item.tooltip|default:item.name }}">
     <a class="nav-link nav-expand-hide-span" {% if item.is_modal %}data-toggle="modal" data-target="{{ item.target }}"{% else %}href="{{ item.url }}"{% endif %}>
         {% block contenu %}<i class="{{ item.icon }} fa-fw"></i><span class="d-inline">{{ item.name }}</span>{% endblock %}

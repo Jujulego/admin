@@ -9,29 +9,35 @@
                 </ol>
             </nav>
         </div>
-        <div class="row">
+        <div class="row mb-3">
             <div class="col">
                 <div class="card">
                     <div class="card-header card-header-toolbar">
-                        <i class="icon fas fa-server"></i><span class="title">Vassals</span>
+                        <i class="icon fas fa-server"></i><span class="title">Vassaux</span>
                         <div class="btn-toolbar">
                             <a class="btn btn-light btn-sm" href="{% url "uwsgi:creer" %}">
                                 <i class="fas fa-plus"></i>
                             </a>
                         </div>
                     </div>
-                    <table class="card-body table table-bordered table-hover mb-0">
+                    <table class="card-body table table-bordered mb-0">
                         <thead>
                             <tr>
-                                <th>Nom</th>
-                                <th>Actif</th>
+                                <th class="text-center">Nom</th>
+                                <th class="text-center">Actif</th>
                             </tr>
                         </thead>
                         <tbody>
                             {% for v in vassals %}
                                 <tr>
                                     <td><a href="{% url "uwsgi:edit" v.id %}">{{ v.nom }}</a></td>
-                                    <td>{{ v.actif }}</td>
+                                    <td class="text-center">
+                                        {% if v.actif %}
+                                            <i class="fas fa-check-circle text-success"></i>
+                                        {% else %}
+                                            <i class="fas fa-times-circle text-danger"></i>
+                                        {% endif %}
+                                    </td>
                                 </tr>
                             {% empty %}
                                 <tr>

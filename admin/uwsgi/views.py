@@ -1,4 +1,6 @@
 # Importations
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse, Http404
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
@@ -7,6 +9,7 @@ from django.views import View
 from .models import Vassal
 
 # Create your views here.
+@login_required
 def index(request):
     return render(request, "uwsgi/index.html", {
         "vassals": Vassal.objects.all(),
@@ -39,8 +42,11 @@ class VassalView(View):
         v.save()
 
         if vassal is not None:
+            messages.success(req, "Vassal modifié !")
             return JsonResponse({})
+
         else:
+            messages.success(req, "Vassal créé !")
             return JsonResponse({
                 "redirect": reverse("uwsgi:edit", kwargs={
                     "vassal": v.id,
@@ -56,6 +62,7 @@ class VassalView(View):
         v = get_object_or_404(Vassal, id=vassal)
         v.delete()
 
+        messages.success(req, "Vassal supprimé !")
         return JsonResponse({
             "redirect": reverse("uwsgi:index")
         })

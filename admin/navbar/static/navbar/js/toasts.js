@@ -13,12 +13,16 @@ const Toasts = {
         this.btn = $("#toasts-btn");
         this.panel = $("#toasts-panel");
 
-        this.badge = this.btn.children(".badge");
+        this.badge = $(".badge", this.btn);
         this.template = this.panel.children(".template").children();
 
         // Events
         this.btn.click(function() {
             Toasts.preview.alert.removeClass("show");
+
+            Toasts.badge
+                .removeClass("badge-warning")
+                .addClass("badge-info")
         });
 
         // Sous-Namespaces
@@ -58,11 +62,28 @@ const Toasts = {
 
             // Badge
             this.badge
-                .addClass("show")
+                .removeClass("badge-info")
+                .addClass("show").addClass("badge-warning")
                 .text(this.messages.length);
         } else {
             this.badge.removeClass("show");
         }
+    },
+
+    sync: function() {
+        // Request for new messages
+        $.get({
+            url: `${window.location.origin}/messages`,
+
+            success: function(data) {
+                data["messages"].forEach(function(msg) {
+                    Toasts.toast(msg.message, `alert-${msg.level}`);
+                });
+            },
+            error: function() {
+                Toasts.error("Impossible de récupérer les derniers messages");
+            }
+        });
     },
 
     toast: function(msg, cls = "alert-info") {
@@ -84,7 +105,8 @@ const Toasts = {
 
         this.panel.prepend(copie);
         this.badge
-            .addClass("show")
+            .removeClass("badge-info")
+            .addClass("show").addClass("badge-warning")
             .text(this.messages.length);
 
         // Preview

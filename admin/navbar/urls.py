@@ -10,5 +10,6 @@ urlpatterns = [
 
     # Connexion
     path("login", views.LoginView.as_view(), name="login"),
+    path("messages", views.get_messages, name="messages"),
     path("logout", views.logout, name="logout"),
 ]

@@ -1,6 +1,6 @@
 <div id="toasts-panel" class="panel">
     {% for msg in messages %}
-        <div class="alert alert-{% if msg.level == DEFAULT_MESSAGE_LEVELS.ERROR %}danger{% elif msg.level == DEFAULT_MESSAGE_LEVELS.WARNING %}warning{% elif msg.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}success{% else %}info{% endif %}{% if msg.extra_tags %} {{ msg.extra_tags }}{% endif %}">
+        <div class="alert alert-{% if msg.level == DEFAULT_MESSAGE_LEVELS.ERROR %}danger{% elif msg.level == DEFAULT_MESSAGE_LEVELS.WARNING %}warning{% elif msg.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}success{% else %}info{% endif %}">
             {{ msg|capfirst }}
         </div>
     {% endfor %}
