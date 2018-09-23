@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('uwsgi', '0002_auto_20180820_2241'),
+        ('uwsgi_emperor', '0002_auto_20180820_2241'),
     ]
 
     operations = [

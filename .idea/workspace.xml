@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec6973eb-679e-4a77-9cc6-9ae730d0307c" name="Default Changelist" comment="add: navbar menus&#10;fix: use of &quot;default_app_config&quot;">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/admin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
+    <list default="true" id="ec6973eb-679e-4a77-9cc6-9ae730d0307c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/admin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/static/navbar/css/card.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/css/card.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/static/navbar/js/toasts.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/js/toasts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/panel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/toasts.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/toasts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/templates/navbar/items/top.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/templates/navbar/modals/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/templates/navbar/modals/logout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/templates/navbar/panel/toasts.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/templates/navbar/panel/toasts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi/static/uwsgi/js/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi/static/uwsgi/js/edit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi/templates/uwsgi/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi/templates/uwsgi/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi/templates/uwsgi/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi/templates/uwsgi/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/migrations/0002_auto_20180820_2241.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/migrations/0002_auto_20180820_2241.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/migrations/0003_auto_20180920_1907.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/migrations/0003_auto_20180920_1907.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/navbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/navbar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/static/uwsgi/js/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/static/uwsgi/js/edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/templates/uwsgi/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/templates/uwsgi/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/templates/uwsgi/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/templates/uwsgi/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uwsgi/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uwsgi_emperor/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +52,7 @@
     <session id="1037418863">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="52" />
+          <entry key="project.closed" value="53" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.13" value="1" />
@@ -61,11 +60,11 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="4" />
-          <entry key="project.open.time.6" value="16" />
+          <entry key="project.open.time.6" value="17" />
           <entry key="project.open.time.7" value="16" />
           <entry key="project.open.time.8" value="10" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="57" />
+          <entry key="project.opened" value="58" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -86,10 +85,10 @@
           <entry key="html" value="210" />
           <entry key="js" value="39" />
           <entry key="json" value="1" />
-          <entry key="py" value="258" />
+          <entry key="py" value="261" />
           <entry key="sql" value="2" />
           <entry key="svg" value="1" />
-          <entry key="txt" value="1" />
+          <entry key="txt" value="2" />
           <entry key="urlpath" value="1" />
           <entry key="xml" value="2" />
         </counts>
@@ -103,8 +102,8 @@
           <entry key="Ini" value="2" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="39" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="258" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="261" />
           <entry key="SVG" value="1" />
           <entry key="Scratch" value="2" />
           <entry key="UML" value="9" />
@@ -120,9 +119,9 @@
           <entry key="html" value="17375" />
           <entry key="js" value="14133" />
           <entry key="json" value="14" />
-          <entry key="py" value="18671" />
+          <entry key="py" value="18672" />
           <entry key="sql" value="28" />
-          <entry key="txt" value="295" />
+          <entry key="txt" value="319" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -132,8 +131,8 @@
           <entry key="HTML" value="17375" />
           <entry key="JSON" value="14" />
           <entry key="JavaScript" value="14132" />
-          <entry key="PLAIN_TEXT" value="359" />
-          <entry key="Python" value="20251" />
+          <entry key="PLAIN_TEXT" value="383" />
+          <entry key="Python" value="20252" />
           <entry key="Scratch" value="28" />
         </counts>
       </usages-collector>
@@ -145,37 +144,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/uwsgi/templates/uwsgi/edit.html">
+        <entry file="file://$PROJECT_DIR$/admin/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2278">
-              <caret line="134" column="74" selection-start-line="134" selection-start-column="74" selection-end-line="134" selection-end-column="74" />
+            <state relative-caret-position="238">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/items/top.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="37" selection-start-column="37" selection-end-column="37" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/admin/uwsgi_emperor/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/uwsgi/static/uwsgi/js/edit.js">
+        <entry file="file://$PROJECT_DIR$/admin/uwsgi_emperor/apps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="7" />
+            <state relative-caret-position="68">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -213,8 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/terminal/static/debug/js/terminal.js" />
-        <option value="$PROJECT_DIR$/admin/terminal/__init__.py" />
         <option value="$PROJECT_DIR$/admin/terminal/templates/terminal/terminal.html" />
         <option value="$PROJECT_DIR$/admin/navbar/items/item.py" />
         <option value="$PROJECT_DIR$/admin/navbar/navbars.py" />
@@ -261,9 +245,11 @@
         <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/modals/logout.html" />
         <option value="$PROJECT_DIR$/admin/uwsgi/templates/uwsgi/edit.html" />
         <option value="$PROJECT_DIR$/admin/uwsgi/static/uwsgi/js/edit.js" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/.dockerignore" />
         <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/admin/uwsgi_emperor/__init__.py" />
+        <option value="$PROJECT_DIR$/admin/uwsgi_emperor/apps.py" />
       </list>
     </option>
   </component>
@@ -285,10 +271,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -312,7 +297,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -320,10 +304,22 @@
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="uwsgi_emperor" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -544,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536856563058</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update: vassal edit">
+      <created>1537634976822</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1537634976822</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -558,8 +561,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48794326" visible="true" weight="0.1785235" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48794326" visible="true" weight="0.3738255" />
       <window_info id="Structure" order="1" sideWeight="0.5120567" side_tool="true" weight="0.1885906" />
       <window_info id="Favorites" order="2" sideWeight="0.50914633" side_tool="true" weight="0.32348993" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -569,7 +573,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32765958" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49932885" visible="true" weight="0.6836879" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932885" weight="0.6836879" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.7673759" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4986577" weight="0.7673759" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4986577" weight="0.59432626" />
@@ -653,30 +657,10 @@
     <MESSAGE value="add: base uwsgi" />
     <MESSAGE value="add: base aframe" />
     <MESSAGE value="add: navbar menus&#10;fix: use of &quot;default_app_config&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: navbar menus&#10;fix: use of &quot;default_app_config&quot;" />
+    <MESSAGE value="update: vassal edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: vassal edit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/uwsgi/navbar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/uwsgi/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -733,7 +717,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/uwsgi/views.py">
+    <entry file="file://$PROJECT_DIR$/admin/uwsgi_emperor/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-start-column="35" selection-end-line="2" selection-end-column="57" />
@@ -747,7 +731,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/uwsgi/urls.py">
+    <entry file="file://$PROJECT_DIR$/admin/uwsgi_emperor/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
@@ -764,7 +748,7 @@
     <entry file="file://$PROJECT_DIR$/admin/admin/wsgi.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/uwsgi/templates/uwsgi/index.html">
+    <entry file="file://$PROJECT_DIR$/admin/uwsgi_emperor/templates/uwsgi/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
@@ -877,7 +861,19 @@
     <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/navbar.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/uwsgi/templates/uwsgi/edit.html">
+    <entry file="file://$PROJECT_DIR$/env/pyvenv.cfg">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.dockerignore" />
+    <entry file="file://$PROJECT_DIR$/Dockerfile" />
+    <entry file="file://$PROJECT_DIR$/admin/uwsgi_emperor/templates/uwsgi/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2278">
           <caret line="134" column="74" selection-start-line="134" selection-start-column="74" selection-end-line="134" selection-end-column="74" />
@@ -891,41 +887,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/env/pyvenv.cfg">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        <state relative-caret-position="51">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.dockerignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/uwsgi/static/uwsgi/js/edit.js">
+    <entry file="file://$PROJECT_DIR$/admin/uwsgi_emperor/static/uwsgi/js/edit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/uwsgi_emperor/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/uwsgi_emperor/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
         </state>
       </provider>
     </entry>

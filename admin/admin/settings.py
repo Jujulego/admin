@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'navbar',
     'debug',
 
-    'uwsgi',
+    'uwsgi_emperor',
 ]
 
 MIDDLEWARE = [
