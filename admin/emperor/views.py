@@ -1,6 +1,5 @@
 # Importations
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse, Http404
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
@@ -9,22 +8,32 @@ from django.views import View
 from .models import Vassal
 
 # Create your views here.
-@login_required
-def index(request):
-    return render(request, "uwsgi/index.html", {
-        "vassals": Vassal.objects.all(),
-    })
+class IndexView(View):
+    # Méthodes
+    def get(self, req):
+        return render(req, "emperor/index.html", {
+            "vassals": Vassal.objects.all(),
+        })
+
+    def post(self, req):
+        # Lancement de rechargement
+        v = get_object_or_404(Vassal, id=req.POST.get("vassal"))
+        v.save()
+
+        # Message et réponse
+        messages.info(req, "Rechargement de " + v.nom)
+        return JsonResponse({})
 
 class VassalView(View):
     # Méthodes
     def get(self, req, vassal=None):
         if vassal is not None:
-            return render(req, "uwsgi/edit.html", {
+            return render(req, "emperor/edit.html", {
                 "vassal": get_object_or_404(Vassal, id=vassal),
             })
 
         else:
-            return render(req, "uwsgi/edit.html")
+            return render(req, "emperor/edit.html")
 
     def post(self, req, vassal=None):
         # Récupération / Création de l'objet
@@ -48,7 +57,7 @@ class VassalView(View):
         else:
             messages.success(req, "Vassal créé !")
             return JsonResponse({
-                "redirect": reverse("uwsgi:edit", kwargs={
+                "redirect": reverse("emperor:edit", kwargs={
                     "vassal": v.id,
                 })
             })
@@ -64,5 +73,5 @@ class VassalView(View):
 
         messages.success(req, "Vassal supprimé !")
         return JsonResponse({
-            "redirect": reverse("uwsgi:index")
+            "redirect": reverse("emperor:index")
         })

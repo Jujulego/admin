@@ -5,10 +5,10 @@ from django.urls import path
 from . import views
 
 # Urls
-app_name = "uwsgi"
+app_name = "emperor"
 urlpatterns = [
     # Accueil
-    path('', views.index, name="index"),
-    path('creer', login_required(views.VassalView.as_view()), name="creer"),
+    path('',                  login_required(views.IndexView.as_view()),  name="index"),
+    path('creer',             login_required(views.VassalView.as_view()), name="creer"),
     path('edit/<int:vassal>', login_required(views.VassalView.as_view()), name="edit"),
 ]

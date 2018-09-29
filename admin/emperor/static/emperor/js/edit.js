@@ -67,7 +67,7 @@ $(document).ready(function() {
                     Toasts.sync();
                 }
             },
-        })
+        });
     });
 
     suppr.click(function() {
@@ -83,6 +83,6 @@ $(document).ready(function() {
             success: function(data) {
                 window.location.href = window.location.origin + data.redirect;
             },
-        })
+        });
     });
 });

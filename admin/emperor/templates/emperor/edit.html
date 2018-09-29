@@ -42,7 +42,7 @@
         <div class="row">
             <nav class="col" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{% url "uwsgi:index" %}">Uwsgi</a></li>
+                    <li class="breadcrumb-item"><a href="{% url "emperor:index" %}">Uwsgi Emperor</a></li>
                     {% if vassal %}
                         <li class="breadcrumb-item active" aria-current="page">{{ vassal.nom|title }}</li>
                     {% else %}
@@ -149,5 +149,5 @@
     <script>
         const config = "{{ vassal.config|escapejs }}";
     </script>
-    <script src="{% static "uwsgi/js/edit.js" %}"></script>
+    <script src="{% static "emperor/js/edit.js" %}"></script>
 {% endblock %}

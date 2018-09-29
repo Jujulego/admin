@@ -10,6 +10,6 @@ from navbar.navbars import navbar
 @if_staff
 class UwsgiItem(Item):
     # Attributs
-    name = "Uwsgi"
+    name = "Uwsgi Emperor"
     icon = "fas fa-server"
-    url = reverse("uwsgi:index")
+    url = reverse("emperor:index")

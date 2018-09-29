@@ -1,0 +1,13 @@
+.vassal {
+    display: flex;
+}
+
+.vassal > a {
+    flex: 1;
+}
+
+.vassal .btn-toolbar {
+    margin-top: -.375rem;
+    margin-right: -.75rem;
+    margin-bottom: -.375rem;
+}

@@ -9,5 +9,5 @@ urlpatterns = [
     path('', include("navbar.urls")),
     #path('aframe/', include("aframe.urls", namespace="aframe")),
     #path('chat/', include("chat.urls", namespace="chat")),
-    path('uwsgi/', include("uwsgi_emperor.urls", namespace="uwsgi")),
+    path('emperor/', include("emperor.urls", namespace="emperor")),
 ]
