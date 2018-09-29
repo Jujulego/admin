@@ -13,6 +13,7 @@
             <path value="file://$PROJECT_DIR$/admin/terminal/static" />
             <path value="file://$PROJECT_DIR$/admin/uwsgi/static" />
             <path value="file://$PROJECT_DIR$/admin/bootstrap/static" />
+            <path value="file://$PROJECT_DIR$/admin/uwsgi_emperor/static" />
           </resourceRoots>
         </entryData>
       </entry>

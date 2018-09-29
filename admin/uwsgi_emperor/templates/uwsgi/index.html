@@ -20,34 +20,20 @@
                             </a>
                         </div>
                     </div>
-                    <table class="card-body table table-bordered mb-0">
-                        <thead>
-                            <tr>
-                                <th class="text-center">Nom</th>
-                                <th class="text-center">Actif</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for v in vassals %}
-                                <tr>
-                                    <td><a href="{% url "uwsgi:edit" v.id %}">{{ v.nom }}</a></td>
-                                    <td class="text-center">
-                                        {% if v.actif %}
-                                            <i class="fas fa-check-circle text-success"></i>
-                                        {% else %}
-                                            <i class="fas fa-times-circle text-danger"></i>
-                                        {% endif %}
-                                    </td>
-                                </tr>
-                            {% empty %}
-                                <tr>
-                                    <td class="text-center font-italic" colspan="2">
-                                        Aucun vassal existant !
-                                    </td>
-                                </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
+                    <div class="list-group list-group-flush">
+                        {% for v in vassals %}
+                            <a class="list-group-item list-group-item-action" href="{% url "uwsgi:edit" v.id %}">
+                                {% if v.actif %}
+                                    <i class="fas fa-check-circle text-success mr-3"></i>
+                                {% else %}
+                                    <i class="fas fa-times-circle text-danger mr-3"></i>
+                                {% endif %}
+                                <span>{{ v.nom|title }}</span>
+                            </a>
+                        {% empty %}
+                            <span class="list-group-item text-center font-italic">Aucun vassal existant !</span>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>

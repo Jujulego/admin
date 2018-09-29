@@ -5,3 +5,4 @@ __pycache__
 # Fichiers
 *~
 *.sqlite3
+admin/admin/settings\.py

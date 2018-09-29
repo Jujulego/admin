@@ -16,6 +16,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/admin" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.vs" />
+      <excludeFolder url="file://$MODULE_DIR$/admin/media" />
       <excludeFolder url="file://$MODULE_DIR$/env" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
@@ -32,8 +33,7 @@
         <option value="$MODULE_DIR$/admin/navbar/templates" />
         <option value="$MODULE_DIR$/admin/aframe/templates" />
         <option value="$MODULE_DIR$/admin/terminal/templates" />
-        <option value="$MODULE_DIR$/admin/uwsgi/templates" />
-        <option value="$MODULE_DIR$/admin/bootstrap/templates" />
+        <option value="$MODULE_DIR$/admin/uwsgi_emperor/templates" />
       </list>
     </option>
   </component>
