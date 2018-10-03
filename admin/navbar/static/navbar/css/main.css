@@ -29,6 +29,11 @@ header {
     display: none;
 }
 
+.bignum {
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
 /* Panels */
 #panel-overlay {
     position: absolute;
