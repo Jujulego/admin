@@ -1,0 +1,48 @@
+{% extends "navbar/base.html" %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'fichiers/css/fichiers.css' %}" />
+{% endblock %}
+
+{% block jslib %}
+    {{ block.super }}
+    <script src="{% static 'js/lru.js' %}"></script>
+{% endblock %}
+
+{% block contenu %}
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Stockage</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row">
+            <div id="fichiers" class="col">
+            </div>
+        </div>
+    </div>
+
+    <!-- Templates -->
+    <div id="template-dossier" class="template">
+        <div class="obj dossier">
+            <div class="obj-header">
+                <i class="fas"></i><div class="slider"><span class="nom"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="template-fichier" class="template">
+        <div class="obj fichier">
+            <div class="obj-header">
+                <i class="fas"></i><div class="slider"><span class="nom"></span></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block jsscript %}
+    <script src="{% static 'fichiers/js/fichiers.js' %}"></script>
+{% endblock %}

@@ -1,6 +1,7 @@
 # Dossiers
 env
 __pycache__
+admin/media
 
 # Fichiers
 *~

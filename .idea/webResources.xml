@@ -15,6 +15,7 @@
             <path value="file://$PROJECT_DIR$/admin/bootstrap/static" />
             <path value="file://$PROJECT_DIR$/admin/uwsgi_emperor/static" />
             <path value="file://$PROJECT_DIR$/admin/emperor/static" />
+            <path value="file://$PROJECT_DIR$/admin/fichiers/static" />
           </resourceRoots>
         </entryData>
       </entry>

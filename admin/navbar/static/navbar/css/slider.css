@@ -1,0 +1,14 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider > span {
+    position: relative;
+    white-space: nowrap;
+
+    transition: linear right 500ms;
+}
+.slider > span:not(:hover) {
+    right: 0 !important;
+}

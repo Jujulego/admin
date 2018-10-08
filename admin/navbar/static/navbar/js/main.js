@@ -38,6 +38,21 @@ $.fn.panel = function(target) {
     });
 };
 
+$.fn.slider = function(vitesse=20) { // vitesse en ms/px
+    // Application
+    this.each(function() {
+        // Elements
+        const box = $(this);
+        const txt = box.children("span");
+
+        // Initialisation
+        const dist = txt.width() - box.width();
+
+        txt.css("right", `${dist}px`);
+        txt.css("transition-duration", `${dist * vitesse}ms`);
+    });
+};
+
 // Fonctions
 function getCookie(name) {
     let cookieValue = null;
@@ -59,4 +74,6 @@ function getCookie(name) {
 $(document).ready(function() {
     $('[data-toggle="panel"]').panel();
     $('[data-toggle="tooltip"]').tooltip();
+
+    $('.slider').slider();
 });

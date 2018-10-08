@@ -112,8 +112,8 @@ TimeZone=UTC</Config>
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionTimestamp>2018-09-29.14:17:53.853</IntrospectionTimestamp>
-      <IntrospectionStateNumber>210831344</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-10-03.14:00:57.033</IntrospectionTimestamp>
+      <IntrospectionStateNumber>210831354</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -271,10 +271,10 @@ TimeZone=UTC</Config>
       <Owner>admin</Owner>
       <StateNumber>210831318</StateNumber>
     </table>
-    <table id="47" parent="20" name="uwsgi_emperor_vassal">
+    <table id="47" parent="20" name="emperor_vassal">
       <ObjectId>16338368</ObjectId>
       <Owner>admin</Owner>
-      <StateNumber>210831344</StateNumber>
+      <StateNumber>210831354</StateNumber>
     </table>
     <column id="48" parent="37" name="id">
       <Position>1</Position>

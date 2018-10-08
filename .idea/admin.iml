@@ -33,7 +33,8 @@
         <option value="$MODULE_DIR$/admin/navbar/templates" />
         <option value="$MODULE_DIR$/admin/aframe/templates" />
         <option value="$MODULE_DIR$/admin/terminal/templates" />
-        <option value="$MODULE_DIR$/admin/uwsgi_emperor/templates" />
+        <option value="$MODULE_DIR$/admin/emperor/templates" />
+        <option value="$MODULE_DIR$/admin/fichiers/templates" />
       </list>
     </option>
   </component>

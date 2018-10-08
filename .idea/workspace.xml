@@ -2,27 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec6973eb-679e-4a77-9cc6-9ae730d0307c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/emperor/static/emperor/css/emperor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/emperor/static/emperor/js/emperor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fichiers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fichiers/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fichiers/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fichiers/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fichiers/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fichiers/navbar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fichiers/signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fichiers/static/fichiers/css/fichiers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fichiers/static/fichiers/css/objets.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fichiers/static/fichiers/js/fichiers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fichiers/templates/fichiers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fichiers/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fichiers/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fichiers/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/css/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/static/js/lru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/admin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1c7287ea-1af5-4580-9eff-2bcfef77af66.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1c7287ea-1af5-4580-9eff-2bcfef77af66.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e86f0e19-155b-4779-8366-61eb71dc6ed2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e86f0e19-155b-4779-8366-61eb71dc6ed2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e86f0e19-155b-4779-8366-61eb71dc6ed2/storage_v2/_src_/database/admin.TwOGBQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e86f0e19-155b-4779-8366-61eb71dc6ed2/storage_v2/_src_/database/admin.TwOGBQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/admin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/migrations/0002_auto_20180820_2241.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/migrations/0002_auto_20180820_2241.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/migrations/0003_auto_20180920_1907.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/migrations/0003_auto_20180920_1907.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/navbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/navbar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/static/uwsgi/js/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/static/emperor/js/edit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/templates/uwsgi/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/templates/emperor/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/templates/uwsgi/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/templates/emperor/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uwsgi_emperor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/emperor/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/navbar/static/navbar/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/navbar/static/navbar/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/js/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +75,7 @@
     <session id="1037418863">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="61" />
+          <entry key="project.closed" value="72" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.13" value="1" />
@@ -77,11 +83,11 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="5" />
-          <entry key="project.open.time.6" value="23" />
-          <entry key="project.open.time.7" value="17" />
-          <entry key="project.open.time.8" value="10" />
+          <entry key="project.open.time.6" value="28" />
+          <entry key="project.open.time.7" value="21" />
+          <entry key="project.open.time.8" value="11" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="66" />
+          <entry key="project.opened" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -95,17 +101,23 @@
           <entry key="Python/#C:/Users/julie/git/admin/admin/admin" value="1" />
           <entry key="Python/#C:/Users/julie/git/admin/admin/main" value="1" />
           <entry key="Python/#C:/Users/julie/git/admin/admin/navbar" value="1" />
-          <entry key="auth_user" value="1" />
+          <entry key="auth_user" value="2" />
+          <entry key="ba2s277zwhi2zooxj36xaho6b6sbo1f1j00n0l6w" value="1" />
           <entry key="cfg" value="2" />
-          <entry key="css" value="62" />
+          <entry key="css" value="68" />
+          <entry key="django_migrations" value="2" />
           <entry key="dockerignore" value="1" />
           <entry key="emperor" value="1" />
-          <entry key="gitignore" value="3" />
-          <entry key="html" value="216" />
+          <entry key="emperor_vassal" value="3" />
+          <entry key="fichiers_dossier" value="3" />
+          <entry key="fichiers_dossier_parent_id_90802da0" value="1" />
+          <entry key="fichiers_fichier" value="1" />
+          <entry key="gitignore" value="4" />
+          <entry key="html" value="225" />
           <entry key="ini" value="1" />
-          <entry key="js" value="41" />
+          <entry key="js" value="45" />
           <entry key="json" value="1" />
-          <entry key="py" value="270" />
+          <entry key="py" value="303" />
           <entry key="sql" value="5" />
           <entry key="svg" value="1" />
           <entry key="txt" value="2" />
@@ -116,17 +128,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="62" />
-          <entry key="Database Element" value="3" />
+          <entry key="CSS" value="68" />
+          <entry key="Database Element" value="13" />
           <entry key="DjangoUrlPath" value="1" />
           <entry key="Dockerfile" value="2" />
-          <entry key="HTML" value="216" />
+          <entry key="HTML" value="225" />
           <entry key="Ini" value="3" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="41" />
-          <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="270" />
-          <entry key="SQL" value="1" />
+          <entry key="JavaScript" value="45" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Python" value="303" />
+          <entry key="SQL" value="2" />
           <entry key="SVG" value="1" />
           <entry key="Scratch" value="5" />
           <entry key="UML" value="9" />
@@ -135,31 +147,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Django Console" value="1613" />
+          <entry key="Django Console" value="1729" />
           <entry key="Dockerfile" value="421" />
-          <entry key="css" value="12544" />
+          <entry key="cell" value="91" />
+          <entry key="css" value="13332" />
           <entry key="dummy" value="76" />
-          <entry key="gitignore" value="23" />
-          <entry key="html" value="18077" />
+          <entry key="gitignore" value="36" />
+          <entry key="html" value="18942" />
           <entry key="ini" value="21" />
-          <entry key="js" value="14317" />
+          <entry key="js" value="17545" />
           <entry key="json" value="14" />
-          <entry key="py" value="19016" />
+          <entry key="py" value="23065" />
           <entry key="sql" value="70" />
           <entry key="txt" value="363" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="12545" />
+          <entry key="CSS" value="13333" />
           <entry key="Dockerfile" value="421" />
-          <entry key="HTML" value="18077" />
+          <entry key="HTML" value="18942" />
           <entry key="Ini" value="21" />
           <entry key="JSON" value="14" />
-          <entry key="JavaScript" value="14316" />
-          <entry key="PLAIN_TEXT" value="462" />
-          <entry key="Python" value="20629" />
-          <entry key="Scratch" value="70" />
+          <entry key="JavaScript" value="17544" />
+          <entry key="PLAIN_TEXT" value="475" />
+          <entry key="Python" value="24794" />
+          <entry key="Scratch" value="161" />
         </counts>
       </usages-collector>
     </session>
@@ -170,80 +183,73 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/emperor/urls.py">
+        <entry file="file://$PROJECT_DIR$/admin/fichiers/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/emperor/templates/emperor/edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="44" column="90" selection-start-line="44" selection-start-column="90" selection-end-line="44" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/emperor/navbar.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/emperor/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
+            <state relative-caret-position="436">
+              <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
               <folding>
-                <element signature="e#15#50#0" expanded="true" />
-                <marker date="1538249890859" expanded="true" signature="291:296" ph="..." />
-                <marker date="1538249890859" expanded="true" signature="291:582" ph="..." />
-                <marker date="1538249890859" expanded="true" signature="330:339" ph="..." />
-                <marker date="1538249890859" expanded="true" signature="699:700" ph="..." />
+                <element signature="e#15#60#0" expanded="true" />
+                <marker date="1538934141630" expanded="true" signature="226:231" ph="..." />
+                <marker date="1538934141630" expanded="true" signature="354:656" ph="..." />
+                <marker date="1538934141630" expanded="true" signature="651:652" ph="..." />
+                <marker date="1538934141630" expanded="true" signature="850:1129" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/fichiers/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+              <folding>
+                <element signature="e#14#42#0" expanded="true" />
+                <marker date="1538934425124" expanded="true" signature="690:758" ph="..." />
+                <marker date="1538934425124" expanded="true" signature="1097:1103" ph="..." />
+                <marker date="1538934425124" expanded="true" signature="1134:1259" ph="..." />
+                <marker date="1538934425124" expanded="true" signature="1385:1386" ph="..." />
+                <marker date="1538934425124" expanded="true" signature="1385:1390" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/fichiers/templates/fichiers/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="436">
+              <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/emperor/templates/emperor/index.html">
+        <entry file="file://$PROJECT_DIR$/admin/fichiers/static/fichiers/js/fichiers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
+            <state relative-caret-position="272">
+              <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+              <folding>
+                <element signature="e#509#1315#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/emperor/static/emperor/css/emperor.css">
+        <entry file="file://$PROJECT_DIR$/admin/fichiers/static/fichiers/css/objets.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="555">
+              <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/emperor/static/emperor/js/edit.js">
+        <entry file="file://$PROJECT_DIR$/admin/fichiers/static/fichiers/css/fichiers.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="81" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/emperor/static/emperor/js/emperor.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="119">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -281,30 +287,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/aframe/navbar.py" />
-        <option value="$PROJECT_DIR$/admin/aframe/templates/aframe/index.html" />
-        <option value="$PROJECT_DIR$/admin/uwsgi/templates/uwsgi/cree.json" />
-        <option value="$PROJECT_DIR$/admin/uwsgi/models.py" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/js/main.js" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/css/card.css" />
-        <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/panel/toasts.html" />
-        <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/items/menu.html" />
-        <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/items/panel.html" />
-        <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/items/sidebar.html" />
-        <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/items/top.html" />
-        <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/items/toasts.html" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/js/toasts.js" />
-        <option value="$PROJECT_DIR$/admin/navbar/views.py" />
-        <option value="$PROJECT_DIR$/admin/navbar/urls.py" />
-        <option value="$PROJECT_DIR$/admin/uwsgi/views.py" />
-        <option value="$PROJECT_DIR$/admin/uwsgi/urls.py" />
-        <option value="$PROJECT_DIR$/admin/uwsgi/templates/uwsgi/index.html" />
-        <option value="$PROJECT_DIR$/admin/admin/urls.py" />
-        <option value="$PROJECT_DIR$/admin/bootstrap/apps.py" />
-        <option value="$PROJECT_DIR$/admin/bootstrap/__init__.py" />
-        <option value="$PROJECT_DIR$/admin/bootstrap/templates/bootstrap/widgets/swtich.html" />
-        <option value="$PROJECT_DIR$/admin/bootstrap/static/bootstrap/widgets/switch.css" />
-        <option value="$PROJECT_DIR$/admin/bootstrap/widgets.py" />
         <option value="$PROJECT_DIR$/admin/bootstrap/templates/bootstrap/card.html" />
         <option value="$PROJECT_DIR$/admin/bootstrap/templates/bootstrap/forms/card.html" />
         <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/modals/logout.html" />
@@ -315,10 +297,8 @@
         <option value="$PROJECT_DIR$/admin/uwsgi_emperor/__init__.py" />
         <option value="$PROJECT_DIR$/admin/uwsgi_emperor/apps.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1c7287ea-1af5-4580-9eff-2bcfef77af66/console.sql" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/admin/admin.uwsgi.ini" />
-        <option value="$PROJECT_DIR$/admin/admin/settings.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e86f0e19-155b-4779-8366-61eb71dc6ed2/console_1.sql" />
         <option value="$PROJECT_DIR$/admin/uwsgi_emperor/templates/uwsgi/edit.html" />
         <option value="$PROJECT_DIR$/admin/uwsgi_emperor/static/uwsgi/js/edit.js" />
@@ -332,6 +312,32 @@
         <option value="$PROJECT_DIR$/admin/emperor/navbar.py" />
         <option value="$PROJECT_DIR$/admin/emperor/templates/emperor/edit.html" />
         <option value="$PROJECT_DIR$/admin/emperor/templates/emperor/index.html" />
+        <option value="$PROJECT_DIR$/admin/emperor/static/emperor/css/emperor.css" />
+        <option value="$PROJECT_DIR$/env/Lib/site-packages/django_uwsgi/management/commands/runuwsgi.py" />
+        <option value="$PROJECT_DIR$/admin/debug/uwsgi.py" />
+        <option value="$PROJECT_DIR$/admin/debug/templates/debug/panel.html" />
+        <option value="$PROJECT_DIR$/admin/debug/context.py" />
+        <option value="$PROJECT_DIR$/admin/debug/templates/debug/uwsgi.html" />
+        <option value="$PROJECT_DIR$/admin/projects/models.py" />
+        <option value="$PROJECT_DIR$/admin/fichiers/__init__.py" />
+        <option value="$PROJECT_DIR$/admin/admin/settings.py" />
+        <option value="$PROJECT_DIR$/admin/admin/urls.py" />
+        <option value="$PROJECT_DIR$/admin/fichiers/navbar.py" />
+        <option value="$PROJECT_DIR$/admin/fichiers/apps.py" />
+        <option value="$PROJECT_DIR$/admin/fichiers/signals.py" />
+        <option value="$PROJECT_DIR$/admin/fichiers/admin.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/css/main.css" />
+        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/css/slider.css" />
+        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/js/main.js" />
+        <option value="$PROJECT_DIR$/admin/fichiers/static/fichiers/css/fichiers.css" />
+        <option value="$PROJECT_DIR$/admin/fichiers/urls.py" />
+        <option value="$PROJECT_DIR$/admin/fichiers/static/fichiers/css/objets.css" />
+        <option value="$PROJECT_DIR$/admin/fichiers/views.py" />
+        <option value="$PROJECT_DIR$/admin/fichiers/models.py" />
+        <option value="$PROJECT_DIR$/admin/static/js/lru.js" />
+        <option value="$PROJECT_DIR$/admin/fichiers/templates/fichiers/index.html" />
+        <option value="$PROJECT_DIR$/admin/fichiers/static/fichiers/js/fichiers.js" />
       </list>
     </option>
   </component>
@@ -353,7 +359,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
+    <option name="x" value="790" />
+    <option name="y" value="240" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
@@ -395,55 +402,7 @@
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="emperor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="emperor" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="emperor" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="emperor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="emperor" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="emperor" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="emperor" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="emperor" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="emperor" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="emperor" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="emperor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -479,19 +438,19 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\julie\git\admin\admin\fichiers" />
+      <recent name="C:\Users\julie\git\admin\admin\static\vendor" />
+      <recent name="C:\Users\julie\git\admin\admin\uwsgi" />
+      <recent name="C:\Users\julie\git\admin\admin\terminal" />
+      <recent name="C:\Users\julie\git\admin\admin\navbar\static\vendor\jquery-easing" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\julie\git\admin" />
       <recent name="C:\Users\julie\git\admin\admin" />
       <recent name="C:\Users\julie\git\admin\admin\bootstrap\templates\bootstrap\forms" />
       <recent name="C:\Users\julie\git\admin\admin\static" />
       <recent name="C:\Users\julie\git\admin\admin\navbar\templates\navbar\panel" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\julie\git\admin\admin\static\vendor" />
-      <recent name="C:\Users\julie\git\admin\admin\uwsgi" />
-      <recent name="C:\Users\julie\git\admin\admin\terminal" />
-      <recent name="C:\Users\julie\git\admin\admin\navbar\static\vendor\jquery-easing" />
-      <recent name="C:\Users\julie\git\admin\admin\aframe" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -568,15 +527,6 @@
           <option name="containerName" value="" />
           <option name="entrypoint" value="" />
           <option name="imageTag" value="" />
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="6379" />
-                <option name="hostPort" value="6379" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
-          <option name="publishAllPorts" value="true" />
           <option name="startBrowserSettings">
             <browser url="http://192.168.99.100" />
           </option>
@@ -699,10 +649,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48794326" visible="true" weight="0.15637584" />
-      <window_info id="Structure" order="1" sideWeight="0.5120567" side_tool="true" weight="0.1885906" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48510638" visible="true" weight="0.17651007" />
+      <window_info id="Structure" order="1" sideWeight="0.5148936" side_tool="true" weight="0.17651007" />
       <window_info id="Favorites" order="2" sideWeight="0.50914633" side_tool="true" weight="0.32348993" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.87659574" />
@@ -727,24 +676,25 @@
       <window_info anchor="right" id="SciView" order="4" weight="0.3295302" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48794326" visible="true" weight="0.4281879" />
-      <window_info id="Structure" order="1" sideWeight="0.5120567" side_tool="true" weight="0.1885906" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48652482" visible="true" weight="0.17651007" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.5134752" side_tool="true" visible="true" weight="0.17651007" />
       <window_info id="Favorites" order="2" sideWeight="0.50914633" side_tool="true" weight="0.32348993" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.8780142" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.87659574" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5744681" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32765958" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932885" weight="0.6836879" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4986577" weight="0.7673759" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013423" side_tool="true" weight="0.7673759" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.32765958" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4986577" weight="0.7673759" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4986577" weight="0.59432626" />
       <window_info anchor="bottom" id="Docker" order="11" weight="0.529078" />
-      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32765958" />
+      <window_info anchor="bottom" id="Database Changes" order="12" sideWeight="0.4986577" weight="0.32765958" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -800,211 +750,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="fix: rename uwsgi =&gt; uwsgi_emperor" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/admin/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/chat/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/bootstrap/apps.py" />
-    <entry file="file://$PROJECT_DIR$/admin/chat/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/bootstrap/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/forms/templates/django/forms/widgets/checkbox_option.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/forms/templates/django/forms/widgets/checkbox.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/forms/templates/django/forms/widgets/input_option.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/btn.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="84" column="1" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="84" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/bootstrap/static/bootstrap/widgets/switch.css" />
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/forms/jinja2/django/forms/widgets/checkbox.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/forms/jinja2/django/forms/widgets/input.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/forms/templates/django/forms/widgets/input.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="173" selection-start-column="173" selection-end-column="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/contrib/gis/forms/widgets.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/contrib/gis/forms/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1621" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/forms/widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8894">
-          <caret line="496" column="50" selection-start-line="496" selection-start-column="42" selection-end-line="496" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/forms/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4233" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/bootstrap/widgets.py" />
-    <entry file="file://$PROJECT_DIR$/admin/bootstrap/templates/bootstrap/forms/widgets/swtich.html" />
-    <entry file="file://$PROJECT_DIR$/admin/bootstrap/templates/bootstrap/forms/card.html" />
-    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/modals/logout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/login.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/navbar.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/pyvenv.cfg">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.dockerignore" />
-    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/items/top.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-start-column="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1c7287ea-1af5-4580-9eff-2bcfef77af66/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="55" selection-start-column="55" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/emperor/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile" />
-    <entry file="file://$PROJECT_DIR$/admin/admin.uwsgi.ini" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e86f0e19-155b-4779-8366-61eb71dc6ed2/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://e86f0e19-155b-4779-8366-61eb71dc6ed2/database/admin/schema/public/table/auth_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e86f0e19-155b-4779-8366-61eb71dc6ed2/role/emperor">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e86f0e19-155b-4779-8366-61eb71dc6ed2/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="103" selection-start-column="103" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e86f0e19-155b-4779-8366-61eb71dc6ed2/database/admin/schema/public/table/uwsgi_emperor_vassal">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="64" column="7" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/emperor/static/emperor/js/edit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="81" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/emperor/static/emperor/js/emperor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/emperor/static/emperor/css/emperor.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/emperor/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
-          <folding>
-            <element signature="e#15#50#0" expanded="true" />
-            <marker date="1538249890859" expanded="true" signature="291:296" ph="..." />
-            <marker date="1538249890859" expanded="true" signature="291:582" ph="..." />
-            <marker date="1538249890859" expanded="true" signature="330:339" ph="..." />
-            <marker date="1538249890859" expanded="true" signature="699:700" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/emperor/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1012,41 +757,350 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/emperor/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+    <entry file="das://e86f0e19-155b-4779-8366-61eb71dc6ed2/database/admin/schema/public/table/emperor_vassal">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/emperor/__init__.py">
+    <entry file="file://$PROJECT_DIR$/admin/emperor/static/emperor/css/emperor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django_uwsgi/management/commands/runuwsgi.py" />
+    <entry file="file://$PROJECT_DIR$/admin/navbar/context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/sql.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/context.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/panel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/templates/debug/uwsgi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/debug/uwsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/chat/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fichiers/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" selection-start-column="50" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fichiers/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1c7287ea-1af5-4580-9eff-2bcfef77af66/schema/main/table/fichiers_dossier/index/fichiers_dossier_parent_id_90802da0">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1c7287ea-1af5-4580-9eff-2bcfef77af66/schema/main/table/django_migrations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/apps/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fichiers/navbar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#15#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/db/models/signals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fichiers/signals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fichiers/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/navbar/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#15#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/emperor/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-start-column="35" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1c7287ea-1af5-4580-9eff-2bcfef77af66/schema/main/table/auth_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1c7287ea-1af5-4580-9eff-2bcfef77af66/schema/main/table/fichiers_fichier">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/media/files/ba2s277zwhi2zooxj36xaho6b6sbo1f1j00n0l6w">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/emperor/admin.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/emperor/navbar.py">
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/shortcuts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="175">
+          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/emperor/templates/emperor/edit.html">
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/core/serializers/json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="44" column="90" selection-start-line="44" selection-start-column="90" selection-end-line="44" selection-end-column="90" />
+        <state relative-caret-position="124">
+          <caret line="75" column="6" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/http/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="547" column="42" lean-forward="true" selection-start-line="547" selection-start-column="42" selection-end-line="547" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/views/generic/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/emperor/templates/emperor/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/navbar.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/slider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fichiers/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+          <folding>
+            <element signature="e#15#47#0" expanded="true" />
+            <marker date="1538834497421" expanded="true" signature="177:182" ph="..." />
+            <marker date="1538834497421" expanded="true" signature="177:239" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-584" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/emperor/static/emperor/js/edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-924" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fichiers/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding>
+            <element signature="e#15#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fichiers/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding>
+            <element signature="e#15#60#0" expanded="true" />
+            <marker date="1538934141630" expanded="true" signature="226:231" ph="..." />
+            <marker date="1538934141630" expanded="true" signature="354:656" ph="..." />
+            <marker date="1538934141630" expanded="true" signature="651:652" ph="..." />
+            <marker date="1538934141630" expanded="true" signature="850:1129" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fichiers/static/fichiers/css/fichiers.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fichiers/static/fichiers/css/objets.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1c7287ea-1af5-4580-9eff-2bcfef77af66/schema/main/table/fichiers_dossier">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fichiers/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+          <folding>
+            <element signature="e#14#42#0" expanded="true" />
+            <marker date="1538934425124" expanded="true" signature="690:758" ph="..." />
+            <marker date="1538934425124" expanded="true" signature="1097:1103" ph="..." />
+            <marker date="1538934425124" expanded="true" signature="1134:1259" ph="..." />
+            <marker date="1538934425124" expanded="true" signature="1385:1386" ph="..." />
+            <marker date="1538934425124" expanded="true" signature="1385:1390" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/static/js/lru.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="304" column="3" selection-start-line="304" selection-start-column="3" selection-end-line="304" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fichiers/templates/fichiers/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fichiers/static/fichiers/js/fichiers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+          <folding>
+            <element signature="e#509#1315#0" />
+          </folding>
         </state>
       </provider>
     </entry>
