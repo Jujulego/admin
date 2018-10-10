@@ -1,5 +1,46 @@
 @import "objets.css";
 
+#btn-retour {
+    position: absolute;
+    height: calc(100% - 1rem);
+    z-index: 0;
+}
+
+#btn-retour + .breadcrumb {
+    position: relative;
+    z-index: 1;
+
+    transition: margin-left 500ms;
+}
+
+#btn-retour.actif + .breadcrumb {
+    margin-left: 3.5rem;
+}
+
+@keyframes breadcrumb-appear {
+    from {
+        margin-left: calc(-100% - .5rem);
+    }
+    to {
+        margin-left: 0;
+    }
+}
+
+.breadcrumb-item {
+    display: flex;
+
+    transition: color 500ms;
+}
+
+.breadcrumb-item > div {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.breadcrumb-item .text {
+    animation: breadcrumb-appear 500ms 1;
+}
+
 #fichiers {
     display: flex;
     flex-wrap: wrap;

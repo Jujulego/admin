@@ -1,35 +1,105 @@
 const Fichiers = (function() {
     return {
         // Attributs
-        zone: undefined,
-        _dossier: 0,
-
+        pile: [],
         lrucache: new LRUMap(100),
 
+        zone: undefined,
+        btn_retour: undefined,
+        breadcrumbs: undefined,
+
         templates: {
-            fichier: undefined,
             dossier: undefined,
+            fichier: undefined,
+            breadcrumb: undefined,
         },
 
         // Propriétés
+        _dossier: 0,
         get dossier() {
             return this._dossier;
         },
         set dossier(d) {
             this._dossier = d;
             this.refresh();
+
+            // Gestion du bouton ;)
+            if (this.pile.length) {
+                this.btn_retour.addClass("actif");
+            } else {
+                this.btn_retour
+                    .blur()
+                    .removeClass("actif");
+            }
         },
 
         // Méthodes
         init: function() {
             // Eléments
             this.zone = $("#fichiers");
-            this.templates.fichier = $("#template-fichier").children();
+            this.btn_retour = $("#btn-retour");
+            this.breadcrumbs = $("ol.breadcrumb");
+
             this.templates.dossier = $("#template-dossier").children();
+            this.templates.fichier = $("#template-fichier").children();
+            this.templates.breadcrumb = $("#template-breadcrumb").children();
+
+            // Events
+            this.btn_retour.click(function() {
+                Fichiers.retour();
+            });
+
+            this.breadcrumbs.children().last()
+                .click(function() {
+                    Fichiers.retour(0);
+                });
         },
 
         vider: function() {
             this.zone.empty();
+        },
+
+        ouvrir: async function(d) {
+            // Breadcrumb
+            this.breadcrumbs.children().removeClass("active");
+
+            const breadcrumb = this.templates.breadcrumb.clone();
+            breadcrumb.addClass("active")
+                .click(function() {
+                    if (!$(this).hasClass("active")) {
+                        Fichiers.retour(d);
+                    }
+                });
+
+            $(".text", breadcrumb)
+                .text((await this.metadata("dossier", d)).nom);
+
+            this.breadcrumbs.append(breadcrumb);
+
+            // Empilage
+            this.pile.push(this.dossier);
+
+            // Changement
+            this.dossier = d;
+        },
+
+        retour: function(dossier) {
+            if (dossier === undefined) {
+                dossier = this.pile[this.pile.length-1];
+            }
+
+            while (this.pile.length) {
+                // Breadcrumbs
+                this.breadcrumbs.children().last().remove();
+                this.breadcrumbs.children().last().addClass("active");
+
+                // Ouverture !
+                const d = this.pile.pop();
+                if (d === dossier) {
+                    this.dossier = d;
+                    break;
+                }
+            }
         },
 
         refresh: async function() {
@@ -94,7 +164,7 @@ const Fichiers = (function() {
 
             // Events
             dossier.dblclick(function() {
-                Fichiers.dossier = data.id;
+                Fichiers.ouvrir(data.id);
             });
 
             // Ajout !
