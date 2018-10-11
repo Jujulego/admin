@@ -36,6 +36,8 @@ $.fn.panel = function(target) {
             evolve(pan);
         });
     });
+
+    return this;
 };
 
 $.fn.slider = function(vitesse=20) { // vitesse en ms/px
@@ -51,6 +53,8 @@ $.fn.slider = function(vitesse=20) { // vitesse en ms/px
         txt.css("right", `${dist}px`);
         txt.css("transition-duration", `${dist * vitesse}ms`);
     });
+
+    return this;
 };
 
 // Fonctions

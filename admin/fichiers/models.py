@@ -11,7 +11,7 @@ def generate_filename(instance, filename):
 # Create your models here.
 class Objet(models.Model):
     # Attributs
-    metadata = ("nom", "date_creation", "date_modification")
+    metadata = ("id", "nom", "date_creation", "date_modification")
 
     # - champs
     nom = models.TextField(max_length=500)

@@ -8,6 +8,9 @@ const Fichiers = (function() {
         btn_retour: undefined,
         breadcrumbs: undefined,
 
+        btn_creer_dossier: undefined,
+        form_creer_dossier: undefined,
+
         templates: {
             dossier: undefined,
             fichier: undefined,
@@ -27,8 +30,7 @@ const Fichiers = (function() {
             if (this.pile.length) {
                 this.btn_retour.addClass("actif");
             } else {
-                this.btn_retour
-                    .blur()
+                this.btn_retour.blur()
                     .removeClass("actif");
             }
         },
@@ -39,6 +41,9 @@ const Fichiers = (function() {
             this.zone = $("#fichiers");
             this.btn_retour = $("#btn-retour");
             this.breadcrumbs = $("ol.breadcrumb");
+
+            this.btn_creer_dossier = $("#btn-creer-dossier");
+            this.form_creer_dossier = $("#form-creer-dossier");
 
             this.templates.dossier = $("#template-dossier").children();
             this.templates.fichier = $("#template-fichier").children();
@@ -53,10 +58,27 @@ const Fichiers = (function() {
                 .click(function() {
                     Fichiers.retour(0);
                 });
+
+            this.btn_creer_dossier
+                .click(function() {
+                    Fichiers.form_creer_dossier.removeClass("inactif");
+                });
+
+            this.form_creer_dossier
+                .submit(function(e) {
+                    e.preventDefault();
+
+                    // Création du dossier
+                    const fd = new FormData(this);
+                    Fichiers.creer_dossier(fd.get("nom"));
+
+                    // et on disparait !
+                    Fichiers.form_creer_dossier.addClass("inactif");
+                });
         },
 
         vider: function() {
-            this.zone.empty();
+            this.zone.children(".obj:not(.obj-persist)").remove();
         },
 
         ouvrir: async function(d) {
@@ -89,12 +111,19 @@ const Fichiers = (function() {
             }
 
             while (this.pile.length) {
+                const d = this.pile.pop();
+
                 // Breadcrumbs
-                this.breadcrumbs.children().last().remove();
-                this.breadcrumbs.children().last().addClass("active");
+                const bc = $(".breadcrumb-item:not(.removing)", this.breadcrumbs).last();
+                console.log(bc);
+                bc.addClass("removing")
+                    .on("animationend", function() {
+                        $(this).remove();
+                    });
+
+                $(".breadcrumb-item:not(.removing)", this.breadcrumbs).last().addClass("active");
 
                 // Ouverture !
-                const d = this.pile.pop();
                 if (d === dossier) {
                     this.dossier = d;
                     break;
@@ -103,7 +132,7 @@ const Fichiers = (function() {
         },
 
         refresh: async function() {
-            // Préparation arguments
+            // Préparation des arguments
             let args = {};
             if (this.dossier !== 0) {
                 args = {
@@ -169,6 +198,7 @@ const Fichiers = (function() {
 
             // Ajout !
             this.zone.append(dossier);
+            $(".slider", dossier).slider();
         },
 
         add_fichier: function(data) {
@@ -179,6 +209,31 @@ const Fichiers = (function() {
 
             // Ajout !
             this.zone.append(fichier);
+            $(".slider", fichier).slider();
+        },
+
+        creer_dossier: async function(nom) {
+            // Préparation des arguments
+            let args = {
+                nom: nom
+            };
+
+            if (this.dossier !== 0) {
+                args["parent"] = this.dossier;
+            }
+
+            // Requete
+            const data = await this.requests.request("put", args)
+                .catch(function(err) {
+                    console.log(err);
+                });
+
+            // Ajout !
+            this.add_dossier(data);
+
+            // au cache aussi
+            const key = `dossier-${data.id}`;
+            this.lrucache.set(key, data);
         },
 
         // sub-namespaces
@@ -204,12 +259,24 @@ const Fichiers = (function() {
             },
 
             request: function(method = "get", args = {}) {
-                let url = this.base_url + this.prepare_args(args);
+                if ($.inArray(method, ["get", "options"]) !== -1) {
+                    let url = this.base_url + this.prepare_args(args);
 
-                return $.ajax({
-                    type: method,
-                    url: url
-                });
+                    return $.ajax({
+                        type: method,
+                        url: url
+                    });
+                } else {
+                    return $.ajax({
+                        method: method,
+                        url: this.base_url,
+                        data: args,
+
+                        beforeSend: function(xhr) {
+                            xhr.setRequestHeader("X-CSRFToken", getCookie("csrftoken"));
+                        },
+                    })
+                }
             },
         }
     };

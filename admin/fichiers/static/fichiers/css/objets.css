@@ -11,7 +11,14 @@
     border: solid 1px rgba(0, 0, 0, .125);
     border-radius: .25rem;
 
-    transition: background-color 500ms;
+    transition: background-color 500ms, opacity 500ms;
+}
+
+#fichiers .obj.inactif {
+    order: 1000 !important;
+    opacity: 0;
+
+    transition: background-color 500ms, opacity 500ms, order 0ms 500ms;
 }
 
 #fichiers .obj:hover {
@@ -44,9 +51,23 @@
     user-select: none;
 }
 
+/* Formulaires */
+#fichiers .obj.obj-form label {
+    margin-bottom: 0;
+}
+
+#fichiers .obj.obj-form input {
+    margin-top: calc(-.25rem);
+    margin-bottom: calc(-.25rem);
+}
+
 /* Dossiers */
 #fichiers .obj.dossier {
     order: 1;
+}
+
+#fichiers .obj.obj-form.dossier {
+    order: 2;
 }
 
 #fichiers .obj.dossier .obj-header i::before {
@@ -55,7 +76,7 @@
 
 /* Fichiers */
 #fichiers .obj.fichier {
-    order: 2;
+    order: 3;
 }
 
 #fichiers .obj.fichier .obj-header i::before {

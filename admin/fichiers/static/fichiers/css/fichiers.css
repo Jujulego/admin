@@ -1,9 +1,12 @@
 @import "objets.css";
 
+/* Bouton de retour */
 #btn-retour {
     position: absolute;
     height: calc(100% - 1rem);
     z-index: 0;
+
+    transition: filter 500ms;
 }
 
 #btn-retour + .breadcrumb {
@@ -17,12 +20,21 @@
     margin-left: 3.5rem;
 }
 
+/* Breadcrumbs */
 @keyframes breadcrumb-appear {
     from {
         margin-left: calc(-100% - .5rem);
     }
     to {
         margin-left: 0;
+    }
+}
+@keyframes breadcrumb-disappear {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: calc(-100% - .5rem);
     }
 }
 
@@ -41,9 +53,19 @@
     animation: breadcrumb-appear 500ms 1;
 }
 
+.breadcrumb-item.removing .text {
+    animation: breadcrumb-disappear 500ms 1;
+}
+
+/* Zone fichiers */
 #fichiers {
     display: flex;
     flex-wrap: wrap;
 
     padding-right: 3px;
+}
+
+/* Outils */
+#outils .list-group-item i {
+    margin-right: .75rem;
 }
