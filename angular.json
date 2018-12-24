@@ -22,6 +22,7 @@
             "main": "admin/src/main.ts",
             "polyfills": "admin/src/polyfills.ts",
             "tsConfig": "admin/src/tsconfig.app.json",
+            "watch": true,
             "assets": [
               "admin/src/favicon.ico",
               "admin/src/assets"
