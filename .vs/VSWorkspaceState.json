@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\admin"
+    "\\admin",
+    "\\admin\\navbar",
+    "\\admin\\navbar\\static",
+    "\\admin\\navbar\\static\\navbar",
+    "\\admin\\navbar\\static\\navbar\\scss"
   ],
-  "SelectedNode": "\\admin",
+  "SelectedNode": "\\admin\\navbar\\static\\navbar\\scss\\_navbar.scss",
   "PreviewInSolutionExplorer": false
 }

@@ -1,7 +1,8 @@
 # Dossiers
-env
 __pycache__
 admin/media
+compressor
+env
 
 # Fichiers
 *~

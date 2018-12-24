@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block css %}
-    <link rel="stylesheet" href="{% static 'fichiers/css/fichiers.css' %}" />
+    <link rel="stylesheet" type="text/x-scss" href="{% static 'fichiers/scss/fichiers.scss' %}" />
 {% endblock %}
 
 {% block jslib %}
@@ -32,7 +32,11 @@
             <div id="outils" class="col-auto">
                 <div class="card">
                     <div class="list-group list-group-flush">
-                        <button id="btn-creer-dossier" class="list-group-item list-group-item-action pl-3" type="button"><i class="fas fa-plus"></i>Nouveau dossier</button>
+                        <button id="btn-creer-dossier" class="list-group-item list-group-item-action"
+                                type="button"><i class="fas fa-plus"></i>Nouveau dossier</button>
+
+                        <button id="btn-suppr-dossier" class="list-group-item list-group-item-action need-selection"
+                                type="button" disabled><i class="fas fa-trash-alt"></i>Supprimer</button>
                     </div>
                 </div>
             </div>

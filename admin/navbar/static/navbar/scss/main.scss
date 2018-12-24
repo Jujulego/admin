@@ -1,0 +1,44 @@
+/*
+ * main.scss
+ */
+
+@import "variables";
+@import "colors";
+
+@import "btn";
+@import "card";
+@import "navbar";
+@import "panel";
+@import "slider";
+@import "toasts";
+
+// Style
+.content-wrapper {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+
+  overflow: auto;
+
+  & > .container-fluid {
+    margin-top: 1rem;
+  }
+}
+
+header {
+  padding: 1rem 1.5rem 1.25rem;
+}
+
+.template {
+  display: none;
+}
+
+.bignum {
+  font-size: 5rem;
+  line-height: 5rem;
+}

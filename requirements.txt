@@ -2,5 +2,7 @@ channels >= 2.1.5
 Django >= 2.1.2
 django_compressor >= 2.2
 django-libsass >= 0.7
+django-q >= 1.0.1
 pytz >= 2018.5
 sqlparse >= 0.2.4
+redis >= 3.0.1

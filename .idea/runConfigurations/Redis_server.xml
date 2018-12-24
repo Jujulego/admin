@@ -7,7 +7,7 @@
         <option name="commandLineOptions" value="" />
         <option name="containerName" value="" />
         <option name="entrypoint" value="" />
-        <option name="imageTag" value="sha256:481995377a044d40ca3358e4203fe95eca1d58b98a1d4c2d9cec51c0c4569613" />
+        <option name="imageTag" value="sha256:5958914cc55880091b005658a79645a90fd44ac6a33abef25d6be87658eb9599" />
         <option name="portBindings">
           <list>
             <DockerPortBindingImpl>

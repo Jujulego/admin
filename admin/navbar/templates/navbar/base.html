@@ -1,4 +1,4 @@
-{% load i18n static %}
+{% load compress i18n static %}
 {% get_current_language as LANGUAGE_CODE %}{% get_current_language_bidi as LANGUAGE_BIDI %}
 
 <!DOCTYPE html>
@@ -13,24 +13,30 @@
     <title>{% block title %}Base{% endblock %}</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{% static 'vendor/fontawesome/css/all.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" />
+    {% compress css %}
+        <link rel="stylesheet" href="{% static 'vendor/fontawesome/css/all.min.css' %}" />
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" />
 
-    <link rel="stylesheet" href="{% static 'navbar/css/main.css' %}" />
+        {# <link rel="stylesheet" href="{% static 'navbar/css/main.css' %}" /> #}
 
-    {% for item in navbar.css %}
-        <link rel="stylesheet" href="{% static item %}" />
-    {% endfor %}
+        <link rel="stylesheet" type="text/x-scss" href="{% static 'navbar/scss/main.scss' %}" />
 
-    {% block css %}{% endblock %}
+        {% for item in navbar.css %}
+            <link rel="stylesheet" href="{% static item %}" />
+        {% endfor %}
+
+        {% block css %}{% endblock %}
+    {% endcompress %}
 
     <!-- JS -->
-    <script src="{% static 'vendor/jquery-3.3.1.min.js' %}"></script>
-    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
-    <script src="{% static 'vendor/popper.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    {% compress js %}
+        <script src="{% static 'vendor/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+        <script src="{% static 'vendor/popper.min.js' %}"></script>
+        <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
 
-    {% block jslib %}{% endblock %}
+        {% block jslib %}{% endblock %}
+    {% endcompress %}
 </head>
 <body id="page-top">
     <!-- Navigation -->
@@ -55,13 +61,15 @@
     </div>
 
     <!-- JS -->
-    <script src="{% static 'navbar/js/main.js' %}"></script>
-    <script src="{% static 'navbar/js/navbar.js' %}"></script>
+    {% compress js %}
+        <script src="{% static 'navbar/js/main.js' %}"></script>
+        <script src="{% static 'navbar/js/navbar.js' %}"></script>
 
-    {% for item in navbar.js %}
-        <script src="{% static item %}"></script>
-    {% endfor %}
+        {% for item in navbar.js %}
+            <script src="{% static item %}"></script>
+        {% endfor %}
 
-    {% block jsscript %}{% endblock %}
+        {% block jsscript %}{% endblock %}
+    {% endcompress %}
 </body>
 </html>

@@ -1,0 +1,70 @@
+/*
+ * _card.scss
+ */
+@import "colors";
+
+// Style
+.card {
+  .card-header > i.icon:first-child {
+    margin-right: 1rem;
+  }
+
+  // Toolbar
+  .card-header-toolbar {
+    display: flex;
+    align-items: center;
+
+    .title {
+      flex-grow: 1;
+    }
+
+    .btn-toolbar {
+      margin-top: -.25rem;
+      margin-right: -.5rem;
+      margin-bottom: -.25rem;
+
+      .btn-light {
+        background-color: $light_color;
+      }
+    }
+  }
+
+  // Contenant un tableau
+  .card-body.table {
+    thead {
+      background-color: rgba(0, 0, 0, .02);
+
+      tr:first-child td,
+      tr:first-child th {
+        border-top: none;
+      }
+    }
+
+    &.table-bordered {
+      border: none;
+
+      td:first-child, th:first-child {
+        border-left: none;
+      }
+
+      td:last-child, th:last-child {
+        border-right: none;
+      }
+
+      &:last-child tr:last-child td,
+      &:last-child tr:last-child td {
+        border-bottom: none;
+      }
+    }
+  }
+
+  // Contenant un Code Mirror
+  .card-body-cm {
+    padding: 0;
+
+    &:last-child .CodeMirror {
+      border-bottom-left-radius: .25rem;
+      border-bottom-right-radius: .25rem;
+    }
+  }
+}

@@ -46,3 +46,16 @@ class ApiView(View):
         d.save()
 
         return JsonResponse(d.get_metadata())
+
+    def delete(self, req): # => delete
+        # Récupérattion des paramètres
+        params = QueryDict(req.body)
+
+        res1 = Dossier.objects.filter(id__in = params.getlist("dossiers[]")).delete()
+        res2 = Fichier.objects.filter(id__in = params.getlist("fichiers[]")).delete()
+
+        return JsonResponse({
+            "total": res1[0] + res2[0],
+            "dossiers": res1[1].get("fichiers.Dossier", 0),
+            "fichiers": res1[1].get("fichiers.Fichier", 0) + res2[1].get("fichiers.Fichier", 0),
+        })
