@@ -1,0 +1,26 @@
+{% load static %}
+
+<!doctype html>
+<html lang="fr">
+<head>
+    {# Métadonnées #}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Admin</title>
+    <base href="/">
+
+    {# Links #}
+    <link rel="icon" type="image/x-icon" href="{% static 'admin/favicon.ico' %}">
+</head>
+<body>
+    <app-root></app-root>
+
+    {# Scripts #}
+    <script type="text/javascript" src="{% static 'admin/runtime.js' %}"></script>
+    <script type="text/javascript" src="{% static 'admin/polyfills.js' %}"></script>
+    <script type="text/javascript" src="{% static 'admin/styles.js' %}"></script>
+    <script type="text/javascript" src="{% static 'admin/vendor.js' %}"></script>
+    <script type="text/javascript" src="{% static 'admin/main.js' %}"></script>
+</body>
+</html>

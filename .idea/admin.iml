@@ -25,6 +25,7 @@
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/env/Lib/python3.6/site-packages/twisted/python/_pydoctortemplates" />
+        <option value="$MODULE_DIR$/admin_api/templates" />
       </list>
     </option>
   </component>
