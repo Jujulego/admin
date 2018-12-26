@@ -23,11 +23,14 @@
             "polyfills": "admin/src/polyfills.ts",
             "tsConfig": "admin/src/tsconfig.app.json",
             "watch": true,
+            "deployUrl": "/static/admin/",
             "assets": [
               "admin/src/favicon.ico",
               "admin/src/assets"
             ],
             "styles": [
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "admin/src/styles.scss"
             ],
             "scripts": []
@@ -84,6 +87,8 @@
             "tsConfig": "admin/src/tsconfig.spec.json",
             "karmaConfig": "admin/src/karma.conf.js",
             "styles": [
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "admin/src/styles.scss"
             ],
             "scripts": [],
