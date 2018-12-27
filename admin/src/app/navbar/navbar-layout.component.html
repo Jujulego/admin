@@ -1,6 +1,16 @@
 <nav class="navbar">
     <!-- Brand -->
     <span class="navbar-brand">{{ brand }}</span>
+
+    <!-- Items -->
+    <ul class="nav">
+        <li class="nav-item" *ngFor="let item of items | navitemfilter: 'top':true" [attr.aria-label]="item.name">
+            <button class="nav-link" mat-button
+                    [matTooltip]="item.name" matTooltipPosition="below">
+                <mat-icon fontIcon="fa-flask" [attr.aria-label]="item.name"></mat-icon>
+            </button>
+        </li>
+    </ul>
 </nav>
 
 <div class="content-wrapper">
