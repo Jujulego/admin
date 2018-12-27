@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import { Breakpoints } from "./breakpoints.enum";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'admin';
+    // Attributs
+    title = 'admin';
+    Breakpoints = Breakpoints;
 }

@@ -6,6 +6,9 @@
 
 @import '~@angular/material/theming';
 
+$sidebar-anim:  250ms;
+$sidebar-width: 250px;
+
 // Theme mixin
 @mixin navbar-theme($theme) {
   // Variables
@@ -17,6 +20,14 @@
   .navbar {
     color: mat-color($foreground, text);
     background-color: map-get($primary, 700);
+
+    > .navbar-toggler span {
+      background-color: mat-color($foreground, text);
+    }
+
+    > .sidebar {
+      background-color: map-get($primary, 400);
+    }
   }
 }
 
@@ -25,12 +36,107 @@
   overflow: hidden;
 }
 
-.navbar > .nav button {
-  min-width: 36px;
-  padding: 0;
+.navbar {
+  > .navbar-toggler {
+    display: flex;
+    height: 40px;
+    min-width: 40px;
+
+    flex-direction: column;
+    justify-content: center;
+
+    padding: .3125rem 0;
+    border: none;
+
+    // Ecarts
+    &:not(:first-child) {
+      margin-left: .675rem;
+    }
+
+    &:not(:last-child) {
+      margin-right: .675rem;
+    }
+
+    // Symbole
+    span {
+      display: block;
+      width: 1.4rem;
+      height: .2rem;
+
+      flex: 0 0 auto;
+
+      margin: 0 auto;
+      border-radius: .075rem;
+
+      transition: transform $sidebar-anim ease, opacity $sidebar-anim ease;
+
+      &:nth-child(1) {
+        transform: translate(0px, .45rem) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        margin: .25rem auto;
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: translate(0px, -.45rem) rotate(-45deg);
+      }
+    }
+
+    // Tranformations
+    &.collapsed span {
+      &:nth-child(1),&:nth-child(3) {
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 1;
+      }
+    }
+  }
+  > .navbar-brand {
+    flex: 1;
+  }
+  > .nav button {
+    min-width: 36px;
+    padding: 0;
+  }
+
+  > .sidebar {
+    position: fixed;
+    top: calc(40px + 1rem);
+    left: 0;
+
+    height: calc(100% - 40px - 1rem);
+    width: $sidebar-width;
+
+    > .nav {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &.navbar-reduced {
+    > .sidebar {
+      transition: left $sidebar-anim ease;
+    }
+
+    &.navbar-collapsed {
+      > .sidebar {
+        left: -$sidebar-width;
+      }
+    }
+  }
 }
 
 .content-wrapper {
   height: calc(100% - 40px - 1rem);
   overflow: auto;
+
+  transition: margin-left $sidebar-anim ease;
+
+  .navbar:not(.navbar-reduced) + & {
+    margin-left: $sidebar-width;
+  }
 }
