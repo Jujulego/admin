@@ -20,6 +20,7 @@ export class NavbarLayoutComponent implements OnInit {
 
     private reduced: boolean = true;
     private collapsed: boolean = true;
+    private sidebarCollapsed: boolean = false;
 
     // Constructeur
     constructor() { }

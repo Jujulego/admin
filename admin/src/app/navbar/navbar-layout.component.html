@@ -20,17 +20,24 @@
     </ul>
 
     <!-- Sidebar -->
-    <div class="sidebar mat-elevation-z4">
+    <div class="sidebar mat-elevation-z4" [ngClass]="{'sidebar-collapsed': sidebarCollapsed}">
         <ul class="nav">
             <li class="nav-item" *ngFor="let item of items | navitemfilter: (reduced ? ['sidebar', 'top'] : 'sidebar'):false" [attr.aria-label]="item.name">
-                <a class="nav-link" type="button" mat-ripple>
-                    <mat-icon fontIcon="fa-flask" [attr.aria-label]="item.name"></mat-icon>{{ item.name }}
+                <a class="nav-link" type="button" mat-ripple
+                   [matTooltip]="item.name" matTooltipPosition="right" [matTooltipDisabled]="!sidebarCollapsed">
+                    <mat-icon fontIcon="fa-flask" [attr.aria-label]="item.name"></mat-icon>
+                    <span>{{ item.name }}</span>
                 </a>
             </li>
         </ul>
+
+        <button class="sidebar-toggle" mat-button *ngIf="!reduced"
+            (click)="sidebarCollapsed = !sidebarCollapsed">
+            <mat-icon fontIcon="fa-angle-left"></mat-icon>
+        </button>
     </div>
 </nav>
 
-<div class="content-wrapper">
+<div class="content-wrapper" [ngClass]="{'sidebar-collapsed': sidebarCollapsed}">
     <ng-content></ng-content>
 </div>

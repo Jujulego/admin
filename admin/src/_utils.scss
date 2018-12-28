@@ -1,0 +1,14 @@
+/*
+ * _utils.scss
+ *
+ * Que des trucs utiles !
+ */
+
+// Importations
+@import '~@angular/material/theming';
+
+// Mixins
+@mixin mat-apply-color($color, $hue) {
+  color: mat-contrast($color, $hue);
+  background-color: mat-color($color, $hue);
+}
