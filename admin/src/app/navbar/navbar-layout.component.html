@@ -13,7 +13,7 @@
     <ul class="nav">
         <li class="nav-item" *ngFor="let item of items | navitemfilter: 'top':(reduced ? true : undefined)" [attr.aria-label]="item.name">
             <button class="nav-link" type="button" mat-button
-                    [matTooltip]="item.name" matTooltipPosition="below">
+                    [matTooltip]="item.name" [matTooltipPosition]="'below'">
                 <mat-icon fontIcon="fa-flask" [attr.aria-label]="item.name"></mat-icon>
             </button>
         </li>
@@ -24,10 +24,11 @@
         <ul class="nav">
             <li class="nav-item" *ngFor="let item of items | navitemfilter: (reduced ? ['sidebar', 'top'] : 'sidebar'):false" [attr.aria-label]="item.name">
                 <a class="nav-link" type="button" mat-ripple
-                   [matTooltip]="item.name" matTooltipPosition="right" [matTooltipDisabled]="!sidebarCollapsed">
+                   [matTooltip]="item.name" [matTooltipPosition]="'right'" [matTooltipDisabled]="!sidebarCollapsed">
                     <mat-icon fontIcon="fa-flask" [attr.aria-label]="item.name"></mat-icon>
                     <span>{{ item.name }}</span>
                 </a>
+                <div class="sidebar-hover"></div>
             </li>
         </ul>
 
