@@ -1,6 +1,7 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { NavbarItem } from "./navbar-item";
 import { Breakpoints } from "../breakpoints.enum";
+import { NavbarMenu } from "./navbar-menu";
 
 @Component({
     selector: 'app-navbar-layout',
@@ -16,6 +17,10 @@ export class NavbarLayoutComponent implements OnInit {
         new NavbarItem("Sidebar !!!"),
         new NavbarItem("Test2", 'top'),
         new NavbarItem("Test3", 'top', true),
+        new NavbarMenu("Menu", {}, [
+            new NavbarItem("Item1"),
+            new NavbarItem("Item1")
+        ])
     ];
 
     private reduced: boolean = true;

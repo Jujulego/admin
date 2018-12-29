@@ -3,11 +3,13 @@ import { CommonModule } from "@angular/common";
 import { NavbarLayoutComponent } from "./navbar-layout.component";
 import { NavbarItemFilterPipe } from "./navbar-item-filter.pipe";
 import { MatButtonModule, MatIconModule, MatIconRegistry, MatRippleModule, MatTooltipModule } from "@angular/material";
+import { NavbarItemIsMenuPipe } from './navbar-item-is-menu.pipe';
 
 @NgModule({
     declarations: [
         NavbarLayoutComponent,
-        NavbarItemFilterPipe
+        NavbarItemFilterPipe,
+        NavbarItemIsMenuPipe
     ],
     imports: [
         CommonModule,
@@ -18,7 +20,8 @@ import { MatButtonModule, MatIconModule, MatIconRegistry, MatRippleModule, MatTo
     ],
     exports: [
         NavbarLayoutComponent,
-        NavbarItemFilterPipe
+        NavbarItemFilterPipe,
+        NavbarItemIsMenuPipe
     ]
 })
 export class NavbarModule {

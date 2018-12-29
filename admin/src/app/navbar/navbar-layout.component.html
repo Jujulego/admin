@@ -1,3 +1,37 @@
+<!-- Templates -->
+<ng-template #sidebarMenu let-items>
+    <ul class="nav">
+        <ng-template ngFor let-item [ngForOf]="items">
+            <li *ngIf="(item | navitemismenu); else notMenu"
+                class="nav-item" [ngClass]="{'menu-collapsed': item.collapsed }" [attr.aria-label]="item.name">
+
+                <a class="nav-link" type="button" mat-ripple (click)="item.collapsed = !item.collapsed"
+                   [matTooltip]="item.name" [matTooltipPosition]="'right'" [matTooltipDisabled]="reduced || !sidebarCollapsed">
+
+                    <mat-icon fontIcon="fa-flask" [attr.aria-label]="item.name"></mat-icon>
+                    <span>{{ item.name }}</span>
+                    <mat-icon class="menu-status" fontIcon="fa-angle-up"></mat-icon>
+                </a>
+                <div class="sidebar-hover"></div>
+
+                <ng-container *ngTemplateOutlet="sidebarMenu; context: { $implicit: item.items }"></ng-container>
+            </li>
+
+            <ng-template #notMenu>
+                <li class="nav-item" [attr.aria-label]="item.name">
+                    <a class="nav-link" type="button" mat-ripple
+                       [matTooltip]="item.name" [matTooltipPosition]="'right'" [matTooltipDisabled]="reduced || !sidebarCollapsed">
+                        <mat-icon fontIcon="fa-flask" [attr.aria-label]="item.name"></mat-icon>
+                        <span>{{ item.name }}</span>
+                    </a>
+                    <div class="sidebar-hover"></div>
+                </li>
+            </ng-template>
+        </ng-template>
+    </ul>
+</ng-template>
+
+<!-- Navbar -->
 <nav class="navbar mat-elevation-z6" [ngClass]="{'navbar-reduced': reduced, 'navbar-collapsed': collapsed}">
     <!-- Toogler -->
     <button class="navbar-toggler" type="button" mat-button
@@ -21,16 +55,7 @@
 
     <!-- Sidebar -->
     <div class="sidebar mat-elevation-z4" [ngClass]="{'sidebar-collapsed': sidebarCollapsed}">
-        <ul class="nav">
-            <li class="nav-item" *ngFor="let item of items | navitemfilter: (reduced ? ['sidebar', 'top'] : 'sidebar'):false" [attr.aria-label]="item.name">
-                <a class="nav-link" type="button" mat-ripple
-                   [matTooltip]="item.name" [matTooltipPosition]="'right'" [matTooltipDisabled]="!sidebarCollapsed">
-                    <mat-icon fontIcon="fa-flask" [attr.aria-label]="item.name"></mat-icon>
-                    <span>{{ item.name }}</span>
-                </a>
-                <div class="sidebar-hover"></div>
-            </li>
-        </ul>
+        <ng-container *ngTemplateOutlet="sidebarMenu; context:{ $implicit: items | navitemfilter: (reduced ? ['sidebar', 'top'] : 'sidebar'):false }"></ng-container>
 
         <button class="sidebar-toggle" mat-button *ngIf="!reduced"
             (click)="sidebarCollapsed = !sidebarCollapsed">
