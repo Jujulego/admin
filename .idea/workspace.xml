@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="121430f9-7bd6-4ccd-8db7-97a3a5a54c33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/src/app/navbar/navbar-item-is-menu.pipe.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/app/navbar/navbar-menu.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/_theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/_theme.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/app/navbar/navbar-item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/navbar/navbar-item.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/app/navbar/navbar-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/navbar/navbar-layout.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/app/navbar/navbar-layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/navbar/navbar-layout.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/app/navbar/navbar-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/navbar/navbar-theme.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/app/navbar/navbar.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/navbar/navbar.module.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +95,7 @@
           <entry key="html" value="2235" />
           <entry key="json" value="250" />
           <entry key="py" value="140" />
-          <entry key="scss" value="2747" />
+          <entry key="scss" value="2792" />
           <entry key="ts" value="2084" />
           <entry key="txt" value="176" />
         </counts>
@@ -114,7 +106,7 @@
           <entry key="JSON" value="250" />
           <entry key="PLAIN_TEXT" value="208" />
           <entry key="Python" value="140" />
-          <entry key="SCSS" value="2747" />
+          <entry key="SCSS" value="2792" />
           <entry key="TypeScript" value="2084" />
         </counts>
       </usages-collector>
@@ -172,8 +164,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/src/app/navbar/navbar-theme.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+            <state relative-caret-position="232">
+              <caret line="155" column="79" selection-start-line="155" selection-start-column="79" selection-end-line="155" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -795,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/app/navbar/navbar-theme.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        <state relative-caret-position="232">
+          <caret line="155" column="79" selection-start-line="155" selection-start-column="79" selection-end-line="155" selection-end-column="79" />
         </state>
       </provider>
     </entry>

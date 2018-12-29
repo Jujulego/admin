@@ -137,6 +137,10 @@ $mini-sidebar-height: calc(24px + 1rem);
           white-space: nowrap;
           overflow-x: hidden;
 
+          mat-icon {
+            flex-shrink: 0;
+          }
+
           span {
             flex: 1;
           }
@@ -149,7 +153,7 @@ $mini-sidebar-height: calc(24px + 1rem);
 
             text-align: center;
 
-            transition: transform $sidebar-anim ease;
+            transition: transform $sidebar-anim ease, left $sidebar-anim linear;
           }
 
           + .sidebar-hover {
@@ -226,6 +230,10 @@ $mini-sidebar-height: calc(24px + 1rem);
         left: calc(24px + 1rem);
 
         opacity: 0;
+      }
+
+      .nav-link > .menu-status {
+        left: -.875rem !important;
       }
 
       > .sidebar-toggle mat-icon {
