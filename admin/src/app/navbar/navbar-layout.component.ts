@@ -1,7 +1,7 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { NavbarItem } from "./navbar-item";
 import { Breakpoints } from "../breakpoints.enum";
-import { NavbarMenu } from "./navbar-menu";
+import { isMenuItem, NavbarMenu } from "./navbar-menu";
 
 @Component({
     selector: 'app-navbar-layout',
@@ -19,13 +19,30 @@ export class NavbarLayoutComponent implements OnInit {
         new NavbarItem("Test3", 'top', true),
         new NavbarMenu("Menu", {}, [
             new NavbarItem("Item1"),
-            new NavbarItem("Item1")
+            new NavbarItem("Item2"),
+            new NavbarMenu("Menu2", {}, [
+                new NavbarItem("Item3"),
+                new NavbarItem("Item4")
+            ])
         ])
     ];
 
     private reduced: boolean = true;
     private collapsed: boolean = true;
-    private sidebarCollapsed: boolean = false;
+    private _sidebarCollapsed: boolean = false;
+
+    // Propriétés
+    private get sidebarCollapsed(): boolean {
+        return this._sidebarCollapsed;
+    }
+
+    private set sidebarCollapsed(val: boolean) {
+        this._sidebarCollapsed = val;
+
+        if (val) {
+            this.closeMenus();
+        }
+    }
 
     // Constructeur
     constructor() { }
@@ -37,5 +54,13 @@ export class NavbarLayoutComponent implements OnInit {
 
     @HostListener('window:resize') onResize() {
       this.reduced = window.innerWidth < this.breakpoint;
+    }
+
+    closeMenus() {
+        this.items
+            .filter(isMenuItem)
+            .forEach(menu => {
+                menu.collapsed = true;
+            })
     }
 }

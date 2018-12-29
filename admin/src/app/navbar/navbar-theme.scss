@@ -174,8 +174,12 @@ $mini-sidebar-height: calc(24px + 1rem);
         }
 
         > .nav {
+          height: calc(100% - 24px - 1rem);
+
           margin-left: 1rem;
           overflow: hidden;
+
+          transition: height $sidebar-anim ease;
         }
 
         &.menu-collapsed {

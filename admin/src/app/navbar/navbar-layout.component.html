@@ -5,7 +5,8 @@
             <li *ngIf="(item | navitemismenu); else notMenu"
                 class="nav-item" [ngClass]="{'menu-collapsed': item.collapsed }" [attr.aria-label]="item.name">
 
-                <a class="nav-link" type="button" mat-ripple (click)="item.collapsed = !item.collapsed"
+                <a class="nav-link" type="button" mat-ripple
+                   (click)="item.collapsed = !item.collapsed; sidebarCollapsed = false"
                    [matTooltip]="item.name" [matTooltipPosition]="'right'" [matTooltipDisabled]="reduced || !sidebarCollapsed">
 
                     <mat-icon fontIcon="fa-flask" [attr.aria-label]="item.name"></mat-icon>

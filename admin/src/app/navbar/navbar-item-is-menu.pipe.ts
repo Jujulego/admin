@@ -1,12 +1,13 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { NavbarItem } from "./navbar-item";
-import { NavbarMenu } from "./navbar-menu";
+import { isMenuItem } from "./navbar-menu";
 
 @Pipe({
-  name: 'navitemismenu'
+    name: 'navitemismenu'
 })
 export class NavbarItemIsMenuPipe implements PipeTransform {
-  transform(item: NavbarItem): boolean {
-    return item instanceof NavbarMenu;
-  }
+    transform(item: NavbarItem): boolean {
+        return isMenuItem(item);
+    }
 }
+
