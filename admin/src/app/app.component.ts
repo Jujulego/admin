@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Breakpoints } from "./breakpoints.enum";
+import { NavbarItem } from "./navbar/navbar-item";
+import { NavbarMenu } from "./navbar/navbar-menu";
 
 @Component({
     selector: 'app-root',
@@ -8,6 +10,12 @@ import { Breakpoints } from "./breakpoints.enum";
 })
 export class AppComponent {
     // Attributs
-    title = 'admin';
-    Breakpoints = Breakpoints;
+    public navbarItems = [
+        new NavbarItem("Accueil", "fa-home", "/", { link_exact: true }),
+        new NavbarMenu("Erreur", "fa-exclamation", [
+            new NavbarItem("Not Found !", "fa-exclamation-circle", "/not-found"),
+        ]),
+    ];
+
+    public Breakpoints = Breakpoints;
 }

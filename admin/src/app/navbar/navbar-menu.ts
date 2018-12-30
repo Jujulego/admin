@@ -1,8 +1,12 @@
-import { NavbarItem } from "./navbar-item";
-import { NavbarPosition } from "./navbar-utils";
+import { NavbarItem, NavbarItemOptions } from "./navbar-item";
+
+function isNavbarItemArray(val: NavbarItemOptions | NavbarItem[]): val is NavbarItem[] {
+    return (<NavbarItem[]> val).length !== undefined;
+}
 
 export class NavbarMenu extends NavbarItem {
     // Attributs
+    public items: NavbarItem[] = [];
     private _collapsed: boolean = true;
 
     // Propriétés
@@ -19,9 +23,11 @@ export class NavbarMenu extends NavbarItem {
     }
 
     // Constructeur
-    constructor(name: string, options: {position ?: NavbarPosition, always_visible ?: boolean} = {},
-                public items: NavbarItem[] = []) {
-        super(name, options.position || 'sidebar', options.always_visible)
+    constructor(name: string, icon: string, arg1: NavbarItemOptions | NavbarItem[], arg2?: NavbarItem[]) {
+        super(name, icon, '', (isNavbarItemArray(arg1) ? { position: 'sidebar' } : arg1 as NavbarItemOptions));
+
+        // Options
+        this.items = isNavbarItemArray(arg1) ? arg1 as NavbarItem[] : arg2 || [];
     }
 
     // Méthodes

@@ -11,32 +11,20 @@ import { isMenuItem, NavbarMenu } from "./navbar-menu";
 export class NavbarLayoutComponent implements OnInit {
     // Attributs
     @Input() brand: string;
+    @Input() brandLink: string;
     @Input() breakpoint: Breakpoints = Breakpoints.LG;
-    @Input() items: NavbarItem[] = [
-        new NavbarItem("Test1"),
-        new NavbarItem("Sidebar !!!"),
-        new NavbarItem("Test2", 'top'),
-        new NavbarItem("Test3", 'top', true),
-        new NavbarMenu("Menu", {}, [
-            new NavbarItem("Item1"),
-            new NavbarItem("Item2"),
-            new NavbarMenu("Menu2", {}, [
-                new NavbarItem("Item3"),
-                new NavbarItem("Item4")
-            ])
-        ])
-    ];
+    @Input() items: NavbarItem[] = [];
 
     private reduced: boolean = true;
     private collapsed: boolean = true;
     private _sidebarCollapsed: boolean = false;
 
     // Propriétés
-    private get sidebarCollapsed(): boolean {
+    get sidebarCollapsed(): boolean {
         return this._sidebarCollapsed;
     }
 
-    private set sidebarCollapsed(val: boolean) {
+    set sidebarCollapsed(val: boolean) {
         this._sidebarCollapsed = val;
 
         if (val) {

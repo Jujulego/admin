@@ -25,12 +25,33 @@ $mini-sidebar-height: calc(24px + 1rem);
   .navbar {
     @include mat-apply-color($primary, 800);
 
+    .navbar-brand a {
+      color: mat-contrast($primary, 800);
+    }
+
     > .navbar-toggler span {
-      background-color: mat-color($foreground, text);
+      background-color: mat-contrast($primary, 800);
     }
 
     > .sidebar {
       @include mat-apply-color($primary, 200);
+
+      .nav-link {
+        @include mat-apply-color($primary, 200);
+        border-right-color: mat-color($primary, 400);
+
+        &.active {
+          border-right: solid .25rem mat-color($primary, 600);
+
+          .menu-status {
+            left: .5rem !important;
+          }
+        }
+
+        &:not(.active):hover .menu-status {
+          left: .5rem;
+        }
+      }
 
       > .sidebar-toggle {
         @include mat-apply-color($primary, 600);
@@ -45,6 +66,11 @@ $mini-sidebar-height: calc(24px + 1rem);
 }
 
 .navbar {
+  .navbar-brand a.active:hover {
+    text-decoration: none;
+    cursor: default;
+  }
+
   > .navbar-toggler {
     display: flex;
     height: 40px;
@@ -121,74 +147,93 @@ $mini-sidebar-height: calc(24px + 1rem);
     width: $sidebar-width;
     flex-direction: column;
 
-    > .nav {
+    > div {
       flex: 1;
+      max-height: calc(100% - calc(24px + 1rem));
 
-      display: flex;
-      flex-direction: column;
+      > .nav {
+        display: flex;
+        flex-direction: column;
 
-      .nav-item {
-        position: relative;
-        width: 100%;
+        .nav-item {
+          position: relative;
+          width: 100%;
 
-        .nav-link {
-          display: flex;
+          .nav-link {
+            display: flex;
 
-          white-space: nowrap;
-          overflow-x: hidden;
+            white-space: nowrap;
+            overflow-x: hidden;
 
-          mat-icon {
-            flex-shrink: 0;
+            border-right-style: solid;
+            border-right-width: 0;
+
+            transition: border-right-width $sidebar-anim linear;
+
+            &:not(.active):hover, &.active {
+              border-right-width: .25rem;
+
+              .menu-status {
+                left: .5rem;
+              }
+            }
+
+            span {
+              flex: 1;
+            }
+
+            mat-icon {
+              position: relative;
+              flex-shrink: 0;
+
+              text-align: center;
+
+              &:first-child {
+                right: .5rem;
+              }
+
+              &.menu-status {
+                left: .25rem;
+                margin-left: auto;
+
+                transition: transform $sidebar-anim ease, left $sidebar-anim linear;
+              }
+            }
+
+            + .sidebar-hover {
+              position: absolute;
+              top: 0; left: 0;
+              z-index: -1;
+
+              width: 100%;
+              height: calc(24px + 1rem);
+
+              background-color: white;
+              opacity: 0;
+            }
+
+            &:hover + .sidebar-hover {
+              opacity: .04;
+            }
           }
 
-          span {
-            flex: 1;
+          > .nav {
+            height: calc(100% - 24px - 1rem);
+
+            margin-left: 1rem;
+            overflow: hidden;
+
+            transition: height $sidebar-anim ease;
           }
 
-          .menu-status {
-            position: relative;
-            left: .25rem;
+          &.menu-collapsed {
+            .menu-status {
+              transform: rotate(180deg);
+            }
 
-            margin-left: auto;
-
-            text-align: center;
-
-            transition: transform $sidebar-anim ease, left $sidebar-anim linear;
-          }
-
-          + .sidebar-hover {
-            position: absolute;
-            top: 0; left: 0;
-            z-index: -1;
-
-            width: 100%;
-            height: calc(24px + 1rem);
-
-            background-color: white;
-            opacity: 0;
-          }
-
-          &:hover + .sidebar-hover {
-            opacity: .04;
-          }
-        }
-
-        > .nav {
-          height: calc(100% - 24px - 1rem);
-
-          margin-left: 1rem;
-          overflow: hidden;
-
-          transition: height $sidebar-anim ease;
-        }
-
-        &.menu-collapsed {
-          .menu-status {
-            transform: rotate(180deg);
-          }
-
-          .nav {
-            height: 0;
+            .nav {
+              height: 0;
+            }
           }
         }
       }

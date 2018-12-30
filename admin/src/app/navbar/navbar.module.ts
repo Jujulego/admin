@@ -4,6 +4,7 @@ import { NavbarLayoutComponent } from "./navbar-layout.component";
 import { NavbarItemFilterPipe } from "./navbar-item-filter.pipe";
 import { MatButtonModule, MatIconModule, MatIconRegistry, MatRippleModule, MatTooltipModule } from "@angular/material";
 import { NavbarItemIsMenuPipe } from './navbar-item-is-menu.pipe';
+import { AppRoutingModule } from "../app-routing.module";
 
 @NgModule({
     declarations: [
@@ -12,7 +13,7 @@ import { NavbarItemIsMenuPipe } from './navbar-item-is-menu.pipe';
         NavbarItemIsMenuPipe
     ],
     imports: [
-        CommonModule,
+        CommonModule, AppRoutingModule,
         MatButtonModule, MatIconModule, MatRippleModule, MatTooltipModule
     ],
     providers: [

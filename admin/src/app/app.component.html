@@ -1,7 +1,3 @@
-<app-navbar-layout brand="Admin">
-    <div class="text-center">
-        <h1>Welcome to {{ title }} !</h1>
-    </div>
-
+<app-navbar-layout brand="Admin" brandLink="/" [items]="navbarItems">
     <router-outlet></router-outlet>
 </app-navbar-layout>
