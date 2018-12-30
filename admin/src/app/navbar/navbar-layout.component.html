@@ -20,13 +20,24 @@
 
             <ng-template #notMenu>
                 <li class="nav-item" [attr.aria-label]="item.name">
-                    <a class="nav-link" type="button" mat-ripple
-                       [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="item.link_options"
+                    <a *ngIf="item.link_href; else sidebarNotHref"
+                       class="nav-link" [href]="item.link" mat-ripple
                        [matTooltip]="item.name" [matTooltipPosition]="'right'" [matTooltipDisabled]="reduced || !sidebarCollapsed">
 
                         <mat-icon [fontIcon]="item.icon" [attr.aria-label]="item.name"></mat-icon>
                         <span>{{ item.name }}</span>
                     </a>
+
+                    <ng-template #sidebarNotHref>
+                        <a class="nav-link" mat-ripple
+                           [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="item.link_options"
+                           [matTooltip]="item.name" [matTooltipPosition]="'right'" [matTooltipDisabled]="reduced || !sidebarCollapsed">
+
+                            <mat-icon [fontIcon]="item.icon" [attr.aria-label]="item.name"></mat-icon>
+                            <span>{{ item.name }}</span>
+                        </a>
+                    </ng-template>
+
                     <div class="sidebar-hover"></div>
                 </li>
             </ng-template>
@@ -51,11 +62,20 @@
     <!-- Items -->
     <ul class="nav">
         <li class="nav-item" *ngFor="let item of items | navitemfilter: 'top':(reduced ? true : undefined)" [attr.aria-label]="item.name">
-            <button class="nav-link" type="button" mat-button
-                    [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="item.link_options"
-                    [matTooltip]="item.name" [matTooltipPosition]="'below'">
+            <a *ngIf="item.link_href; else notHref"
+               class="nav-link" [href]="item.link" mat-button
+               [matTooltip]="item.name" [matTooltipPosition]="'below'">
+
                 <mat-icon [fontIcon]="item.icon" [attr.aria-label]="item.name"></mat-icon>
-            </button>
+            </a>
+
+            <ng-template #notHref>
+                <button class="nav-link" type="button" mat-button
+                        [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="item.link_options"
+                        [matTooltip]="item.name" [matTooltipPosition]="'below'">
+                    <mat-icon [fontIcon]="item.icon" [attr.aria-label]="item.name"></mat-icon>
+                </button>
+            </ng-template>
         </li>
     </ul>
 

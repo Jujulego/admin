@@ -12,9 +12,7 @@ export class AppComponent {
     // Attributs
     public navbarItems = [
         new NavbarItem("Accueil", "fa-home", "/", { link_exact: true }),
-        new NavbarMenu("Erreur", "fa-exclamation", [
-            new NavbarItem("Not Found !", "fa-exclamation-circle", "/not-found"),
-        ]),
+        new NavbarItem("Administration", "fa-cogs", "/admin/", { link_href: true }),
     ];
 
     public Breakpoints = Breakpoints;
