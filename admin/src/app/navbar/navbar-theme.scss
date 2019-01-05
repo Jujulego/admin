@@ -165,10 +165,8 @@ $mini-sidebar-height: calc(24px + 1rem);
             white-space: nowrap;
             overflow-x: hidden;
 
-            border-right-style: solid;
             border-right-width: 0;
-
-            transition: border-right-width $sidebar-anim linear;
+            border-right-style: solid;
 
             &:not(.active):hover, &.active {
               border-right-width: .25rem;
@@ -196,7 +194,7 @@ $mini-sidebar-height: calc(24px + 1rem);
                 left: .25rem;
                 margin-left: auto;
 
-                transition: transform $sidebar-anim ease, left $sidebar-anim linear;
+                transition: transform $sidebar-anim ease;
               }
             }
 
@@ -295,6 +293,9 @@ $mini-sidebar-height: calc(24px + 1rem);
 .content-wrapper {
   height: calc(100% - 40px - 1rem);
   overflow: auto;
+
+  padding-top: 1rem;
+  padding-left: 1rem;
 
   transition: margin-left $sidebar-anim ease;
 

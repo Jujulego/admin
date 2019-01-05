@@ -7,21 +7,26 @@ import { AppComponent } from './app.component';
 import { NavbarModule } from "./navbar/navbar.module";
 import { IndexComponent } from './index/index.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SenderModule } from "./sender/sender.module";
+import { ContactsService } from "./sender/contacts.service";
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        IndexComponent,
-        PageNotFoundComponent,
-    ],
     imports: [
         BrowserModule,
-        AppRoutingModule,
         BrowserAnimationsModule,
 
-        NavbarModule
+        NavbarModule, SenderModule,
+        AppRoutingModule,
     ],
-    providers: [],
-    bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        IndexComponent, PageNotFoundComponent,
+    ],
+    providers: [
+        ContactsService,
+    ],
+    bootstrap: [
+        AppComponent
+    ]
 })
 export class AppModule { }

@@ -29,12 +29,19 @@ ALLOWED_HOSTS = []
 
 # Application definition
 INSTALLED_APPS = [
+    # Django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Libraries
+    'rest_framework',
+
+    # Applications
+    'sender',
 ]
 
 MIDDLEWARE = [
@@ -67,6 +74,11 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'admin_api.wsgi.application'
+
+# CSRF Protection
+#CSRF_USE_SESSIONS = True
+#CSRF_COOKIE_NAME = "XSRF-TOKEN"
+#CSRF_HEADER_NAME = "X-XSRF-TOKEN"
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases

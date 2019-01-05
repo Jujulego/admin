@@ -12,6 +12,9 @@ export class AppComponent {
     // Attributs
     public navbarItems = [
         new NavbarItem("Accueil", "fa-home", "/", { link_exact: true }),
+        new NavbarMenu("Sender", "fa-paper-plane", [
+            new NavbarItem("Contacts", "fa-users", "/contacts"),
+        ]),
         new NavbarItem("Administration", "fa-cogs", "/admin/", { link_href: true }),
     ];
 
