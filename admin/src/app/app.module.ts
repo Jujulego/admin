@@ -9,11 +9,19 @@ import { IndexComponent } from './index/index.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SenderModule } from "./sender/sender.module";
 import { ContactsService } from "./sender/contacts.service";
+import { FormsModule } from "@angular/forms";
+import { MatButtonModule, MatCardModule, MatInputModule } from "@angular/material";
+import { HttpClientModule, HttpClientXsrfModule } from "@angular/common/http";
 
 @NgModule({
     imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
+        BrowserModule, BrowserAnimationsModule, FormsModule, HttpClientModule,
+        HttpClientXsrfModule.withOptions({
+            cookieName: 'csrftoken',
+            headerName: 'X-CSRFToken',
+        }),
+
+        MatButtonModule, MatCardModule, MatInputModule,
 
         NavbarModule, SenderModule,
         AppRoutingModule,

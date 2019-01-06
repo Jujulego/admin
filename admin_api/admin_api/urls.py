@@ -22,8 +22,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # API
+    path('api/google/', include('google_api.urls')),
     path('api/sender/', include('sender.urls')),
 
     # Application Angular !
-    re_path(r'.*', TemplateView.as_view(template_name="index.html"))
+    re_path(r'.*', TemplateView.as_view(template_name="index.html"), name="angular")
 ]

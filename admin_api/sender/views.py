@@ -4,6 +4,9 @@ from rest_framework import generics
 from .models import Contact, ListeEnvoi
 from .serializers import ContactSerializer, ListeEnvoiSerializer
 
+# Constantes
+SCOPES = 'https://www.googleapis.com/auth/gmail.send'
+
 # Vues
 # - contacts
 class ContactList(generics.ListCreateAPIView):
@@ -16,7 +19,7 @@ class ContactDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Contact.objects.all()
     serializer_class = ContactSerializer
 
-# - contacts
+# - listes d'envoi
 class ListeEnvoiList(generics.ListCreateAPIView):
     # Options
     queryset = ListeEnvoi.objects.all()

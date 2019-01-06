@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # Applications
+    'google_api',
     'sender',
 ]
 
@@ -74,11 +75,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'admin_api.wsgi.application'
-
-# CSRF Protection
-#CSRF_USE_SESSIONS = True
-#CSRF_COOKIE_NAME = "XSRF-TOKEN"
-#CSRF_HEADER_NAME = "X-XSRF-TOKEN"
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
@@ -120,3 +116,16 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(PROJECT_DIR, "dist"),
 ]
+
+# Google API
+GOOGLE_API = {
+    "CLIENT_SECRETS": os.path.join(BASE_DIR, "credentials.json"),
+    "REDIRECT_URI"  : "http://localhost:8000/api/google/oauth/step2/",
+
+    "SCOPES": [
+        'https://www.googleapis.com/auth/gmail.readonly',
+        'https://www.googleapis.com/auth/userinfo.email',
+        'https://www.googleapis.com/auth/userinfo.profile',
+        # Add other requested scopes.
+    ],
+}
