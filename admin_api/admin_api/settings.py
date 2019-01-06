@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Libraries
+    'django_q',
     'rest_framework',
 
     # Applications
@@ -128,4 +129,19 @@ GOOGLE_API = {
         'https://www.googleapis.com/auth/userinfo.profile',
         # Add other requested scopes.
     ],
+}
+
+# Django Q
+Q_CLUSTER = {
+    'name': 'admin-cluster',
+
+    'redis': {
+        'host': 'localhost',
+        'port': 6379,
+        'db': 0,
+        'password': None,
+        'socket_timeout': None,
+        'charset': 'utf-8',
+        'errors': 'strict',
+    }
 }
