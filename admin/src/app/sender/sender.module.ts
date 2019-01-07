@@ -8,6 +8,7 @@ import { MatButtonModule, MatCardModule, MatInputModule, MatTableModule } from "
 import { ReactiveFormsModule } from "@angular/forms";
 import { CookieService } from "ngx-cookie-service";
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { GmailContactFormComponent } from "./gmail-contact-form/gmail-contact-form.component";
 
 @NgModule({
     imports: [
@@ -25,7 +26,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     declarations: [
         ContactListComponent,
         ContactDetailsComponent,
-        ContactFormComponent
+        ContactFormComponent, GmailContactFormComponent
     ]
 })
 export class SenderModule { }

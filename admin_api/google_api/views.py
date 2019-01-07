@@ -1,5 +1,6 @@
 # Importations
-from django.shortcuts import redirect
+from django.shortcuts import render
+
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -14,7 +15,6 @@ def step1(request):
         'url': url,
     })
 
-@api_view(['GET'])
 def step2(request):
     OAuth.get_credentials(request.GET.get("code"), "")
-    return redirect("angular")
+    return render(request, "google_api/oauth_complete.html")

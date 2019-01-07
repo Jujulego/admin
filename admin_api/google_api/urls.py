@@ -6,7 +6,10 @@ from . import views
 
 # URLs
 urlpatterns = format_suffix_patterns([
-    # Contacts
+    # OAuth
     path('oauth/step1/', views.step1),
+
+]) + [ # Hors API
+    # OAuth
     path('oauth/step2/', views.step2),
-])
+]

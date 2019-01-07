@@ -11,16 +11,10 @@ import { SenderModule } from "./sender/sender.module";
 import { ContactsService } from "./sender/contacts.service";
 import { FormsModule } from "@angular/forms";
 import { MatButtonModule, MatCardModule, MatInputModule } from "@angular/material";
-import { HttpClientModule, HttpClientXsrfModule } from "@angular/common/http";
 
 @NgModule({
     imports: [
-        BrowserModule, BrowserAnimationsModule, FormsModule, HttpClientModule,
-        HttpClientXsrfModule.withOptions({
-            cookieName: 'csrftoken',
-            headerName: 'X-CSRFToken',
-        }),
-
+        BrowserModule, BrowserAnimationsModule, FormsModule,
         MatButtonModule, MatCardModule, MatInputModule,
 
         NavbarModule, SenderModule,

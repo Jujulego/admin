@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="121430f9-7bd6-4ccd-8db7-97a3a5a54c33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/admin_api/google_api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/google_api/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/sender/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/sender/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/app/sender/gmail-contact-form/gmail-contact-form.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/app/sender/gmail-contact-form/gmail-contact-form.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/app/sender/gmail-contact-form/gmail-contact-form.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/app/sender/gmail-contact-form/gmail-contact-form.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_api/google_api/templates/google_api/oauth_complete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/admin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/index/index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/index/index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/index/index.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/index/index.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/sender/contact-form/contact-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/sender/contact-form/contact-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/sender/contact-form/contact-form.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/sender/contact-form/contact-form.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/sender/contact-list/contact-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/sender/contact-list/contact-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/sender/contacts.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/sender/contacts.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/sender/sender.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/sender/sender.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_api/google_api/oauth.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/google_api/oauth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_api/google_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/google_api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_api/google_api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/google_api/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,13 +88,13 @@
           <entry key="google_api_gmailcontact" value="2" />
           <entry key="google_api_googleapi" value="4" />
           <entry key="google_api_maillog" value="5" />
-          <entry key="html" value="51" />
+          <entry key="html" value="59" />
           <entry key="ico" value="1" />
           <entry key="js" value="5" />
           <entry key="json" value="22" />
           <entry key="md" value="1" />
-          <entry key="py" value="144" />
-          <entry key="scss" value="50" />
+          <entry key="py" value="148" />
+          <entry key="scss" value="51" />
           <entry key="sender_contact" value="9" />
           <entry key="sender_contactmodel" value="1" />
           <entry key="sender_listeenvoi" value="1" />
@@ -87,7 +103,7 @@
           <entry key="sender_message" value="4" />
           <entry key="sender_message_clients" value="1" />
           <entry key="sender_sendqueue" value="1" />
-          <entry key="ts" value="147" />
+          <entry key="ts" value="153" />
           <entry key="txt" value="8" />
         </counts>
       </usages-collector>
@@ -95,16 +111,16 @@
         <counts>
           <entry key="CSS" value="2" />
           <entry key="Database Element" value="49" />
-          <entry key="HTML" value="51" />
+          <entry key="HTML" value="59" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="19" />
           <entry key="JavaScript" value="5" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="144" />
-          <entry key="SCSS" value="50" />
+          <entry key="Python" value="148" />
+          <entry key="SCSS" value="51" />
           <entry key="SQL" value="1" />
-          <entry key="TypeScript" value="147" />
+          <entry key="TypeScript" value="153" />
           <entry key="UML" value="3" />
           <entry key="tsconfig" value="3" />
         </counts>
@@ -115,37 +131,62 @@
           <entry key="cell" value="109" />
           <entry key="dummy" value="226" />
           <entry key="gitignore" value="29" />
-          <entry key="html" value="4967" />
+          <entry key="html" value="5137" />
           <entry key="json" value="250" />
-          <entry key="py" value="9188" />
+          <entry key="py" value="9319" />
           <entry key="scss" value="3664" />
           <entry key="sql" value="6" />
-          <entry key="ts" value="7767" />
+          <entry key="ts" value="8096" />
           <entry key="txt" value="400" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="4966" />
+          <entry key="HTML" value="5136" />
           <entry key="JSON" value="250" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="655" />
-          <entry key="Python" value="10482" />
+          <entry key="Python" value="10613" />
           <entry key="SCSS" value="3664" />
           <entry key="SQL" value="6" />
           <entry key="Scratch" value="109" />
-          <entry key="TypeScript" value="7767" />
+          <entry key="TypeScript" value="8096" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="12" />
+          <entry key="Angular2LanguageService" value="13" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_api/google_api/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding>
+                <element signature="e#15#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin_api/google_api/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#15#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -153,6 +194,7 @@
         <option value="TypeScript File" />
         <option value="SCSS File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -172,14 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/src/app/sender/contact-list/contact-list.component.scss" />
-        <option value="$PROJECT_DIR$/admin/src/app/sender/contact-form/contact-form.component.html" />
-        <option value="$PROJECT_DIR$/admin/src/app/sender/contact-list/contact-list.component.html" />
-        <option value="$PROJECT_DIR$/admin/src/app/sender/contact-form/contact-form.component.ts" />
-        <option value="$PROJECT_DIR$/admin/src/app/sender/contact-list/contact-list.component.ts" />
-        <option value="$PROJECT_DIR$/admin/src/app/sender/sender.module.ts" />
-        <option value="$PROJECT_DIR$/admin/src/app/sender/contact-details/contact-details.component.html" />
-        <option value="$PROJECT_DIR$/admin/src/app/sender/contacts.service.ts" />
         <option value="$PROJECT_DIR$/admin/src/app/sender/contact-details/contact-details.component.ts" />
         <option value="$PROJECT_DIR$/admin_api/google.py" />
         <option value="$PROJECT_DIR$/admin_api/google_api/fields.py" />
@@ -187,15 +221,10 @@
         <option value="$PROJECT_DIR$/admin_api/sender/views.py" />
         <option value="$PROJECT_DIR$/admin_api/gmail.py" />
         <option value="$PROJECT_DIR$/admin_api/google_api/gmail.py" />
-        <option value="$PROJECT_DIR$/admin_api/google_api/urls.py" />
         <option value="$PROJECT_DIR$/admin_api/credentials.json" />
-        <option value="$PROJECT_DIR$/admin/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/admin/src/app/index/index.component.ts" />
         <option value="$PROJECT_DIR$/admin_api/admin_api/urls.py" />
-        <option value="$PROJECT_DIR$/admin_api/google_api/views.py" />
         <option value="$PROJECT_DIR$/admin_api/google_api/serializer.py" />
         <option value="$PROJECT_DIR$/admin_api/google_api/serializers.py" />
-        <option value="$PROJECT_DIR$/admin/src/app/index/index.component.html" />
         <option value="$PROJECT_DIR$/admin_api/sender/migrations/0003_auto_20190107_0933.py" />
         <option value="$PROJECT_DIR$/admin_api/sender/migrations/0003_contact_compte_google.py" />
         <option value="$PROJECT_DIR$/admin_api/sender/migrations/0004_message.py" />
@@ -207,7 +236,6 @@
         <option value="$PROJECT_DIR$/admin_api/sender/migrations/0006_sendqueue.py" />
         <option value="$PROJECT_DIR$/admin_api/sender/migrations/0005_prepare_sendqueue.py" />
         <option value="$PROJECT_DIR$/admin_api/sender/migrations/0006_auto_20190107_1829.py" />
-        <option value="$PROJECT_DIR$/admin_api/google_api/oauth.py" />
         <option value="$PROJECT_DIR$/admin_api/sender/tasks.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/admin_api/admin_api/settings.py" />
@@ -223,6 +251,20 @@
         <option value="$PROJECT_DIR$/admin_api/sender/migrations/0003_listeenvoi_sendqueue.py" />
         <option value="$PROJECT_DIR$/admin_api/sender/admin.py" />
         <option value="$PROJECT_DIR$/admin_api/google_api/admin.py" />
+        <option value="$PROJECT_DIR$/admin/src/app/sender/gmail-contact-form/contact-form.component.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/sender/sender.module.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/sender/gmail-contact-form/gmail-contact-form.component.html" />
+        <option value="$PROJECT_DIR$/admin/src/app/sender/contact-form/contact-form.component.html" />
+        <option value="$PROJECT_DIR$/admin/src/app/sender/contact-list/contact-list.component.html" />
+        <option value="$PROJECT_DIR$/admin/src/app/sender/gmail-contact-form/gmail-contact-form.component.ts" />
+        <option value="$PROJECT_DIR$/admin_api/google_api/oauth.py" />
+        <option value="$PROJECT_DIR$/admin/src/app/sender/contacts.service.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/index/index.component.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/index/index.component.html" />
+        <option value="$PROJECT_DIR$/admin_api/google_api/views.py" />
+        <option value="$PROJECT_DIR$/admin_api/google_api/urls.py" />
+        <option value="$PROJECT_DIR$/admin_api/google_api/templates/google_api/oauth_complete.html" />
       </list>
     </option>
   </component>
@@ -290,6 +332,19 @@
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="admin_api" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_api" type="462c0819:PsiDirectoryNode" />
+              <item name="google_api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_api" type="462c0819:PsiDirectoryNode" />
+              <item name="google_api" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -298,6 +353,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/admin_api/admin_api/settings.py" />
@@ -323,8 +379,8 @@
       <recent name="C:\Users\julie\git\admin\admin\src\app\navbar\navbar-menu.ts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\julie\git\admin\admin_api\google_api" />
       <recent name="C:\Users\julie\git\admin\admin\src\app\sender" />
+      <recent name="C:\Users\julie\git\admin\admin_api\google_api" />
       <recent name="C:\Users\julie\git\admin\admin\src" />
       <recent name="C:\Users\julie\git\admin\admin\src\app" />
       <recent name="C:\Users\julie\git\admin\admin_api\templates" />
@@ -436,15 +492,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18791947" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23557048" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32907802" />
       <window_info anchor="bottom" id="TypeScript" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32765958" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.37588653" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.37588653" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -469,112 +526,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin_api/sender/migrations/0002_contact_email_unique.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/sender/migrations/0005_auto_20190107_0949.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/contrib/admin/options.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="109" column="4" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DjangoModelDependency/#admin">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DjangoModelDependency</ID>
-          <OriginalElement>#admin</OriginalElement>
-          <nodes>
-            <node x="" y="">google_api.models.CompteGoogle</node>
-            <node x="" y="">sender.models.Contact</node>
-            <node x="" y="">sender.models.Message</node>
-            <node x="" y="">sender.models.ListeEnvoi</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="118.5" y="133.0" />
-          <SelectedNodes />
-          <Categories />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/googleapiclient/errors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="69" column="76" selection-start-line="69" selection-start-column="63" selection-end-line="69" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/email/message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="136" column="8" selection-start-line="136" selection-start-column="8" selection-end-line="136" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/base64.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3afc65bf-c8ae-48da-b135-36ff7f4b8d45/schema/main/table/google_api_comptegoogle">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/sender/migrations/0003_contact_compte_google.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/sender/migrations/0004_message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/google_api/migrations/0004_abstractlog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/db/models/fields/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1598">
-          <caret line="1286" column="6" selection-start-line="1286" selection-start-column="6" selection-end-line="1286" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/sender/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/google_api/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin_api/google_api/migrations/0003_googleapi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -643,13 +594,6 @@
         <state relative-caret-position="-51" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/google_api/oauth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin_api/google_api/migrations/0006_auto_20190107_1859.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -691,13 +635,6 @@
           <folding>
             <element signature="e#49#89#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/admin_api/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -831,6 +768,138 @@
           <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/sender/contact-form/contact-form.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/sender/contact-list/contact-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/sender/sender.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/admin_api/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1213">
+          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/common/http/src/headers.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/google_api/oauth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1019">
+          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+          <folding>
+            <element signature="e#15#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/sender/gmail-contact-form/gmail-contact-form.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/sender/gmail-contact-form/gmail-contact-form.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/sender/contacts.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/index/index.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/index/index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/index/index.component.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/google_api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="e#15#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/google_api/templates/google_api/oauth_complete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/google_api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#15#43#0" expanded="true" />
           </folding>
         </state>
       </provider>

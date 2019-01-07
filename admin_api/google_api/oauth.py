@@ -28,7 +28,7 @@ class OAuth:
             return None
 
     @staticmethod
-    def store_credentials(user_id, email, credentials):
+    def store_credentials(user_id, user_name, email, credentials):
         # Get or create
         try:
             model = GmailContact.objects.get(user_id = str(user_id))
@@ -36,7 +36,7 @@ class OAuth:
             model = GmailContact(user_id = str(user_id))
 
         # Update
-        model.nom = email
+        model.nom = user_name
         model.email = email
         model.credentials = credentials
         model.save()
@@ -90,8 +90,9 @@ class OAuth:
             user_info = OAuth.get_user_info(credentials)
             email_address = user_info.get('email')
             user_id = user_info.get('id')
+            user_name = user_info.get('name')
             if credentials.refresh_token is not None:
-                OAuth.store_credentials(user_id, email_address, credentials)
+                OAuth.store_credentials(user_id, user_name, email_address, credentials)
                 return credentials
             else:
                 credentials = OAuth.get_stored_credentials(user_id)

@@ -1,35 +1,38 @@
 <section class="container-fluid">
     <article class="row">
         <!-- Contacts exitants -->
-        <mat-card id="data" class="col-md-8">
-            <mat-card-header>
-                <mat-card-title>Contacts :</mat-card-title>
-                <button mat-button type="button" (click)="onReload()">Rafraichir</button>
-            </mat-card-header>
-            <mat-card-content>
-                <table class="w-100 mat-elevation-z1" mat-table [dataSource]="contacts$">
-                    <!-- Nom -->
-                    <ng-container matColumnDef="nom">
-                        <th mat-header-cell *matHeaderCellDef> Nom </th>
-                        <td mat-cell *matCellDef="let c"><a [routerLink]="c.id"> {{ c.nom }} </a></td>
-                    </ng-container>
+        <div class="col-md-8">
+            <mat-card id="data">
+                <mat-card-header>
+                    <mat-card-title>Contacts :</mat-card-title>
+                    <button mat-button type="button" (click)="onReload()">Rafraichir</button>
+                </mat-card-header>
+                <mat-card-content>
+                    <table class="w-100 mat-elevation-z1" mat-table [dataSource]="contacts$">
+                        <!-- Nom -->
+                        <ng-container matColumnDef="nom">
+                            <th mat-header-cell *matHeaderCellDef> Nom </th>
+                            <td mat-cell *matCellDef="let c"><a [routerLink]="c.id"> {{ c.nom }} </a></td>
+                        </ng-container>
 
-                    <!-- Nom -->
-                    <ng-container matColumnDef="email">
-                        <th mat-header-cell *matHeaderCellDef> Email </th>
-                        <td mat-cell *matCellDef="let c"> {{ c.email }} </td>
-                    </ng-container>
+                        <!-- Nom -->
+                        <ng-container matColumnDef="email">
+                            <th mat-header-cell *matHeaderCellDef> Email </th>
+                            <td mat-cell *matCellDef="let c"> {{ c.email }} </td>
+                        </ng-container>
 
-                    <!-- Content -->
-                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-                </table>
-            </mat-card-content>
-        </mat-card>
+                        <!-- Content -->
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+                </mat-card-content>
+            </mat-card>
+        </div>
 
         <!-- Création de contacts -->
         <aside class="col-md-4">
-            <app-contact-form></app-contact-form>
+            <app-contact-form class="d-block mb-3"></app-contact-form>
+            <app-gmail-contact-form class="d-block"></app-gmail-contact-form>
         </aside>
     </article>
 </section>

@@ -1,19 +1,9 @@
 <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
     <mat-card>
         <mat-card-header>
-            <mat-card-title>Nouveau contact :</mat-card-title>
+            <mat-card-title>Nouveau contact Gmail :</mat-card-title>
         </mat-card-header>
         <mat-card-content class="container-fluid mb-0">
-            <div class="row mb-0">
-                <mat-form-field class="col">
-                    <input matInput name="nom" type="text" placeholder="Nom" required
-                           formControlName="nom" />
-
-                    <mat-error *ngIf="formGroup.controls['nom'].hasError('required')">
-                        Nom est <strong>requis</strong>
-                    </mat-error>
-                </mat-form-field>
-            </div>
             <div class="row mb-0">
                 <mat-form-field class="col">
                     <input matInput name="email" type="email" placeholder="Email" required
