@@ -30,10 +30,6 @@ class GmailContact(Contact):
     user_id = models.CharField(max_length=64, unique=True, db_index=True)
     credentials = CredentialsField()
 
-    # Méthodes spéciales
-    def __str__(self):
-        return "{} ({})".format(self.nom, self.user_id)
-
     # Méthodes
     def build_service(self):
         http = httplib2.Http()

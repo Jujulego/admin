@@ -77,5 +77,5 @@ class SendQueue(models.Model):
 
     # Méta
     class Meta:
-        verbose_name = "file d'envois"
-        verbose_name_plural = "file d'envois"
+        verbose_name = "file d'envoi"
+        verbose_name_plural = "file d'envoi"

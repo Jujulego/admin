@@ -1,5 +1,6 @@
 # Importations
 from django.contrib import admin
+from django.db.models import QuerySet
 
 from polymorphic.admin import PolymorphicParentModelAdmin, PolymorphicChildModelAdmin, PolymorphicChildModelFilter
 
@@ -34,6 +35,7 @@ class AdminListeEnvoi(admin.ModelAdmin):
 @admin.register(Message)
 class AdminMessage(admin.ModelAdmin):
     # Liste
+    actions = ("add_to_send_queue",)
     list_display = ("objet", "sender", "status")
 
     # Edition
@@ -48,6 +50,20 @@ class AdminMessage(admin.ModelAdmin):
 
     filter_horizontal = ("clients",)
     readonly_fields = ("status",)
+
+    # Actions
+    def add_to_send_queue(self, request, qs: QuerySet):
+        qs = qs.filter(status=Message.ATTENTE)
+
+        # Ajout à la queue
+        SendQueue.objects.bulk_create([
+            SendQueue(message=m) for m in qs
+        ])
+
+        # Marquage "envoi en cours"
+        qs.update(status=Message.ENVOI_EN_COURS)
+
+    add_to_send_queue.short_description = "Ajoute les message à la file d'envoi"
 
 @admin.register(SendQueue)
 class AdminSendQueue(admin.ModelAdmin):
