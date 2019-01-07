@@ -29,12 +29,16 @@ class OAuth:
 
     @staticmethod
     def store_credentials(email, user_id, credentials):
-        CompteGoogle.objects.get_or_create(user_id = str(user_id),
-            defaults = {
-                "nom": email,
-                "credentials": credentials
-            }
-        )
+        # Get or create
+        try:
+            model = CompteGoogle.objects.get(user_id = str(user_id))
+        except CompteGoogle.DoesNotExist:
+            model = CompteGoogle(user_id = str(user_id))
+
+        # Update
+        model.nom = email
+        model.credentials = credentials
+        model.save()
 
     @staticmethod
     def exchange_code(authorization_code):
