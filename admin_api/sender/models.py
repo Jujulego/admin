@@ -1,11 +1,13 @@
 # Importations
+from email.mime.text import MIMEText
+
 from django.contrib.auth.models import User
 from django.db import models
 
 # Create your models here.
 class Contact(models.Model):
     # Champs
-    nom = models.CharField(max_length=1024)
+    nom   = models.CharField(max_length=1024)
     email = models.EmailField(max_length=512, unique=True)
 
     google = models.ForeignKey('google_api.CompteGoogle', models.SET_NULL, null=True, blank=True)
@@ -13,11 +15,6 @@ class Contact(models.Model):
     # Méthodes spéciales
     def __str__(self):
         return self.nom
-
-    # Méthodes
-    def send_mail(self, message: 'Message', client: 'Contact'):
-        if self.google is not None:
-            self.google.send_mail(message, client)
 
 class ListeEnvoi(models.Model):
     # Champs
@@ -34,10 +31,18 @@ class ListeEnvoi(models.Model):
         return self.nom
 
 class Message(models.Model):
+    # Constantes
+    ATTENTE = 1; ENVOI_EN_COURS = 2; ENVOYE = 3
+    STATUS = (
+        (ATTENTE,        "Attente"),
+        (ENVOI_EN_COURS, "Envoi en cours"),
+        (ENVOYE,         "Envoyé")
+    )
+
     # Champs
     sender  = models.ForeignKey(Contact, models.CASCADE)
-    client  = models.ForeignKey(Contact, models.SET_NULL, null=True, blank=True, related_name="+")
-    clients = models.ForeignKey(ListeEnvoi, models.SET_NULL, null=True, blank=True)
+    clients = models.ManyToManyField(Contact, related_name='+')
+    status  = models.SmallIntegerField(choices=STATUS, default=ATTENTE)
 
     objet   = models.CharField(max_length=2048)
     message = models.TextField()
@@ -45,3 +50,20 @@ class Message(models.Model):
     # Méthodes spéciales
     def __str__(self):
         return "{}: {}".format(self.sender, self.objet)
+
+    # Méthodes
+    def to_mime_text(self):
+        mail = MIMEText(self.message)
+        mail['to'] = ', '.join(c.email for c in self.clients.all())
+        mail['from'] = self.sender.email
+        mail['subject'] = self.objet
+
+class SendQueue(models.Model):
+    # Champs
+    date    = models.DateTimeField(auto_now_add=True)
+    message = models.ForeignKey(Message, models.CASCADE, related_name='+')
+
+    # Méta
+    class Meta:
+        verbose_name = "file d'envois"
+        verbose_name_plural = "file d'envois"

@@ -19,14 +19,29 @@ class AdminListeEnvoi(admin.ModelAdmin):
 @admin.register(Message)
 class AdminMessage(admin.ModelAdmin):
     # Liste
-    list_display = ("objet", "sender")
+    list_display = ("objet", "sender", "status")
 
     # Edition
     fieldsets = (
         (None, {
-            "fields": ("sender", ("client", "clients"))
+            "fields": ("sender", "clients", "status")
         }),
         ("Message", {
             "fields": ("objet", "message")
         }),
     )
+
+    filter_horizontal = ("clients",)
+    readonly_fields = ("status",)
+
+@admin.register(SendQueue)
+class AdminSendQueue(admin.ModelAdmin):
+    # Liste
+    list_display = ("date", "message")
+
+    # Méthodes
+    def has_add_permission(self, request):
+        return False
+
+    def has_change_permission(self, request, obj=None):
+        return False
