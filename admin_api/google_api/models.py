@@ -12,6 +12,19 @@ from sender.models import Message, Contact
 from .fields import CredentialsField
 
 # Create your models here.
+class GoogleAPI(models.Model):
+    # Champs
+    nom = models.CharField(max_length=512, unique=True)
+    quota = models.BigIntegerField()
+
+    # Méta
+    class Meta:
+        verbose_name = "Google API"
+
+    # Méthodes spéciales
+    def __str__(self):
+        return self.nom
+
 class CompteGoogle(models.Model):
     # Champs
     user_id = models.CharField(primary_key=True, max_length=64)
@@ -38,22 +51,46 @@ class CompteGoogle(models.Model):
         return {'raw': base64.urlsafe_b64encode(mail.as_bytes()).decode()}
 
     def send_mail(self, message: Message, client: Contact):
+        api = GoogleAPI.objects.get(nom="GMail")
         service = self.build_service()
         mail = self.create_mail(message, client)
 
-        log = MailLog(message=message, client=client, sender=self)
+        log = MailLog(message=message, client=client, sender=self, api=api)
 
         try:
             mail = service.users().messages().send(userId=self.nom, body=mail).execute()
+
+            log.status = MailLog.SUCCES
             log.mail_id = mail['id']
 
         except errors.HttpError as error:
+            log.status = MailLog.ERREUR
             log.erreur = str(error)
 
         finally:
             log.save()
 
-class MailLog(models.Model):
+# - logs
+class AbstractLog(models.Model):
+    # Constantes
+    SUCCES = "S"
+    ERREUR = "E"
+
+    STATUS = (
+        (SUCCES, "Succès"),
+        (ERREUR, "Erreur"),
+    )
+
+    # Champs
+    api  = models.ForeignKey(GoogleAPI, models.CASCADE)
+    date = models.DateTimeField(auto_now_add=True)
+    status = models.CharField(max_length=2, choices=STATUS)
+
+    # Méta
+    class Meta:
+        abstract = True
+
+class MailLog(AbstractLog):
     # Champs
     message = models.ForeignKey(Message, models.CASCADE)
     client  = models.ForeignKey(Contact, models.CASCADE)
@@ -61,3 +98,7 @@ class MailLog(models.Model):
 
     mail_id = models.CharField(max_length=512, null=True)
     erreur  = models.TextField(null=True)
+
+    # Méthodes spéciales
+    def __str__(self):
+        return "MailLog ({})".format(self.date)

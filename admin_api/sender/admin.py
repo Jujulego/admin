@@ -20,3 +20,13 @@ class AdminListeEnvoi(admin.ModelAdmin):
 class AdminMessage(admin.ModelAdmin):
     # Liste
     list_display = ("objet", "sender")
+
+    # Edition
+    fieldsets = (
+        (None, {
+            "fields": ("sender", ("client", "clients"))
+        }),
+        ("Message", {
+            "fields": ("objet", "message")
+        }),
+    )
