@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="121430f9-7bd6-4ccd-8db7-97a3a5a54c33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/admin_api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/admin_api/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_api/google_api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/google_api/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/google_api/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/google_api/migrations/0002_maillog.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/google_api/migrations/0003_googleapi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/google_api/migrations/0004_abstractlog.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/google_api/migrations/0005_logstatus.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/google_api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/google_api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/google_api/oauth.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/google_api/oauth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/google_api/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/sender/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/sender/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/sender/migrations/0002_contact_email_unique.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/sender/migrations/0003_contact_compte_google.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/sender/migrations/0004_message.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/sender/migrations/0005_prepare_sendqueue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/sender/migrations/0006_sendqueue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/sender/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/sender/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_api/sender/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/sender/admin.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,13 +38,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="google_api_maillog: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -89,19 +65,19 @@
           <entry key="auth_user" value="1" />
           <entry key="browserslist" value="2" />
           <entry key="css" value="2" />
-          <entry key="django_content_type" value="2" />
+          <entry key="django_content_type" value="3" />
           <entry key="django_migrations" value="10" />
           <entry key="gitignore" value="4" />
           <entry key="google_api_comptegoogle" value="5" />
           <entry key="google_api_gmailcontact" value="2" />
-          <entry key="google_api_googleapi" value="3" />
+          <entry key="google_api_googleapi" value="4" />
           <entry key="google_api_maillog" value="5" />
           <entry key="html" value="51" />
           <entry key="ico" value="1" />
           <entry key="js" value="5" />
           <entry key="json" value="22" />
           <entry key="md" value="1" />
-          <entry key="py" value="142" />
+          <entry key="py" value="144" />
           <entry key="scss" value="50" />
           <entry key="sender_contact" value="9" />
           <entry key="sender_contactmodel" value="1" />
@@ -118,14 +94,14 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="Database Element" value="47" />
+          <entry key="Database Element" value="49" />
           <entry key="HTML" value="51" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="19" />
           <entry key="JavaScript" value="5" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="142" />
+          <entry key="Python" value="144" />
           <entry key="SCSS" value="50" />
           <entry key="SQL" value="1" />
           <entry key="TypeScript" value="147" />
@@ -136,12 +112,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Django Console" value="1294" />
-          <entry key="cell" value="104" />
-          <entry key="dummy" value="194" />
+          <entry key="cell" value="109" />
+          <entry key="dummy" value="226" />
           <entry key="gitignore" value="29" />
           <entry key="html" value="4967" />
           <entry key="json" value="250" />
-          <entry key="py" value="8985" />
+          <entry key="py" value="9188" />
           <entry key="scss" value="3664" />
           <entry key="sql" value="6" />
           <entry key="ts" value="7767" />
@@ -153,11 +129,11 @@
           <entry key="HTML" value="4966" />
           <entry key="JSON" value="250" />
           <entry key="JavaScript" value="1" />
-          <entry key="PLAIN_TEXT" value="623" />
-          <entry key="Python" value="10279" />
+          <entry key="PLAIN_TEXT" value="655" />
+          <entry key="Python" value="10482" />
           <entry key="SCSS" value="3664" />
           <entry key="SQL" value="6" />
-          <entry key="Scratch" value="104" />
+          <entry key="Scratch" value="109" />
           <entry key="TypeScript" value="7767" />
         </counts>
       </usages-collector>
@@ -169,40 +145,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_api/google_api/migrations/0002_gmailcontact.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_api/sender/migrations/0003_listeenvoi_sendqueue.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin_api/google_api/migrations/0003_maillog.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_api/sender/migrations/0002_message.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -229,7 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin_api/sender/urls.py" />
         <option value="$PROJECT_DIR$/admin/src/app/sender/contact-list/contact-list.component.scss" />
         <option value="$PROJECT_DIR$/admin/src/app/sender/contact-form/contact-form.component.html" />
         <option value="$PROJECT_DIR$/admin/src/app/sender/contact-list/contact-list.component.html" />
@@ -271,8 +213,6 @@
         <option value="$PROJECT_DIR$/admin_api/admin_api/settings.py" />
         <option value="$PROJECT_DIR$/admin_api/sender/migrations/0008_polymorphic_contact.py" />
         <option value="$PROJECT_DIR$/admin_api/sender/models.py" />
-        <option value="$PROJECT_DIR$/admin_api/sender/admin.py" />
-        <option value="$PROJECT_DIR$/admin_api/google_api/admin.py" />
         <option value="$PROJECT_DIR$/admin_api/google_api/models.py" />
         <option value="$PROJECT_DIR$/admin_api/google_api/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/admin_api/sender/migrations/0001_initial.py" />
@@ -280,6 +220,9 @@
         <option value="$PROJECT_DIR$/admin_api/google_api/migrations/0002_gmailcontact_maillog.py" />
         <option value="$PROJECT_DIR$/admin_api/google_api/migrations/0002_gmailcontact.py" />
         <option value="$PROJECT_DIR$/admin_api/google_api/migrations/0003_maillog.py" />
+        <option value="$PROJECT_DIR$/admin_api/sender/migrations/0003_listeenvoi_sendqueue.py" />
+        <option value="$PROJECT_DIR$/admin_api/sender/admin.py" />
+        <option value="$PROJECT_DIR$/admin_api/google_api/admin.py" />
       </list>
     </option>
   </component>
@@ -309,7 +252,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
+    <option name="x" value="-8" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
@@ -346,32 +289,6 @@
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="admin_api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_api" type="462c0819:PsiDirectoryNode" />
-              <item name="google_api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_api" type="462c0819:PsiDirectoryNode" />
-              <item name="google_api" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_api" type="462c0819:PsiDirectoryNode" />
-              <item name="sender" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_api" type="462c0819:PsiDirectoryNode" />
-              <item name="sender" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -519,9 +436,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23020135" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18791947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32907802" />
@@ -761,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://3afc65bf-c8ae-48da-b135-36ff7f4b8d45/schema/main/table/django_content_type">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://3afc65bf-c8ae-48da-b135-36ff7f4b8d45/schema/main/table/sender_contact">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -799,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://3afc65bf-c8ae-48da-b135-36ff7f4b8d45/schema/main/table/google_api_googleapi">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://3afc65bf-c8ae-48da-b135-36ff7f4b8d45/schema/main/table/google_api_maillog">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -833,31 +735,10 @@
     <entry file="file://$PROJECT_DIR$/admin_api/sender/views.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/sender/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#15#47#0" expanded="true" />
-            <marker date="1546887146861" expanded="true" signature="162:212" ph="..." />
-            <marker date="1546887146861" expanded="true" signature="889:894" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin_api/sender/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
           <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/google_api/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -889,13 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/sender/migrations/0002_message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin_api/google_api/migrations/0002_gmailcontact.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -903,13 +777,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/sender/migrations/0003_listeenvoi_sendqueue.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="das://3afc65bf-c8ae-48da-b135-36ff7f4b8d45/schema/main/table/django_content_type">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3afc65bf-c8ae-48da-b135-36ff7f4b8d45/schema/main/table/google_api_googleapi">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/sender/migrations/0003_sendqueue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin_api/google_api/migrations/0003_maillog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+        <state relative-caret-position="510">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/sender/migrations/0002_message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/sender/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-end-line="23" />
+          <folding>
+            <element signature="e#15#47#0" expanded="true" />
+            <marker date="1546888237914" expanded="true" signature="321:347" ph="..." />
+            <marker date="1546888237914" expanded="true" signature="529:629" ph="..." />
+            <marker date="1546888237914" expanded="true" signature="1306:1311" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/google_api/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

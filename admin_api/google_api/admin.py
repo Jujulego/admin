@@ -1,5 +1,7 @@
 from django.contrib import admin
 
+from sender.admin import ContactChildAdmin
+
 from .models import GmailContact, GoogleAPI, MailLog
 
 # Register your models here.
@@ -12,9 +14,13 @@ class AdminGoogleAPI(admin.ModelAdmin):
     readonly_fields = ("nom",)
 
 @admin.register(GmailContact)
-class AdminGmailContact(admin.ModelAdmin):
+class AdminGmailContact(ContactChildAdmin):
+    # Models
+    base_model = GmailContact
+    show_in_index = True
+
     # Liste
-    list_display = ("nom", "user_id")
+    list_display = ("nom", "email")
 
     # Edition
     exclude = ("credentials",)

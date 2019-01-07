@@ -1,12 +1,27 @@
 # Importations
 from django.contrib import admin
+
+from polymorphic.admin import PolymorphicParentModelAdmin, PolymorphicChildModelAdmin, PolymorphicChildModelFilter
+
+from google_api.models import GmailContact
+
 from .models import *
+
+# Polymorphic base
+class ContactChildAdmin(PolymorphicChildModelAdmin):
+    # Base model
+    base_model = Contact
 
 # Register your models here.
 @admin.register(Contact)
-class AdminContact(admin.ModelAdmin):
+class ContactParentAdmin(PolymorphicParentModelAdmin):
+    # Models
+    base_model = Contact
+    child_models = (GmailContact,)
+
     # Liste
     list_display = ("nom", "email")
+    list_filter  = (PolymorphicChildModelFilter,)
 
 @admin.register(ListeEnvoi)
 class AdminListeEnvoi(admin.ModelAdmin):
