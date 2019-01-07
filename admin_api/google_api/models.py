@@ -7,7 +7,7 @@ from django.db import models
 from apiclient import discovery, errors
 from email.mime.text import MIMEText
 
-from sender.models import Message, Contact
+from sender.models import Contact, Message
 
 from .fields import CredentialsField
 
@@ -25,12 +25,10 @@ class GoogleAPI(models.Model):
     def __str__(self):
         return self.nom
 
-class CompteGoogle(models.Model):
+class GmailContact(Contact):
     # Champs
-    user_id = models.CharField(primary_key=True, max_length=64)
+    user_id = models.CharField(max_length=64, unique=True, db_index=True)
     credentials = CredentialsField()
-
-    nom = models.CharField(max_length=1024)
 
     # Méthodes spéciales
     def __str__(self):
@@ -42,20 +40,15 @@ class CompteGoogle(models.Model):
         http = self.credentials.authorize(http)
         return discovery.build("gmail", "v1", http=http)
 
-    def create_mail(self, message: Message, client: Contact):
-        mail = MIMEText(message.message)
-        mail['to'] = client.email
-        mail['from'] = self.nom
-        mail['subject'] = message.objet
-
+    def prepare_mail(self, mail: MIMEText):
         return {'raw': base64.urlsafe_b64encode(mail.as_bytes()).decode()}
 
-    def send_mail(self, message: Message, client: Contact):
-        api = GoogleAPI.objects.get(nom="GMail")
+    def send_mail(self, mail: MIMEText, message: Message):
+        api     = GoogleAPI.objects.get(nom="gmail")
         service = self.build_service()
-        mail = self.create_mail(message, client)
+        mail    = self.prepare_mail(mail)
 
-        log = MailLog(message=message, client=client, sender=self, api=api)
+        log = MailLog(message=message, sender=self, api=api)
 
         try:
             mail = service.users().messages().send(userId=self.nom, body=mail).execute()
@@ -93,8 +86,7 @@ class AbstractLog(models.Model):
 class MailLog(AbstractLog):
     # Champs
     message = models.ForeignKey(Message, models.CASCADE)
-    client  = models.ForeignKey(Contact, models.CASCADE)
-    sender  = models.ForeignKey(CompteGoogle, models.CASCADE)
+    sender  = models.ForeignKey(GmailContact, models.CASCADE)
 
     mail_id = models.CharField(max_length=512, null=True)
     erreur  = models.TextField(null=True)

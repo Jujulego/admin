@@ -39,6 +39,7 @@ INSTALLED_APPS = [
 
     # Libraries
     'django_q',
+    'polymorphic',
     'rest_framework',
 
     # Applications

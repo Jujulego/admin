@@ -1,20 +1,23 @@
 # Importations
-from email.mime.text import MIMEText
-
 from django.contrib.auth.models import User
 from django.db import models
 
+from email.mime.text import MIMEText
+from polymorphic.models import PolymorphicModel
+
 # Create your models here.
-class Contact(models.Model):
+class Contact(PolymorphicModel):
     # Champs
     nom   = models.CharField(max_length=1024)
     email = models.EmailField(max_length=512, unique=True)
 
-    google = models.ForeignKey('google_api.CompteGoogle', models.SET_NULL, null=True, blank=True)
-
     # Méthodes spéciales
     def __str__(self):
         return self.nom
+
+    # Méthodes
+    def send_mail(self, mail: MIMEText, message: 'Message'):
+        pass
 
 class ListeEnvoi(models.Model):
     # Champs
@@ -52,11 +55,20 @@ class Message(models.Model):
         return "{}: {}".format(self.sender, self.objet)
 
     # Méthodes
-    def to_mime_text(self):
+    def to_mime_text(self) -> MIMEText:
         mail = MIMEText(self.message)
         mail['to'] = ', '.join(c.email for c in self.clients.all())
         mail['from'] = self.sender.email
         mail['subject'] = self.objet
+
+        return mail
+
+    def send(self):
+        self.sender.send_mail(self.to_mime_text(), self)
+
+        # Changement de status
+        self.status = Message.ENVOYE
+        self.save()
 
 class SendQueue(models.Model):
     # Champs

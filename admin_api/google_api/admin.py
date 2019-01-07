@@ -1,10 +1,18 @@
 from django.contrib import admin
 
-from .models import CompteGoogle, GoogleAPI, MailLog
+from .models import GmailContact, GoogleAPI, MailLog
 
 # Register your models here.
-@admin.register(CompteGoogle)
-class AdminCompteGoogle(admin.ModelAdmin):
+@admin.register(GoogleAPI)
+class AdminGoogleAPI(admin.ModelAdmin):
+    # Liste
+    list_display = ("nom", "quota")
+
+    # Edition
+    readonly_fields = ("nom",)
+
+@admin.register(GmailContact)
+class AdminGmailContact(admin.ModelAdmin):
     # Liste
     list_display = ("nom", "user_id")
 
@@ -16,14 +24,6 @@ class AdminCompteGoogle(admin.ModelAdmin):
     def has_add_permission(self, request):
         return False
 
-@admin.register(GoogleAPI)
-class AdminGoogleAPI(admin.ModelAdmin):
-    # Liste
-    list_display = ("nom", "quota")
-
-    # Edition
-    readonly_fields = ("nom",)
-
 @admin.register(MailLog)
 class AdminMailLog(admin.ModelAdmin):
     # Liste
@@ -34,7 +34,7 @@ class AdminMailLog(admin.ModelAdmin):
     # Edition
     fieldsets = (
         (None, {
-            "fields": (("sender", "client"), "message")
+            "fields": ("sender", "message")
         }),
         ("Resultat", {
             "classes": ("collapse",),
@@ -42,8 +42,9 @@ class AdminMailLog(admin.ModelAdmin):
         }),
     )
 
-    readonly_fields = ("api", "date", "mail_id", "erreur", "message", "client", "sender", "status")
-
     # Méthodes
     def has_add_permission(self, request):
+        return False
+
+    def has_change_permission(self, request, obj=None):
         return False

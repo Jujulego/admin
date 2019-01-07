@@ -9,7 +9,7 @@ from oauth2client.client import flow_from_clientsecrets
 from oauth2client.client import FlowExchangeError
 
 from .exceptions import *
-from .models import CompteGoogle
+from .models import GmailContact
 
 # Classe
 class OAuth:
@@ -22,21 +22,22 @@ class OAuth:
     @staticmethod
     def get_stored_credentials(user_id):
         try:
-            return CompteGoogle.objects.get(user_id=user_id).credentials
+            return GmailContact.objects.get(user_id=user_id).credentials
 
-        except CompteGoogle.DoesNotExist:
+        except GmailContact.DoesNotExist:
             return None
 
     @staticmethod
-    def store_credentials(email, user_id, credentials):
+    def store_credentials(user_id, email, credentials):
         # Get or create
         try:
-            model = CompteGoogle.objects.get(user_id = str(user_id))
-        except CompteGoogle.DoesNotExist:
-            model = CompteGoogle(user_id = str(user_id))
+            model = GmailContact.objects.get(user_id = str(user_id))
+        except GmailContact.DoesNotExist:
+            model = GmailContact(user_id = str(user_id))
 
         # Update
         model.nom = email
+        model.email = email
         model.credentials = credentials
         model.save()
 
@@ -90,7 +91,7 @@ class OAuth:
             email_address = user_info.get('email')
             user_id = user_info.get('id')
             if credentials.refresh_token is not None:
-                OAuth.store_credentials(email_address, user_id, credentials)
+                OAuth.store_credentials(user_id, email_address, credentials)
                 return credentials
             else:
                 credentials = OAuth.get_stored_credentials(user_id)
