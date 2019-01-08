@@ -1,10 +1,13 @@
 # Importations
 import logging
+from datetime import timedelta
+
 import httplib2
 
 from django.conf import settings
 
 from apiclient import errors, discovery
+from django.utils import timezone
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.client import FlowExchangeError
 
@@ -33,7 +36,12 @@ class OAuth:
         try:
             model = GmailContact.objects.get(user_id = str(user_id))
         except GmailContact.DoesNotExist:
-            model = GmailContact(user_id = str(user_id))
+            model = GmailContact(user_id = str(user_id),
+                quota=25000,
+                per_query_quota=100,
+                last_reset=timezone.now(),
+                reset_delta=timedelta(seconds=100)
+            )
 
         # Update
         model.nom = user_name

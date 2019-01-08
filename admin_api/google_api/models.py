@@ -7,6 +7,7 @@ from django.db import models
 from apiclient import discovery, errors
 from email.mime.text import MIMEText
 
+from google_api.exceptions import OutOfQuota
 from sender.models import Contact, Message
 
 from .fields import CredentialsField
@@ -15,7 +16,9 @@ from .fields import CredentialsField
 class GoogleAPI(models.Model):
     # Champs
     nom = models.CharField(max_length=512, unique=True)
+
     quota = models.BigIntegerField()
+    limite = models.BigIntegerField() # Limite max d'utilisation
 
     # Méta
     class Meta:
@@ -24,6 +27,16 @@ class GoogleAPI(models.Model):
     # Méthodes spéciales
     def __str__(self):
         return self.nom
+
+    # Méthodes
+    def assert_quota(self):
+        self.refresh_from_db()
+        if self.quota >= self.limite:
+            raise OutOfQuota(self)
+
+    def use_quota(self, pts):
+        self.quota += pts
+        self.save()
 
 class GmailContact(Contact):
     # Champs
@@ -39,8 +52,12 @@ class GmailContact(Contact):
     def prepare_mail(self, mail: MIMEText):
         return {'raw': base64.urlsafe_b64encode(mail.as_bytes()).decode()}
 
-    def send_mail(self, mail: MIMEText, message: Message):
-        api     = GoogleAPI.objects.get(nom="gmail")
+    def _send_mail(self, mail: MIMEText, message: Message):
+        # Check quota !
+        api = GoogleAPI.objects.get(nom="gmail")
+        api.assert_quota()
+
+        # Prepare sending
         service = self.build_service()
         mail    = self.prepare_mail(mail)
 
@@ -48,6 +65,9 @@ class GmailContact(Contact):
 
         try:
             mail = service.users().messages().send(userId=self.nom, body=mail).execute()
+
+            # Log & update quota
+            api.use_quota(100)
 
             log.status = MailLog.SUCCES
             log.mail_id = mail['id']
@@ -62,9 +82,7 @@ class GmailContact(Contact):
 # - logs
 class AbstractLog(models.Model):
     # Constantes
-    SUCCES = "S"
-    ERREUR = "E"
-
+    SUCCES = "S"; ERREUR = "E"
     STATUS = (
         (SUCCES, "Succès"),
         (ERREUR, "Erreur"),

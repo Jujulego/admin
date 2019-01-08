@@ -3,6 +3,8 @@ from django.contrib.auth.models import User
 from django.db import models
 
 from email.mime.text import MIMEText
+
+from django.utils import timezone
 from polymorphic.models import PolymorphicModel
 
 # Create your models here.
@@ -11,13 +13,41 @@ class Contact(PolymorphicModel):
     nom   = models.CharField(max_length=1024)
     email = models.EmailField(max_length=512, unique=True)
 
+    quota = models.IntegerField(default=-1, help_text="si < 0 alors le quota est inifini")
+    max_quota = models.IntegerField(default=-1)
+    per_query_quota = models.IntegerField(default=0)
+    last_reset = models.DateTimeField(null=True)
+    reset_delta = models.DurationField(null=True)
+
     # Méthodes spéciales
     def __str__(self):
         return self.nom
 
     # Méthodes
+    def has_quota(self):
+        self.refresh_from_db()
+        return self.quota < 0 or self.quota >= self.per_query_quota
+
+    def use_quota(self):
+        if self.quota != -1:
+            self.quota -= self.per_query_quota
+            self.save()
+
+    def reset_quota(self):
+        self.refresh_from_db()
+        if timezone.now() > self.last_reset + self.reset_delta:
+            self.quota = self.max_quota
+            self.last_reset = timezone.now()
+
+            self.save()
+
     def send_mail(self, mail: MIMEText, message: 'Message'):
-        pass
+        if self.has_quota():
+            self._send_mail(mail, message)
+            self.use_quota()
+
+    def _send_mail(self, mail: MIMEText, message: 'Message'):
+        print("Send mail {}".format(mail["subject"]))
 
 class ListeEnvoi(models.Model):
     # Champs

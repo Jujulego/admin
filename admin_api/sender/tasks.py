@@ -7,6 +7,12 @@ def sender():
     if SendQueue.objects.count() == 0: return
 
     # Envoi du plus vieux !
-    sq = SendQueue.objects.order_by("-date").first()
-    sq.message.send()
-    sq.delete()
+    queryset = SendQueue.objects.order_by("date")
+
+    for sq in queryset:
+        msg = sq.message
+
+        msg.sender.reset_quota()
+        if msg.sender.has_quota():
+            msg.send()
+            sq.delete()

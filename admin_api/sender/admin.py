@@ -13,16 +13,36 @@ class ContactChildAdmin(PolymorphicChildModelAdmin):
     # Base model
     base_model = Contact
 
+    # Edition
+    fieldsets = (
+        (None, {
+            "fields": ("nom", "email")
+        }),
+        ("Quota", {
+            "fields": (("quota", "per_query_quota", "max_quota"), ("last_reset", "reset_delta"))
+        }),
+    )
+
 # Register your models here.
 @admin.register(Contact)
 class ContactParentAdmin(PolymorphicParentModelAdmin):
     # Models
     base_model = Contact
-    child_models = (GmailContact,)
+    child_models = (Contact, GmailContact)
 
     # Liste
     list_display = ("nom", "email")
     list_filter  = (PolymorphicChildModelFilter,)
+
+    # Edition
+    fieldsets = (
+        (None, {
+            "fields": ("nom", "email")
+        }),
+        ("Quota", {
+            "fields": (("quota", "per_query_quota", "max_quota"), ("last_reset", "reset_delta"))
+        }),
+    )
 
 @admin.register(ListeEnvoi)
 class AdminListeEnvoi(admin.ModelAdmin):
