@@ -38,6 +38,7 @@ class OAuth:
         except GmailContact.DoesNotExist:
             model = GmailContact(user_id = str(user_id),
                 quota=25000,
+                max_quota=25000,
                 per_query_quota=100,
                 last_reset=timezone.now(),
                 reset_delta=timedelta(seconds=100)

@@ -10,9 +10,6 @@ class AdminGoogleAPI(admin.ModelAdmin):
     # Liste
     list_display = ("nom", "quota")
 
-    # Edition
-    readonly_fields = ("nom",)
-
 @admin.register(GmailContact)
 class AdminGmailContact(ContactChildAdmin):
     # Models

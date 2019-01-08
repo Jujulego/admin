@@ -64,7 +64,7 @@ class GmailContact(Contact):
         log = MailLog(message=message, sender=self, api=api)
 
         try:
-            mail = service.users().messages().send(userId=self.nom, body=mail).execute()
+            mail = service.users().messages().send(userId=self.email, body=mail).execute()
 
             # Log & update quota
             api.use_quota(100)

@@ -13,11 +13,11 @@ class Contact(PolymorphicModel):
     nom   = models.CharField(max_length=1024)
     email = models.EmailField(max_length=512, unique=True)
 
-    quota = models.IntegerField(default=-1, help_text="si < 0 alors le quota est inifini")
+    quota = models.IntegerField(default=-1, help_text="valeur inférieure 0 pour quota infini")
     max_quota = models.IntegerField(default=-1)
     per_query_quota = models.IntegerField(default=0)
-    last_reset = models.DateTimeField(null=True)
-    reset_delta = models.DurationField(null=True)
+    last_reset = models.DateTimeField(null=True, blank=True)
+    reset_delta = models.DurationField(null=True, blank=True)
 
     # Méthodes spéciales
     def __str__(self):
