@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # Applications
+    'emperor',
     'google_api',
     'sender',
 ]

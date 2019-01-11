@@ -6,12 +6,12 @@ from .models import GmailContact, GoogleAPI, MailLog
 
 # Register your models here.
 @admin.register(GoogleAPI)
-class AdminGoogleAPI(admin.ModelAdmin):
+class GoogleAPIAdmin(admin.ModelAdmin):
     # Liste
     list_display = ("nom", "quota")
 
 @admin.register(GmailContact)
-class AdminGmailContact(ContactChildAdmin):
+class GmailContactAdmin(ContactChildAdmin):
     # Models
     base_model = GmailContact
     show_in_index = True
@@ -28,7 +28,7 @@ class AdminGmailContact(ContactChildAdmin):
         return False
 
 @admin.register(MailLog)
-class AdminMailLog(admin.ModelAdmin):
+class MailLogAdmin(admin.ModelAdmin):
     # Liste
     date_hierarchy = "date"
     list_filter = ("status",)
