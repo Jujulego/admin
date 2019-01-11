@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # Applications
+    'auth_api',
     'emperor',
     'google_api',
     'sender',
@@ -121,6 +122,17 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(PROJECT_DIR, "dist"),
 ]
+
+# REST Framework
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    )
+}
 
 # Google API
 GOOGLE_API = {

@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path, re_path
+from django.views.decorators.csrf import ensure_csrf_cookie
 from django.views.generic.base import TemplateView
 
 urlpatterns = [
@@ -22,9 +23,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # API
+    path('api/auth/',   include('auth_api.urls')),
     path('api/google/', include('google_api.urls')),
     path('api/sender/', include('sender.urls')),
 
     # Application Angular !
-    re_path(r'.*', TemplateView.as_view(template_name="index.html"), name="angular")
+    re_path(r'.*', ensure_csrf_cookie(TemplateView.as_view(template_name="index.html")), name="angular")
 ]

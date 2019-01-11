@@ -1,3 +1,9 @@
-<app-navbar-layout brand="Admin" brandLink="/" [items]="navbarItems">
+<app-navbar-layout
+        *ngIf="isAuthenticated | async; else unauth"
+        brand="Admin" brandLink="/" [items]="navbarItems">
     <router-outlet></router-outlet>
 </app-navbar-layout>
+
+<ng-template #unauth>
+    <router-outlet></router-outlet>
+</ng-template>

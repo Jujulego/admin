@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Breakpoints } from "./breakpoints.enum";
 import { NavbarItem } from "./navbar/navbar-item";
 import { NavbarMenu } from "./navbar/navbar-menu";
+import { AuthService } from "./auth.service";
+import { Observable } from "rxjs";
 
 @Component({
     selector: 'app-root',
@@ -19,4 +21,12 @@ export class AppComponent {
     ];
 
     public Breakpoints = Breakpoints;
+
+    // Constructeur
+    constructor(private auth: AuthService) {}
+
+    // Propriétés
+    get isAuthenticated(): Observable<boolean> {
+        return this.auth.isAuthenticated
+    }
 }
