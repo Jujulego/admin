@@ -22,3 +22,7 @@ class Vassal(models.Model):
     # Meta
     class Meta:
         verbose_name_plural = "vassaux"
+
+    # Méthodes spéciales
+    def __str__(self):
+        return self.nom.capitalize()
