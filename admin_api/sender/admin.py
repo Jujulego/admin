@@ -25,6 +25,10 @@ class ContactChildAdmin(PolymorphicChildModelAdmin):
         }),
     )
 
+class MessageChildAdmin(PolymorphicChildModelAdmin):
+    # Base model
+    base_model = Message
+
 # Register your models here.
 @admin.register(Contact)
 class ContactParentAdmin(PolymorphicParentModelAdmin):
@@ -55,23 +59,16 @@ class AdminListeEnvoi(admin.ModelAdmin):
     filter_horizontal = ("contacts",)
 
 @admin.register(Message)
-class AdminMessage(admin.ModelAdmin, AdminUtilsMixin):
+class AdminMessage(PolymorphicParentModelAdmin, AdminUtilsMixin):
+    # Models
+    base_model = Message
+    child_models = (Mail,)
+
     # Liste
     actions = ("add_to_send_queue",)
+
     list_display = ("objet", "sender", "status")
-
-    # Edition
-    fieldsets = (
-        (None, {
-            "fields": ("sender", "clients", "status")
-        }),
-        ("Message", {
-            "fields": ("objet", "message")
-        }),
-    )
-
-    filter_horizontal = ("clients",)
-    readonly_fields = ("status",)
+    list_filter  = (PolymorphicChildModelFilter,)
 
     # Actions
     def add_to_send_queue(self, request, qs: QuerySet):
@@ -93,6 +90,24 @@ class AdminMessage(admin.ModelAdmin, AdminUtilsMixin):
             messages.info(request, "Envoi de {} messages".format(qs.count()))
 
     add_to_send_queue.short_description = "Ajoute le(s) message(s) à la file d'envoi"
+
+@admin.register(Mail)
+class MailAdmin(MessageChildAdmin):
+    # Model
+    base_model = Mail
+
+    # Edition
+    fieldsets = (
+        (None, {
+            "fields": ("sender", "clients", "status")
+        }),
+        ("Message", {
+            "fields": ("objet", "message")
+        }),
+    )
+
+    filter_horizontal = ("clients",)
+    readonly_fields = ("status",)
 
 @admin.register(SendQueue)
 class AdminSendQueue(admin.ModelAdmin):

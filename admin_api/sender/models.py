@@ -63,7 +63,7 @@ class ListeEnvoi(models.Model):
     def __str__(self):
         return self.nom
 
-class Message(models.Model):
+class Message(PolymorphicModel):
     # Constantes
     ATTENTE = 1; ENVOI_EN_COURS = 2; ENVOYE = 3
     STATUS = (
@@ -73,9 +73,8 @@ class Message(models.Model):
     )
 
     # Champs
-    sender  = models.ForeignKey(Contact, models.CASCADE)
-    clients = models.ManyToManyField(Contact, related_name='+')
-    status  = models.SmallIntegerField(choices=STATUS, default=ATTENTE)
+    sender = models.ForeignKey(Contact, models.CASCADE)
+    status = models.SmallIntegerField(choices=STATUS, default=ATTENTE)
 
     objet   = models.CharField(max_length=2048)
     message = models.TextField()
@@ -87,7 +86,6 @@ class Message(models.Model):
     # Méthodes
     def to_mime_text(self) -> MIMEText:
         mail = MIMEText(self.message)
-        mail['to'] = ', '.join(c.email for c in self.clients.all())
         mail['from'] = self.sender.email
         mail['subject'] = self.objet
 
@@ -99,6 +97,17 @@ class Message(models.Model):
         # Changement de status
         self.status = Message.ENVOYE
         self.save()
+
+class Mail(Message):
+    # Champs
+    clients = models.ManyToManyField(Contact, related_name='+')
+
+    # Méthodes
+    def to_mime_text(self):
+        mail = super(Mail, self).to_mime_text()
+        mail['to'] = ', '.join(c.email for c in self.clients.all())
+
+        return mail
 
 class SendQueue(models.Model):
     # Champs
