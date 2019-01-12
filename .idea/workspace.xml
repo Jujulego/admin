@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="121430f9-7bd6-4ccd-8db7-97a3a5a54c33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin_api/google_api/migrations/0005_googleapi_quota_default.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_api/sender/migrations/0008_polymorphic_message.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_api/sender/migrations/0009_mail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_api/sender/migrations/0010_template.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_api/sender/migrations/0011_polymorphic_sendqueue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_api/sender/migrations/0012_sendqueuetemplate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_api/sender/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/sender/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_api/sender/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/sender/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_api/sender/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/sender/tasks.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +70,7 @@
           <entry key="auth_user" value="1" />
           <entry key="browserslist" value="2" />
           <entry key="css" value="2" />
-          <entry key="django_content_type" value="4" />
+          <entry key="django_content_type" value="5" />
           <entry key="django_migrations" value="11" />
           <entry key="emperor_vassal" value="3" />
           <entry key="gitignore" value="4" />
@@ -82,18 +83,21 @@
           <entry key="js" value="5" />
           <entry key="json" value="23" />
           <entry key="md" value="1" />
-          <entry key="py" value="231" />
+          <entry key="py" value="239" />
           <entry key="scss" value="71" />
-          <entry key="sender_contact" value="11" />
+          <entry key="sender_contact" value="12" />
           <entry key="sender_contactmodel" value="1" />
           <entry key="sender_listeenvoi" value="1" />
           <entry key="sender_listeenvoi_contacts" value="2" />
           <entry key="sender_listeenvoimodel_contacts_contactmodel_id_80a04e88" value="1" />
           <entry key="sender_mail" value="1" />
           <entry key="sender_mail_clients" value="1" />
-          <entry key="sender_message" value="5" />
+          <entry key="sender_message" value="7" />
           <entry key="sender_message_clients" value="1" />
-          <entry key="sender_sendqueue" value="1" />
+          <entry key="sender_sendqueue" value="2" />
+          <entry key="sender_sendqueuetemplate" value="1" />
+          <entry key="sender_sendqueuetemplate_clients" value="2" />
+          <entry key="sender_template" value="1" />
           <entry key="sql" value="1" />
           <entry key="ts" value="181" />
           <entry key="txt" value="10" />
@@ -102,14 +106,14 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="Database Element" value="61" />
+          <entry key="Database Element" value="70" />
           <entry key="HTML" value="65" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="20" />
           <entry key="JavaScript" value="5" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="231" />
+          <entry key="Python" value="239" />
           <entry key="SCSS" value="71" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="1" />
@@ -120,13 +124,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Django Console" value="1623" />
-          <entry key="cell" value="109" />
-          <entry key="dummy" value="329" />
+          <entry key="Django Console" value="1739" />
+          <entry key="cell" value="111" />
+          <entry key="dummy" value="348" />
           <entry key="gitignore" value="29" />
           <entry key="html" value="5807" />
           <entry key="json" value="250" />
-          <entry key="py" value="14807" />
+          <entry key="py" value="16088" />
           <entry key="scss" value="4247" />
           <entry key="sql" value="44" />
           <entry key="ts" value="9711" />
@@ -138,11 +142,11 @@
           <entry key="HTML" value="5806" />
           <entry key="JSON" value="250" />
           <entry key="JavaScript" value="1" />
-          <entry key="PLAIN_TEXT" value="820" />
-          <entry key="Python" value="16430" />
+          <entry key="PLAIN_TEXT" value="839" />
+          <entry key="Python" value="17827" />
           <entry key="SCSS" value="4247" />
           <entry key="SQL" value="44" />
-          <entry key="Scratch" value="109" />
+          <entry key="Scratch" value="111" />
           <entry key="TypeScript" value="9711" />
         </counts>
       </usages-collector>
@@ -155,28 +159,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin_api/sender/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1054">
-              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="351">
+              <caret line="171" column="33" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="33" />
               <folding>
-                <marker date="1547317224109" expanded="true" signature="2831:2836" ph="..." />
-                <marker date="1547317224109" expanded="true" signature="2831:3091" ph="..." />
+                <marker date="1547331074917" expanded="true" signature="2745:2796" ph="..." />
+                <marker date="1547331074917" expanded="true" signature="3157:3162" ph="..." />
+                <marker date="1547331074917" expanded="true" signature="5530:5536" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin_api/sender/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="380">
+              <caret line="84" column="17" lean-forward="true" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
               <folding>
-                <marker date="1547318180761" expanded="true" signature="2526:2531" ph="..." />
-                <marker date="1547318180761" expanded="true" signature="2526:2833" ph="..." />
+                <marker date="1547330753946" expanded="true" signature="2654:2659" ph="..." />
+                <marker date="1547330753946" expanded="true" signature="2654:3335" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://26b6be39-5d85-4772-8bdb-73fbdaf40764/schema/main/table/sender_sendqueuetemplate_clients">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/polymorphic/query.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="463" column="21" lean-forward="true" selection-start-line="463" selection-start-column="21" selection-end-line="463" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/db/models/query.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="182" column="28" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_api/sender/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -209,10 +250,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin_api/google_api/templates/google_api/oauth_complete.html" />
         <option value="$PROJECT_DIR$/admin_api/google_api/exceptions.py" />
         <option value="$PROJECT_DIR$/admin_api/google_api/api.py" />
-        <option value="$PROJECT_DIR$/admin_api/sender/tasks.py" />
         <option value="$PROJECT_DIR$/admin_api/google_api/oauth.py" />
         <option value="$PROJECT_DIR$/admin/src/environments/environment.ts" />
         <option value="$PROJECT_DIR$/admin/src/environments/environment.prod.ts" />
@@ -258,8 +297,10 @@
         <option value="$PROJECT_DIR$/admin_api/google_api/admin.py" />
         <option value="$PROJECT_DIR$/admin_api/sender/migrations/0008_polymorphic_message.py" />
         <option value="$PROJECT_DIR$/admin_api/sender/migrations/0009_mail.py" />
-        <option value="$PROJECT_DIR$/admin_api/sender/models.py" />
+        <option value="$PROJECT_DIR$/admin_api/sender/migrations/0011_polymorphic_sendqueue.py" />
+        <option value="$PROJECT_DIR$/admin_api/sender/tasks.py" />
         <option value="$PROJECT_DIR$/admin_api/sender/admin.py" />
+        <option value="$PROJECT_DIR$/admin_api/sender/models.py" />
       </list>
     </option>
   </component>
@@ -331,20 +372,7 @@
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="admin_api" type="462c0819:PsiDirectoryNode" />
-              <item name="google_api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_api" type="462c0819:PsiDirectoryNode" />
               <item name="sender" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_api" type="462c0819:PsiDirectoryNode" />
-              <item name="sender" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -494,6 +522,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23959732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -512,7 +541,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32765958" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.44680852" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="14" visible="true" weight="0.67659575" />
+      <window_info anchor="bottom" id="Python Console" order="14" weight="0.67659575" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -552,58 +581,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/admin_api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/rest_framework/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="112" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/rest_framework/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="94" column="6" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/contrib/auth/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/contrib/auth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="89" column="14" lean-forward="true" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/rxjs/src/internal/Observable.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4195">
-          <caret line="71" column="2" selection-start-line="71" selection-start-column="2" selection-end-line="71" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/app/app.component.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -713,13 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/db/models/query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="679" column="8" selection-start-line="679" selection-start-column="8" selection-end-line="679" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin_api/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -757,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/sender/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django_q/humanhash.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -788,16 +751,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin_api/sender/migrations/0007_auto_20190109_1117.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/sender/migrations/0008_polymorphic_message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-          <folding>
-            <element signature="e#49#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin_api/google_api/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -936,17 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_api/sender/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1054">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <marker date="1547317224109" expanded="true" signature="2831:2836" ph="..." />
-            <marker date="1547317224109" expanded="true" signature="2831:3091" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin_api/google_api/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68">
@@ -978,6 +920,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/sender/migrations/0008_polymorphic_message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+          <folding>
+            <element signature="e#49#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/sender/migrations/0011_polymorphic_sendqueue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/sender/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://26b6be39-5d85-4772-8bdb-73fbdaf40764/schema/main/table/sender_sendqueue">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://26b6be39-5d85-4772-8bdb-73fbdaf40764/schema/main/table/sender_sendqueuetemplate">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/db/models/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="182" column="28" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://26b6be39-5d85-4772-8bdb-73fbdaf40764/schema/main/table/django_content_type">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/polymorphic/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="463" column="21" lean-forward="true" selection-start-line="463" selection-start-column="21" selection-end-line="463" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://26b6be39-5d85-4772-8bdb-73fbdaf40764/schema/main/table/sender_message">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -987,11 +988,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin_api/sender/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="380">
+          <caret line="84" column="17" lean-forward="true" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
           <folding>
-            <marker date="1547318180761" expanded="true" signature="2526:2531" ph="..." />
-            <marker date="1547318180761" expanded="true" signature="2526:2833" ph="..." />
+            <marker date="1547330753946" expanded="true" signature="2654:2659" ph="..." />
+            <marker date="1547330753946" expanded="true" signature="2654:3335" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://26b6be39-5d85-4772-8bdb-73fbdaf40764/schema/main/table/sender_contact">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://26b6be39-5d85-4772-8bdb-73fbdaf40764/schema/main/table/sender_template">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://26b6be39-5d85-4772-8bdb-73fbdaf40764/schema/main/table/sender_sendqueuetemplate_clients">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/sender/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="171" column="33" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="33" />
+          <folding>
+            <marker date="1547331074917" expanded="true" signature="2745:2796" ph="..." />
+            <marker date="1547331074917" expanded="true" signature="3157:3162" ph="..." />
+            <marker date="1547331074917" expanded="true" signature="5530:5536" ph="..." />
           </folding>
         </state>
       </provider>

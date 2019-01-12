@@ -4,6 +4,7 @@ from django.db.models import QuerySet
 from django.utils.html import format_html
 
 from polymorphic.admin import PolymorphicParentModelAdmin, PolymorphicChildModelAdmin, PolymorphicChildModelFilter
+from polymorphic.query import PolymorphicQuerySet
 
 from google_api.models import GmailContact
 from utils import AdminUtilsMixin
@@ -62,7 +63,7 @@ class AdminListeEnvoi(admin.ModelAdmin):
 class AdminMessage(PolymorphicParentModelAdmin, AdminUtilsMixin):
     # Models
     base_model = Message
-    child_models = (Mail,)
+    child_models = (Mail, Template)
 
     # Liste
     actions = ("add_to_send_queue",)
@@ -71,13 +72,12 @@ class AdminMessage(PolymorphicParentModelAdmin, AdminUtilsMixin):
     list_filter  = (PolymorphicChildModelFilter,)
 
     # Actions
-    def add_to_send_queue(self, request, qs: QuerySet):
+    def add_to_send_queue(self, request, qs: PolymorphicQuerySet):
         qs = qs.filter(status=Message.ATTENTE)
 
         # Ajout à la queue
-        SendQueue.objects.bulk_create([
-            SendQueue(message=m) for m in qs
-        ])
+        sq_items = [m.create_send_queue() for m in qs.get_real_instances()]
+        SendQueue.objects.bulk_create(sq for sq in sq_items if sq.pk is None)
 
         # Marquage "envoi en cours"
         qs.update(status=Message.ENVOI_EN_COURS)
@@ -107,6 +107,24 @@ class MailAdmin(MessageChildAdmin):
     )
 
     filter_horizontal = ("clients",)
+    readonly_fields = ("status",)
+
+@admin.register(Template)
+class TemplateAdmin(MessageChildAdmin):
+    # Model
+    base_model = Template
+
+    # Edition
+    fieldsets = (
+        (None, {
+            "fields": ("sender", "listes", "status")
+        }),
+        ("Message", {
+            "fields": ("objet", "message")
+        }),
+    )
+
+    filter_horizontal = ("listes",)
     readonly_fields = ("status",)
 
 @admin.register(SendQueue)
