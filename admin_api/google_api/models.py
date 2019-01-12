@@ -17,7 +17,7 @@ class GoogleAPI(models.Model):
     # Champs
     nom = models.CharField(max_length=512, unique=True)
 
-    quota = models.BigIntegerField()
+    quota = models.BigIntegerField(default=0)
     limite = models.BigIntegerField() # Limite max d'utilisation
 
     # Méta
@@ -26,7 +26,7 @@ class GoogleAPI(models.Model):
 
     # Méthodes spéciales
     def __str__(self):
-        return self.nom
+        return self.nom.capitalize()
 
     # Méthodes
     def assert_quota(self):

@@ -8,7 +8,14 @@ from .models import GmailContact, GoogleAPI, MailLog
 @admin.register(GoogleAPI)
 class GoogleAPIAdmin(admin.ModelAdmin):
     # Liste
-    list_display = ("nom", "quota")
+    list_display = ("nom", "quota", "used_out")
+
+    # Méthodes
+    def used_out(self, obj):
+        return obj.limite <= obj.quota
+
+    used_out.boolean = True
+    used_out.short_description = "épuisée"
 
 @admin.register(GmailContact)
 class GmailContactAdmin(ContactChildAdmin):

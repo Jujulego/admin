@@ -49,6 +49,78 @@ class Contact(PolymorphicModel):
     def _send_mail(self, mail: MIMEText, message: 'Message'):
         print("Send mail {}".format(mail["subject"]))
 
+class SendQueue(PolymorphicModel):
+    # Champs
+    date    = models.DateTimeField(auto_now_add=True)
+    message = models.ForeignKey('sender.Message', models.CASCADE, related_name='+')
+
+    # Méta
+    class Meta:
+        verbose_name = "file d'envoi"
+        verbose_name_plural = "file d'envoi"
+
+    # Méthodes
+    def send(self):
+        msg = self.message
+
+        msg.sender.reset_quota()
+        if msg.sender.has_quota():
+            if not isinstance(msg, Template):
+                msg.send()
+
+            self.delete()
+
+class Message(PolymorphicModel):
+    # Constantes
+    ATTENTE = 1; ENVOI_EN_COURS = 2; ENVOYE = 3
+    STATUS = (
+        (ATTENTE,        "Attente"),
+        (ENVOI_EN_COURS, "Envoi en cours"),
+        (ENVOYE,         "Envoyé")
+    )
+
+    send_queue = SendQueue
+
+    # Champs
+    sender = models.ForeignKey(Contact, models.CASCADE)
+    status = models.SmallIntegerField(choices=STATUS, default=ATTENTE)
+
+    objet   = models.CharField(max_length=2048)
+    message = models.TextField()
+
+    # Méthodes spéciales
+    def __str__(self):
+        return "{}: {}".format(self.sender, self.objet)
+
+    # Méthodes
+    def create_send_queue(self) -> 'SendQueue':
+        return self.send_queue(message=self)
+
+    def to_mime_text(self) -> MIMEText:
+        mail = MIMEText(self.message)
+        mail['from'] = self.sender.email
+        mail['subject'] = self.objet
+
+        return mail
+
+    def send(self):
+        self.sender.send_mail(self.to_mime_text(), self)
+
+        # Changement de status
+        self.status = Message.ENVOYE
+        self.save()
+
+class Mail(Message):
+    # Champs
+    clients = models.ManyToManyField(Contact, related_name='+')
+
+    # Méthodes
+    def to_mime_text(self):
+        mail = super(Mail, self).to_mime_text()
+        mail['to'] = ', '.join(c.email for c in self.clients.all())
+
+        return mail
+
 class ListeEnvoi(models.Model):
     # Champs
     nom = models.CharField(max_length=1024)
@@ -63,49 +135,77 @@ class ListeEnvoi(models.Model):
     def __str__(self):
         return self.nom
 
-class Message(models.Model):
-    # Constantes
-    ATTENTE = 1; ENVOI_EN_COURS = 2; ENVOYE = 3
-    STATUS = (
-        (ATTENTE,        "Attente"),
-        (ENVOI_EN_COURS, "Envoi en cours"),
-        (ENVOYE,         "Envoyé")
-    )
-
+class SendQueueTemplate(SendQueue):
     # Champs
-    sender  = models.ForeignKey(Contact, models.CASCADE)
     clients = models.ManyToManyField(Contact, related_name='+')
-    status  = models.SmallIntegerField(choices=STATUS, default=ATTENTE)
-
-    objet   = models.CharField(max_length=2048)
-    message = models.TextField()
-
-    # Méthodes spéciales
-    def __str__(self):
-        return "{}: {}".format(self.sender, self.objet)
 
     # Méthodes
-    def to_mime_text(self) -> MIMEText:
-        mail = MIMEText(self.message)
-        mail['to'] = ', '.join(c.email for c in self.clients.all())
-        mail['from'] = self.sender.email
-        mail['subject'] = self.objet
+    def send(self):
+        msg = self.message
+
+        # Au cas ou ...
+        if not isinstance(msg, Template):
+            return super(SendQueueTemplate, self).send()
+
+        # Manage quota
+        msg.sender.reset_quota()
+        if msg.sender.has_quota():
+            # Envois !
+            sentlist = []
+
+            try:
+                # Envoi
+                for contact in self.clients.all():
+                    msg.send(contact)
+                    sentlist.append(contact)
+
+                    if not msg.sender.has_quota():
+                        break
+
+                # Suppression des clients
+                self.clients.remove(*sentlist)
+
+                # Mise à jour du message
+                msg.messages_sent += len(sentlist)
+                if self.clients.count() == 0:
+                    msg.status = Message.ENVOYE
+                    self.delete()
+
+                msg.save()
+
+            except Exception:
+                # Suppression des clients
+                self.clients.remove(*sentlist)
+
+                # Mise à jour du message
+                msg.messages_sent += len(sentlist)
+                msg.save()
+
+                raise
+
+class Template(Message):
+    # Constantes
+    send_queue = SendQueueTemplate
+
+    # Champs
+    listes = models.ManyToManyField(ListeEnvoi, related_name='+')
+    messages_sent = models.PositiveIntegerField(default=0)
+
+    # Méthodes
+    def create_send_queue(self) -> 'SendQueue':
+        sqt: SendQueueTemplate = super(Template, self).create_send_queue()
+        sqt.save()
+
+        for liste in self.listes.all():
+            sqt.clients.add(*liste.contacts.all())
+
+        return sqt
+
+    def to_mime_text(self, contact: Contact):
+        mail = super(Template, self).to_mime_text()
+        mail['to'] = contact.email
 
         return mail
 
-    def send(self):
-        self.sender.send_mail(self.to_mime_text(), self)
-
-        # Changement de status
-        self.status = Message.ENVOYE
-        self.save()
-
-class SendQueue(models.Model):
-    # Champs
-    date    = models.DateTimeField(auto_now_add=True)
-    message = models.ForeignKey(Message, models.CASCADE, related_name='+')
-
-    # Méta
-    class Meta:
-        verbose_name = "file d'envoi"
-        verbose_name_plural = "file d'envoi"
+    def send(self, contact: Contact):
+        self.sender.send_mail(self.to_mime_text(contact), self)
