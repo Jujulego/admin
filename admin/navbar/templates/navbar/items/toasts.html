@@ -1,8 +1,0 @@
-{% extends "navbar/items/panel.html" %}
-
-{% block id %}toasts-btn{% endblock %}
-
-{% block contenu %}
-    {{ block.super }}
-    <span class="badge fade {% if messages %}show{% endif %}">{{ messages|length }}</span>
-{% endblock %}
