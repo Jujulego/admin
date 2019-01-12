@@ -1,0 +1,23 @@
+// Importations
+@import "theme";
+
+// Theme
+@include mat-core();
+@include angular-material-theme($app-theme);
+
+// Style
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: map-get(map-get($app-theme, background), background);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-icon {
+  &.fab, &.fas, &.far {
+    line-height: 24px;
+  }
+}

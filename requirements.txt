@@ -1,8 +1,9 @@
-channels >= 2.1.5
-Django >= 2.1.2
-django_compressor >= 2.2
-django-libsass >= 0.7
+Django >= 2.1.4
 django-q >= 1.0.1
-pytz >= 2018.5
-sqlparse >= 0.2.4
+django-polymorphic >= 2.0.3
+djangorestframework >= 3.9.0
+google-api-python-client >= 1.7.7
+httplib2 >= 0.12.0
+oauth2client >= 4.1.3
+pytz >= 2018.7
 redis >= 3.0.1

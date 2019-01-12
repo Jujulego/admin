@@ -1,0 +1,11 @@
+/*
+ * navbar-layout.component.scss
+ * Style de la navbar
+ */
+
+// Importations
+@import "~src/theme";
+@import "navbar-theme";
+
+// Theme
+@include navbar-theme($navbar-theme);

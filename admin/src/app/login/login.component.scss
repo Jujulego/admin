@@ -1,0 +1,17 @@
+/*
+ * login.component.scss
+ *
+ * Author: Julien CAPELLARI
+ */
+
+// Style
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+mat-card {
+  min-width: 325px;
+
+  margin-top: 6rem;
+}

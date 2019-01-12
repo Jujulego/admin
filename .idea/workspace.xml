@@ -1,78 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec6973eb-679e-4a77-9cc6-9ae730d0307c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_btn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_panel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_slider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_toasts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/navbar/static/navbar/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/admin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Redis_server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Redis_server.xml" afterDir="false" />
+    <list default="true" id="121430f9-7bd6-4ccd-8db7-97a3a5a54c33" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/src/app/api-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/app/auth.guard.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/app/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/app/auth.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/app/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/app/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/app/login/login.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/app/login/login.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/app/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_api/auth_api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_api/auth_api/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_api/auth_api/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_api/auth_api/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_api/auth_api/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_api/auth_api/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_api/auth_api/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_api/auth_api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/admin/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/admin/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin/routing.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin/routing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/aframe/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/aframe/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/aframe/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/aframe/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/fichiers/static/fichiers/scss/_objets.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/aframe/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/aframe/navbar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/aframe/static/aframe/aframe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/aframe/templates/aframe/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/aframe/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/aframe/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/aframe/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/chat/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/chat/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/chat/consumers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/chat/navbar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/chat/routing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/chat/templates/chat/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/chat/templates/chat/room.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/chat/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/chat/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/fichiers/static/fichiers/css/fichiers.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/fichiers/static/fichiers/css/objets.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/fichiers/static/fichiers/js/fichiers.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/fichiers/static/fichiers/js/fichiers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/fichiers/templates/fichiers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/fichiers/templates/fichiers/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/fichiers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/fichiers/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/navbar/templates/navbar/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/navbar/templates/navbar/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/static/vendor/bootstrap/css/sb-admin.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/terminal/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/terminal/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/terminal/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/terminal/consumers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/terminal/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/fichiers/static/fichiers/scss/fichiers.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/terminal/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/terminal/navbar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/terminal/routing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/terminal/static/terminal/css/anims.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/terminal/static/terminal/css/terminal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/terminal/static/terminal/js/terminal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/terminal/templates/terminal/terminal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/terminal/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/terminal/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/_theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/_theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/navbar/navbar-layout.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/navbar/navbar-layout.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/sender/contacts.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/sender/contacts.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app/sender/sender-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/app/sender/sender-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_api/admin_api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/admin_api/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_api/admin_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/admin_api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_api/sender/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/sender/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/admin$Q_Cluster.coverage" NAME="Q Cluster Coverage Results" MODIFIED="1544459907550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/admin" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -88,267 +54,213 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="admin@srvjulien.capellari.net" type="feb32156:DbDataSourceImpl" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="admin@srvjulien.capellari.net" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="admin@srvjulien.capellari.net" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="admin: database" type="6d9b600a:PostgresImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="admin@srvjulien.capellari.net" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="admin: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="admin@srvjulien.capellari.net" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="admin: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="admin@srvjulien.capellari.net" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="admin: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Django default" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Django default" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+        <item name="emperor_vassal: table" type="ffe0bd85:SqliteImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
-  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="admin" is-module-sdk="true">
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
-    <option name="myUseModuleSdk" value="true" />
-    <option name="myModuleName" value="admin" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1037418863">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="102" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="4" />
-          <entry key="project.open.time.10" value="2" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.13" value="2" />
-          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="5" />
-          <entry key="project.open.time.6" value="30" />
-          <entry key="project.open.time.7" value="29" />
-          <entry key="project.open.time.8" value="22" />
-          <entry key="project.open.time.9" value="5" />
-          <entry key="project.opened" value="106" />
+          <entry key="project.open.time.6" value="5" />
+          <entry key="project.open.time.7" value="7" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Dockerfile" value="2" />
-          <entry key="JavaScript-modules-diagram/C:/Users/julie/git/admin/admin" value="2" />
-          <entry key="JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/debug/static" value="1" />
-          <entry key="JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/main" value="1" />
-          <entry key="JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/main/static" value="1" />
-          <entry key="JavaScript-modules-diagram/C:/Users/julie/git/admin/admin/main/static/main/js" value="1" />
-          <entry key="Python/#C:/Users/julie/git/admin/admin/admin" value="1" />
-          <entry key="Python/#C:/Users/julie/git/admin/admin/main" value="1" />
-          <entry key="Python/#C:/Users/julie/git/admin/admin/navbar" value="1" />
-          <entry key="auth_user" value="2" />
-          <entry key="auth_user_groups" value="1" />
-          <entry key="ba2s277zwhi2zooxj36xaho6b6sbo1f1j00n0l6w" value="2" />
-          <entry key="cfg" value="2" />
-          <entry key="css" value="93" />
-          <entry key="django_migrations" value="4" />
-          <entry key="django_session" value="1" />
-          <entry key="dockerignore" value="1" />
-          <entry key="emperor" value="1" />
-          <entry key="emperor_vassal" value="5" />
-          <entry key="fichiers_dossier" value="7" />
-          <entry key="fichiers_dossier_parent_id_90802da0" value="1" />
-          <entry key="fichiers_fichier" value="1" />
-          <entry key="gitignore" value="6" />
-          <entry key="html" value="234" />
-          <entry key="ini" value="1" />
-          <entry key="js" value="59" />
-          <entry key="json" value="1" />
-          <entry key="py" value="323" />
-          <entry key="scss" value="37" />
-          <entry key="sql" value="5" />
-          <entry key="svg" value="1" />
-          <entry key="txt" value="9" />
-          <entry key="urlpath" value="1" />
-          <entry key="uwsgi_emperor_vassal" value="2" />
-          <entry key="xml" value="2" />
+          <entry key="DjangoModelDependency/#admin" value="4" />
+          <entry key="auth_user" value="1" />
+          <entry key="browserslist" value="2" />
+          <entry key="css" value="2" />
+          <entry key="django_content_type" value="4" />
+          <entry key="django_migrations" value="11" />
+          <entry key="emperor_vassal" value="2" />
+          <entry key="gitignore" value="4" />
+          <entry key="google_api_comptegoogle" value="5" />
+          <entry key="google_api_gmailcontact" value="3" />
+          <entry key="google_api_googleapi" value="4" />
+          <entry key="google_api_maillog" value="5" />
+          <entry key="html" value="65" />
+          <entry key="ico" value="1" />
+          <entry key="js" value="5" />
+          <entry key="json" value="22" />
+          <entry key="md" value="1" />
+          <entry key="py" value="196" />
+          <entry key="scss" value="67" />
+          <entry key="sender_contact" value="11" />
+          <entry key="sender_contactmodel" value="1" />
+          <entry key="sender_listeenvoi" value="1" />
+          <entry key="sender_listeenvoi_contacts" value="2" />
+          <entry key="sender_listeenvoimodel_contacts_contactmodel_id_80a04e88" value="1" />
+          <entry key="sender_message" value="4" />
+          <entry key="sender_message_clients" value="1" />
+          <entry key="sender_sendqueue" value="1" />
+          <entry key="ts" value="181" />
+          <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="93" />
-          <entry key="Database Element" value="23" />
-          <entry key="DjangoUrlPath" value="1" />
-          <entry key="Dockerfile" value="2" />
-          <entry key="HTML" value="234" />
-          <entry key="Ini" value="3" />
-          <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="59" />
-          <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="323" />
-          <entry key="SCSS" value="37" />
-          <entry key="SQL" value="2" />
-          <entry key="SVG" value="1" />
-          <entry key="Scratch" value="5" />
-          <entry key="UML" value="9" />
-          <entry key="XML" value="2" />
+          <entry key="CSS" value="2" />
+          <entry key="Database Element" value="56" />
+          <entry key="HTML" value="65" />
+          <entry key="Image" value="1" />
+          <entry key="JSON" value="19" />
+          <entry key="JavaScript" value="5" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="Python" value="196" />
+          <entry key="SCSS" value="67" />
+          <entry key="SQL" value="1" />
+          <entry key="TypeScript" value="181" />
+          <entry key="UML" value="4" />
+          <entry key="tsconfig" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Django Console" value="1773" />
-          <entry key="Dockerfile" value="421" />
-          <entry key="cell" value="110" />
-          <entry key="css" value="14514" />
-          <entry key="dummy" value="76" />
-          <entry key="gitignore" value="49" />
-          <entry key="html" value="19866" />
-          <entry key="ini" value="21" />
-          <entry key="js" value="22213" />
-          <entry key="json" value="14" />
-          <entry key="py" value="24336" />
-          <entry key="scss" value="2475" />
-          <entry key="sql" value="70" />
-          <entry key="txt" value="551" />
+          <entry key="Django Console" value="1535" />
+          <entry key="cell" value="109" />
+          <entry key="dummy" value="272" />
+          <entry key="gitignore" value="29" />
+          <entry key="html" value="5807" />
+          <entry key="json" value="250" />
+          <entry key="py" value="13007" />
+          <entry key="scss" value="4247" />
+          <entry key="sql" value="44" />
+          <entry key="ts" value="9711" />
+          <entry key="txt" value="457" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="14515" />
-          <entry key="Dockerfile" value="421" />
-          <entry key="HTML" value="19866" />
-          <entry key="Ini" value="21" />
-          <entry key="JSON" value="14" />
-          <entry key="JavaScript" value="22212" />
-          <entry key="PLAIN_TEXT" value="676" />
-          <entry key="Python" value="26109" />
-          <entry key="SCSS" value="2475" />
-          <entry key="Scratch" value="180" />
+          <entry key="HTML" value="5806" />
+          <entry key="JSON" value="250" />
+          <entry key="JavaScript" value="1" />
+          <entry key="PLAIN_TEXT" value="758" />
+          <entry key="Python" value="14542" />
+          <entry key="SCSS" value="4247" />
+          <entry key="SQL" value="44" />
+          <entry key="Scratch" value="109" />
+          <entry key="TypeScript" value="9711" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="Angular2LanguageService" value="16" />
         </counts>
       </usages-collector>
     </session>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="admin" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/scss/_card.scss">
+        <entry file="file://$PROJECT_DIR$/admin/src/app/login/login.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            <state relative-caret-position="69">
+              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/js/main.js">
+        <entry file="file://$PROJECT_DIR$/admin/src/app/auth.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state relative-caret-position="273">
+              <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/navbar.py">
+        <entry file="file://$PROJECT_DIR$/admin_api/auth_api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            <state relative-caret-position="136">
+              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <folding>
+                <element signature="e#15#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/items/panel.py">
+        <entry file="file://$PROJECT_DIR$/admin_api/auth_api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="307">
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+              <folding>
+                <element signature="e#15#66#0" expanded="true" />
+                <marker date="1547242005859" expanded="true" signature="337:342" ph="..." />
+                <marker date="1547242005859" expanded="true" signature="466:471" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/items/item.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/items/__init__.py">
+        <entry file="file://$PROJECT_DIR$/admin/src/app/login/login.component.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-line="6" selection-end-column="23" />
+              <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/src/app/login/login.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
               <folding>
-                <element signature="e#15#47#0" expanded="true" />
+                <element signature="e#0#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/__init__.py">
+        <entry file="file://$PROJECT_DIR$/admin/src/app/auth.guard.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            <state relative-caret-position="290">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
-                <element signature="e#15#35#0" expanded="true" />
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/scss/_navbar.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2465">
-              <caret line="145" selection-start-line="145" selection-end-line="145" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/navbar/navbars.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -356,89 +268,87 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
+        <option value="TypeScript File" />
         <option value="HTML File" />
-        <option value="CSS File" />
-        <option value="JavaScript File" />
+        <option value="Python Script" />
         <option value="SCSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>#sidebar-toggler</find>
-      <find>content-wrapper</find>
-      <find>&lt;/li&gt;</find>
-      <find>import</find>
-      <find>checkbox</find>
-      <find>media</find>
-      <find>slider</find>
+      <find>mat-col</find>
+      <find>@mixin</find>
+      <find>CompteGoogle</find>
     </findStrings>
     <replaceStrings>
-      <replace>.sidebar-toggler</replace>
-      <replace>&quot;,</replace>
+      <replace>GmailContact</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/uwsgi_emperor/views.py" />
-        <option value="$PROJECT_DIR$/admin/uwsgi_emperor/static/uwsgi/js/uwsgi.js" />
-        <option value="$PROJECT_DIR$/admin/uwsgi_emperor/static/uwsgi/css/uwsgi.css" />
-        <option value="$PROJECT_DIR$/admin/uwsgi_emperor/templates/uwsgi/index.html" />
-        <option value="$PROJECT_DIR$/admin/emperor/apps.py" />
-        <option value="$PROJECT_DIR$/admin/emperor/templates/uwsgi/index.html" />
-        <option value="$PROJECT_DIR$/admin/emperor/navbar.py" />
-        <option value="$PROJECT_DIR$/admin/emperor/templates/emperor/edit.html" />
-        <option value="$PROJECT_DIR$/admin/emperor/templates/emperor/index.html" />
-        <option value="$PROJECT_DIR$/admin/emperor/static/emperor/css/emperor.css" />
-        <option value="$PROJECT_DIR$/env/Lib/site-packages/django_uwsgi/management/commands/runuwsgi.py" />
-        <option value="$PROJECT_DIR$/admin/debug/uwsgi.py" />
-        <option value="$PROJECT_DIR$/admin/debug/templates/debug/panel.html" />
-        <option value="$PROJECT_DIR$/admin/debug/context.py" />
-        <option value="$PROJECT_DIR$/admin/debug/templates/debug/uwsgi.html" />
-        <option value="$PROJECT_DIR$/admin/projects/models.py" />
-        <option value="$PROJECT_DIR$/admin/fichiers/__init__.py" />
-        <option value="$PROJECT_DIR$/admin/admin/urls.py" />
-        <option value="$PROJECT_DIR$/admin/fichiers/navbar.py" />
-        <option value="$PROJECT_DIR$/admin/fichiers/apps.py" />
-        <option value="$PROJECT_DIR$/admin/fichiers/signals.py" />
-        <option value="$PROJECT_DIR$/admin/fichiers/admin.py" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/css/slider.css" />
-        <option value="$PROJECT_DIR$/admin/fichiers/urls.py" />
-        <option value="$PROJECT_DIR$/admin/static/js/lru.js" />
-        <option value="$PROJECT_DIR$/admin/fichiers/models.py" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/css/main.css" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/js/main.js" />
-        <option value="$PROJECT_DIR$/admin/admin/routing.py" />
-        <option value="$PROJECT_DIR$/admin/fichiers/static/fichiers/css/objets.css" />
-        <option value="$PROJECT_DIR$/admin/fichiers/static/fichiers/css/fichiers.css" />
-        <option value="$PROJECT_DIR$/admin/fichiers/static/fichiers/js/fichiers.js" />
-        <option value="$PROJECT_DIR$/admin/fichiers/views.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/scss/navbar.scss" />
-        <option value="$PROJECT_DIR$/admin/navbar/templates/navbar/base.html" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_variables.scss" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_panel.scss" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_card.scss" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_colors.scss" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_btn.scss" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_toasts.scss" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_navbar.scss" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/scss/_slider.scss" />
-        <option value="$PROJECT_DIR$/admin/navbar/static/navbar/scss/main.scss" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/admin/admin/settings.py" />
-        <option value="$PROJECT_DIR$/admin/fichiers/static/fichiers/scss/objets.scss" />
-        <option value="$PROJECT_DIR$/admin/fichiers/static/fichiers/scss/fichiers.scss" />
-        <option value="$PROJECT_DIR$/admin/fichiers/static/fichiers/scss/_objets.scss" />
-        <option value="$PROJECT_DIR$/admin/fichiers/templates/fichiers/index.html" />
+        <option value="$PROJECT_DIR$/admin/src/app/index/index.component.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/index/index.component.html" />
+        <option value="$PROJECT_DIR$/admin_api/google_api/views.py" />
+        <option value="$PROJECT_DIR$/admin_api/google_api/urls.py" />
+        <option value="$PROJECT_DIR$/admin_api/google_api/templates/google_api/oauth_complete.html" />
+        <option value="$PROJECT_DIR$/admin_api/google_api/exceptions.py" />
+        <option value="$PROJECT_DIR$/admin_api/google_api/api.py" />
+        <option value="$PROJECT_DIR$/admin_api/sender/admin.py" />
+        <option value="$PROJECT_DIR$/admin_api/sender/tasks.py" />
+        <option value="$PROJECT_DIR$/admin_api/google_api/oauth.py" />
+        <option value="$PROJECT_DIR$/admin_api/google_api/models.py" />
+        <option value="$PROJECT_DIR$/admin_api/sender/models.py" />
+        <option value="$PROJECT_DIR$/admin/src/environments/environment.ts" />
+        <option value="$PROJECT_DIR$/admin/src/environments/environment.prod.ts" />
+        <option value="$PROJECT_DIR$/admin_api/emperor/__init__.py" />
+        <option value="$PROJECT_DIR$/admin_api/google_api/admin.py" />
+        <option value="$PROJECT_DIR$/admin_api/emperor/models.py" />
+        <option value="$PROJECT_DIR$/admin_api/emperor/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/admin_api/emperor/admin.py" />
+        <option value="$PROJECT_DIR$/admin_api/sender/views.py" />
+        <option value="$PROJECT_DIR$/admin_api/auth/__init__.py" />
+        <option value="$PROJECT_DIR$/admin/src/app/api-services/base-api-service.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/api-services/api-service.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/api-service.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/auth-gard.guard.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/auth-guard.service.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/sender/sender-routing.module.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/sender/contacts.service.ts" />
+        <option value="$PROJECT_DIR$/admin_api/auth/views.py" />
+        <option value="$PROJECT_DIR$/admin_api/auth/urls.py" />
+        <option value="$PROJECT_DIR$/admin_api/admin_api/settings.py" />
+        <option value="$PROJECT_DIR$/admin/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/admin/src/app/index/index-theme.css.scss" />
+        <option value="$PROJECT_DIR$/admin/src/app/index/index-theme.scss" />
+        <option value="$PROJECT_DIR$/admin/src/app/index/index.component.scss" />
+        <option value="$PROJECT_DIR$/admin/src/app/navbar/navbar-layout.component.scss" />
+        <option value="$PROJECT_DIR$/admin/src/_theme.scss" />
+        <option value="$PROJECT_DIR$/admin/src/app/login/login-theme.scss" />
+        <option value="$PROJECT_DIR$/admin/src/app/app.component.scss" />
+        <option value="$PROJECT_DIR$/admin/src/styles.scss" />
+        <option value="$PROJECT_DIR$/admin/src/app/login/login.component.scss" />
+        <option value="$PROJECT_DIR$/admin/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/admin_api/admin_api/urls.py" />
+        <option value="$PROJECT_DIR$/admin_api/auth_api/urls.py" />
+        <option value="$PROJECT_DIR$/admin/src/app/login/login.component.html" />
+        <option value="$PROJECT_DIR$/admin_api/auth_api/views.py" />
+        <option value="$PROJECT_DIR$/admin/src/app/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/auth.guard.ts" />
+        <option value="$PROJECT_DIR$/admin/src/app/auth.service.ts" />
       </list>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="$USER_HOME$/AppData/Roaming/npm/node_modules/bower" />
+    <bower.json value="" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -452,13 +362,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/admin/static/vendor/codemirror/package.json" />
+      <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
+    <option name="x" value="950" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
@@ -468,12 +381,12 @@
         <expanded-state>
           <State />
           <State>
-            <id>Django</id>
+            <id>Python</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>Dockerfile</id>
+            <id>PyPep8Inspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -501,7 +414,47 @@
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="emperor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="navbar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_api" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_api" type="462c0819:PsiDirectoryNode" />
+              <item name="auth_api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -510,45 +463,37 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="postgresql&#10;sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="database.data.extractors.current.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/manage.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../showme-web" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
-    <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.stylelint" value="" />
     <property name="node.js.selected.package.tslint" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings module-name="admin" is-module-sdk="true">
-        <option name="myUseModuleSdk" value="true" />
-        <option name="myModuleName" value="admin" />
-      </console-settings>
-    </option>
+    <property name="ts.external.directory.path" value="C:\Users\julie\AppData\Local\JetBrains\Toolbox\apps\PyCharm-P\ch-0\182.4505.26\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\julie\git\admin\admin\fichiers" />
-      <recent name="C:\Users\julie\git\admin\admin\static\vendor" />
-      <recent name="C:\Users\julie\git\admin\admin\uwsgi" />
-      <recent name="C:\Users\julie\git\admin\admin\terminal" />
-      <recent name="C:\Users\julie\git\admin\admin\navbar\static\vendor\jquery-easing" />
+      <recent name="C:\Users\julie\git\admin\admin_api\auth" />
+      <recent name="C:\Users\julie\git\admin\admin\src\app\sender" />
+      <recent name="C:\Users\julie\git\admin\admin_api\google_api" />
+      <recent name="C:\Users\julie\git\admin\admin\src" />
+      <recent name="C:\Users\julie\git\admin\admin\src\app" />
+    </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="C:\Users\julie\git\admin\admin\src\app\navbar\navbar-menu.ts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\julie\git\admin" />
-      <recent name="C:\Users\julie\git\admin\admin" />
-      <recent name="C:\Users\julie\git\admin\admin\bootstrap\templates\bootstrap\forms" />
-      <recent name="C:\Users\julie\git\admin\admin\static" />
-      <recent name="C:\Users\julie\git\admin\admin\navbar\templates\navbar\panel" />
+      <recent name="C:\Users\julie\git\admin\admin\src\app" />
+      <recent name="C:\Users\julie\git\admin\admin_api\sender" />
+      <recent name="C:\Users\julie\git\admin\admin_api\google_api" />
+      <recent name="C:\Users\julie\git\admin\admin_api" />
+      <recent name="C:\Users\julie\git\admin\admin\src\app\navbar" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -563,32 +508,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.Django">
-    <configuration name="Test Server" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+  <component name="RunManager" selected="Compound.Server">
+    <configuration name="Server" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
       <toRun type="Python.DjangoServer" name="Django" />
-      <toRun type="docker-deploy" name="Redis server" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Q Cluster" type="PythonConfigurationType" factoryName="Python" singleton="true">
-      <module name="admin" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\julie\git\admin\env\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/admin" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/admin/manage.py" />
-      <option name="PARAMETERS" value="qcluster" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <toRun type="js.build_tools.npm" name="Angular" />
       <method v="2" />
     </configuration>
     <configuration name="Django" type="Python.DjangoServer" factoryName="Django server" singleton="true">
@@ -597,7 +520,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="admin.settings" />
+        <env name="DJANGO_SETTINGS_MODULE" value="admin_api.settings" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\julie\git\admin\env\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -606,7 +529,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
-      <option name="host" value="localhost" />
+      <option name="host" value="" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -615,12 +538,13 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+    <configuration name="Q Cluster" type="Python.DjangoServer" factoryName="Django server">
       <module name="admin" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="admin_api.settings" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\julie\git\admin\env\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -628,37 +552,30 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="localhost" />
+      <option name="host" value="" />
       <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="http://localhost:8000/" />
-      <option name="runTestServer" value="true" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+      <option name="useCustomRunCommand" value="true" />
+      <option name="customRunCommand" value="qcluster" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="docker-deploy" factoryName="docker-image" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="JSONFilePath" value="" />
-          <option name="command" value="" />
-          <option name="commandLineOptions" value="" />
-          <option name="containerName" value="" />
-          <option name="entrypoint" value="" />
-          <option name="imageTag" value="" />
-          <option name="startBrowserSettings">
-            <browser url="http://192.168.99.100" />
-          </option>
-        </settings>
-      </deployment>
+    <configuration name="Angular" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Compound.Test Server" />
+      <item itemvalue="Compound.Server" />
       <item itemvalue="Django server.Django" />
-      <item itemvalue="Docker.Redis server" />
-      <item itemvalue="Python.Q Cluster" />
+      <item itemvalue="Django server.Q Cluster" />
+      <item itemvalue="npm.Angular" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -666,104 +583,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ec6973eb-679e-4a77-9cc6-9ae730d0307c" name="Default Changelist" comment="" />
-      <created>1534108075097</created>
+      <changelist id="121430f9-7bd6-4ccd-8db7-97a3a5a54c33" name="Default Changelist" comment="" />
+      <created>1545648955211</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1534108075097</updated>
+      <updated>1545648955211</updated>
     </task>
-    <task id="LOCAL-00001" summary="refacto: navbar en jquery plugin">
-      <created>1534529006593</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1534529006593</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add: debug panel">
-      <created>1534631556588</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1534631556588</updated>
-    </task>
-    <task id="LOCAL-00003" summary="refacto: affichage sql">
-      <created>1534698897988</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1534698897988</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add: integration du site d'admin de Django">
-      <created>1534776402179</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1534776402179</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add: gestion des messages">
-      <created>1534886953945</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1534886953946</updated>
-    </task>
-    <task id="LOCAL-00006" summary="update: affichage des variables du contexte">
-      <created>1535548388102</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1535548388102</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add: base terminal">
-      <created>1536839889147</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1536839889147</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add: base uwsgi">
-      <created>1536839960111</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1536839960111</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add: base aframe">
-      <created>1536840006158</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1536840006158</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add: navbar menus&#10;fix: use of &quot;default_app_config&quot;">
-      <created>1536856563058</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1536856563058</updated>
-    </task>
-    <task id="LOCAL-00011" summary="update: vassal edit">
-      <created>1537634976822</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1537634976822</updated>
-    </task>
-    <task id="LOCAL-00012" summary="fix: rename uwsgi =&gt; uwsgi_emperor">
-      <created>1537719219751</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1537719219752</updated>
-    </task>
-    <task id="LOCAL-00013" summary="fix: django security breach">
-      <created>1544221923138</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1544221923138</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -779,369 +604,464 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48510638" visible="true" weight="0.22080536" />
-      <window_info id="Structure" order="1" sideWeight="0.5148936" side_tool="true" weight="0.17651007" />
-      <window_info id="Favorites" order="2" sideWeight="0.50914633" side_tool="true" weight="0.32348993" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.87659574" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5744681" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32765958" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932885" weight="0.6836879" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.32765958" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4986577" weight="0.7673759" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4986577" weight="0.59432626" />
-      <window_info anchor="bottom" id="Docker" order="11" weight="0.529078" />
-      <window_info anchor="bottom" id="Database Changes" order="12" sideWeight="0.4986577" weight="0.32765958" />
-      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32907802" />
-      <window_info anchor="bottom" id="Messages" order="14" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32907802" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2295302" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32907802" />
+      <window_info anchor="bottom" id="TypeScript" order="1" weight="0.32907802" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32624114" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.37588653" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.32907802" />
+      <window_info anchor="bottom" id="Docker" order="9" weight="0.529078" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32765958" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.44680852" />
+      <window_info anchor="bottom" id="Python Console" order="14" weight="0.67659575" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3295302" />
-      <window_info anchor="right" id="SciView" order="4" weight="0.3295302" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3590604" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2295302" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32907802" />
+      <window_info anchor="bottom" id="TypeScript" order="1" weight="0.32907802" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32624114" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.37588653" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.32907802" />
+      <window_info anchor="bottom" id="Docker" order="9" weight="0.529078" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32765958" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.44680852" />
+      <window_info anchor="bottom" id="Python Console" order="14" weight="0.67659575" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3590604" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="refacto: navbar en jquery plugin" />
-    <MESSAGE value="add: debug panel" />
-    <MESSAGE value="refacto: affichage sql" />
-    <MESSAGE value="add: integration du site d'admin de Django" />
-    <MESSAGE value="add: gestion des messages" />
-    <MESSAGE value="update: affichage des variables du contexte" />
-    <MESSAGE value="add: base terminal" />
-    <MESSAGE value="add: base uwsgi" />
-    <MESSAGE value="add: base aframe" />
-    <MESSAGE value="add: navbar menus&#10;fix: use of &quot;default_app_config&quot;" />
-    <MESSAGE value="update: vassal edit" />
-    <MESSAGE value="fix: rename uwsgi =&gt; uwsgi_emperor" />
-    <MESSAGE value="fix: django security breach" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: django security breach" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/compressor/CACHE/css/navbar.f1cccabf07d1.css" />
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/navbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8517">
-          <caret line="501" column="1" selection-start-line="501" selection-start-column="1" selection-end-line="501" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compressor/CACHE/css/main.fff0818087ff.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6684" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compressor/CACHE/css/main.b011430da58a.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6361" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compressor/CACHE/css/main.3b5cd2679f7a.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compressor/CACHE/css/main.cefd7b413595.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="35" column="1" lean-forward="true" selection-start-line="7" selection-end-line="35" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/scss/_panel.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/card.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="61" column="1" lean-forward="true" selection-end-line="61" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/scss/_colors.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/scss/_btn.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/scss/_toasts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/toasts.css">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="das://3afc65bf-c8ae-48da-b135-36ff7f4b8d45/schema/main/table/emperor_vassal">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <caret selection-end-line="46" selection-end-column="1" />
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/scss/_slider.scss">
+    <entry file="file://$PROJECT_DIR$/admin_api/emperor/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin/routing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1c7287ea-1af5-4580-9eff-2bcfef77af66/schema/main/table/emperor_vassal" />
-    <entry file="das://1c7287ea-1af5-4580-9eff-2bcfef77af66/schema/main/table/auth_user_groups" />
-    <entry file="das://e86f0e19-155b-4779-8366-61eb71dc6ed2/database/admin/schema/public/table/django_session" />
-    <entry file="das://e86f0e19-155b-4779-8366-61eb71dc6ed2/database/admin/schema/public/table/emperor_vassal" />
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/js/navbar.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/js/context.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2482">
-          <caret line="146" selection-start-line="146" selection-end-line="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/debug/static/debug/js/debug.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="39" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/slider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/fichiers/static/fichiers/css/fichiers.css" />
-    <entry file="file://$PROJECT_DIR$/admin/fichiers/static/fichiers/css/objets.css" />
-    <entry file="file://$PROJECT_DIR$/admin/fichiers/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/fichiers/static/fichiers/js/fichiers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4947">
-          <caret line="291" column="14" selection-start-line="291" selection-start-column="14" selection-end-line="291" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/fichiers/static/fichiers/scss/fichiers.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/fichiers/static/fichiers/scss/_objets.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/fichiers/templates/fichiers/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="162" column="1" lean-forward="true" selection-start-line="162" selection-start-column="1" selection-end-line="162" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/css/btn.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/context.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/navbar.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/templates/navbar/items/menu.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/items/menu.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/scss/_card.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/navbar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/items/panel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/items/item.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/items/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="e#15#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/static/navbar/scss/_navbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2465">
-          <caret line="145" selection-start-line="145" selection-end-line="145" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/navbars.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/navbar/__init__.py">
+    <entry file="file://$PROJECT_DIR$/admin_api/emperor/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/emperor/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
           <folding>
-            <element signature="e#15#35#0" expanded="true" />
+            <element signature="e#15#47#0" expanded="true" />
+            <marker date="1547030290366" expanded="true" signature="166:171" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/emperor/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/sender/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/google_api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/auth-guard.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/sender/sender-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/sender/contacts.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/rest_framework/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/api-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/auth_api/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/admin_api/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/auth_api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="46" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/admin_api/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/sender/contact-details/contact-details.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/index/index-theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/index/index.component.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/_utils.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/navbar/navbar-layout.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/navbar/navbar-layout.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/sender/contact-form/contact-form.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/navbar/navbar.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/sender/sender.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/sender/contact-form/contact-form.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/sass/lib/sass.jar!/org/jetbrains/plugins/sass/stdlib/sass_functions.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10999">
+          <caret line="1139" column="10" selection-start-line="1139" selection-start-column="10" selection-end-line="1139" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/navbar/navbar-theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/material/_theming.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19890" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/app.component.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/login/login-theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/_theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/login/login.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/admin_api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="e#633#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/rest_framework/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="112" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/rest_framework/permissions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="94" column="6" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/auth_api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#15#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/contrib/auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/contrib/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="89" column="14" lean-forward="true" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_api/auth_api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="e#15#66#0" expanded="true" />
+            <marker date="1547242005859" expanded="true" signature="337:342" ph="..." />
+            <marker date="1547242005859" expanded="true" signature="466:471" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/rxjs/src/internal/Observable.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4195">
+          <caret line="71" column="2" selection-start-line="71" selection-start-column="2" selection-end-line="71" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/app/auth.guard.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

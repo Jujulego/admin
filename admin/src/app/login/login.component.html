@@ -1,0 +1,29 @@
+<div class="d-flex">
+    <form class="mx-auto" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar class="d-flex">
+                    <fa-icon class="m-auto" icon="key" size="lg"></fa-icon>
+                </div>
+                <mat-card-title>Connexion</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="container-fluid mb-0">
+                <div class="row">
+                    <mat-form-field class="col-12">
+                        <input matInput name="username" placeholder="Pseudo" type="text"
+                               formControlName="username" required />
+                    </mat-form-field>
+                </div>
+                <div class="row">
+                    <mat-form-field class="col-12">
+                        <input matInput name="password" placeholder="Mot de passe" type="password"
+                               formControlName="password" required />
+                    </mat-form-field>
+                </div>
+            </mat-card-content>
+            <mat-card-actions class="text-right">
+                <button mat-button color="primary" type="submit">Connexion</button>
+            </mat-card-actions>
+        </mat-card>
+    </form>
+</div>
