@@ -8,7 +8,7 @@
 @import '~@angular/material/theming';
 
 // Mixins
-@mixin mat-apply-color($color, $hue) {
+@mixin mat-apply-color($color, $hue: default) {
   color: mat-contrast($color, $hue);
   background-color: mat-color($color, $hue);
 }

@@ -24,10 +24,9 @@ export class LoginComponent implements OnInit {
 
     // Méthodes
     ngOnInit() {
-        this.auth.isAuthenticated
-            .subscribe(authenticated => {
-                if (authenticated) this.router.navigate(['',])
-            })
+        if (this.auth.isAuthenticated) {
+            this.router.navigate(['',])
+        }
     }
 
     onSubmit() {

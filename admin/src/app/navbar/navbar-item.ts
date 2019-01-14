@@ -1,4 +1,5 @@
 import { NavbarPosition } from './navbar-utils';
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 export declare type NavbarItemOptions = {
     position ?: NavbarPosition,
@@ -15,7 +16,7 @@ export class NavbarItem {
     public link_options = {};
 
     // Constructeur
-    constructor(public name: string, public icon: string, public link: string, options: NavbarItemOptions = {}) {
+    constructor(public name: string, public icon: IconDefinition, public link: string, options: NavbarItemOptions = {}) {
         // Options !
         this.position = options.position || 'sidebar';
         this.always_visible = options.always_visible || false;

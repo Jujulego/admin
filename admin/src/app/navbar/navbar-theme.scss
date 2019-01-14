@@ -23,7 +23,7 @@ $mini-sidebar-height: calc(24px + 1rem);
 
   // Style
   .navbar {
-    @include mat-apply-color($primary, 800);
+    @include mat-apply-color($primary);
 
     .navbar-brand a {
       color: mat-contrast($primary, 800);
@@ -34,7 +34,8 @@ $mini-sidebar-height: calc(24px + 1rem);
     }
 
     > .sidebar {
-      @include mat-apply-color($primary, 200);
+      background-color: mat-color($background, dialog);
+      color: mat-color($foreground, text);
 
       .nav-link {
         @include mat-apply-color($primary, 200);

@@ -1,5 +1,5 @@
 <app-navbar-layout
-        *ngIf="isAuthenticated | async; else unauth"
+        *ngIf="isAuthenticated; else unauth"
         brand="Admin" brandLink="/" [items]="navbarItems">
     <router-outlet></router-outlet>
 </app-navbar-layout>

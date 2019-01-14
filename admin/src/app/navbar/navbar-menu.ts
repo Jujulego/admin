@@ -1,4 +1,5 @@
 import { NavbarItem, NavbarItemOptions } from "./navbar-item";
+import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 
 function isNavbarItemArray(val: NavbarItemOptions | NavbarItem[]): val is NavbarItem[] {
     return (<NavbarItem[]> val).length !== undefined;
@@ -23,7 +24,7 @@ export class NavbarMenu extends NavbarItem {
     }
 
     // Constructeur
-    constructor(name: string, icon: string, arg1: NavbarItemOptions | NavbarItem[], arg2?: NavbarItem[]) {
+    constructor(name: string, icon: IconDefinition, arg1: NavbarItemOptions | NavbarItem[], arg2?: NavbarItem[]) {
         super(name, icon, '', (isNavbarItemArray(arg1) ? { position: 'sidebar' } : arg1 as NavbarItemOptions));
 
         // Options

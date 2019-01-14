@@ -10,7 +10,7 @@ import { first, map } from "rxjs/operators";
 })
 export class AuthService extends ApiService {
     // Attributs
-    public isAuthenticated: Observable<boolean>;
+    public isAuthenticated: boolean = false;
 
     // Constructeur
     constructor(http: HttpClient, cookies: CookieService) {
@@ -20,11 +20,13 @@ export class AuthService extends ApiService {
 
     // Méthodes
     private reloadState() {
-        this.isAuthenticated = this.http.get<boolean>(
-            `${AuthService.API_URL}/auth/authenticated/`,
-            { headers: this.httpHeaders })
-            .pipe(
-                first()
+        this.http
+            .get<boolean>(
+                `${AuthService.API_URL}/auth/authenticated/`,
+                { headers: this.httpHeaders }
+            )
+            .subscribe(
+                state => this.isAuthenticated = state
             );
     }
 
@@ -34,7 +36,7 @@ export class AuthService extends ApiService {
             { headers: this.httpCsrfHeaders })
             .pipe(
                 map(state => {
-                    this.reloadState();
+                    this.isAuthenticated = state;
                     return state;
                 })
             )

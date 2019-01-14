@@ -9,9 +9,9 @@
                    (click)="item.collapsed = !item.collapsed; sidebarCollapsed = false"
                    [matTooltip]="item.name" [matTooltipPosition]="'right'" [matTooltipDisabled]="reduced || !sidebarCollapsed">
 
-                    <mat-icon [fontIcon]="item.icon" [attr.aria-label]="item.name"></mat-icon>
+                    <fa-icon [icon]="item.icon" [attr.aria-label]="item.name"></fa-icon>
                     <span>{{ item.name }}</span>
-                    <mat-icon class="menu-status" fontIcon="fa-angle-up"></mat-icon>
+                    <fa-icon class="menu-status" icon="fa-angle-up"></fa-icon>
                 </a>
                 <div class="sidebar-hover"></div>
 
@@ -33,7 +33,7 @@
                            [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="item.link_options"
                            [matTooltip]="item.name" [matTooltipPosition]="'right'" [matTooltipDisabled]="reduced || !sidebarCollapsed">
 
-                            <mat-icon [fontIcon]="item.icon" [attr.aria-label]="item.name"></mat-icon>
+                            <fa-icon [icon]="item.icon" [attr.aria-label]="item.name"></fa-icon>
                             <span>{{ item.name }}</span>
                         </a>
                     </ng-template>
@@ -66,14 +66,14 @@
                class="nav-link" [href]="item.link" mat-button
                [matTooltip]="item.name" [matTooltipPosition]="'below'">
 
-                <mat-icon [fontIcon]="item.icon" [attr.aria-label]="item.name"></mat-icon>
+                <fa-icon [icon]="item.icon" [attr.aria-label]="item.name"></fa-icon>
             </a>
 
             <ng-template #notHref>
                 <button class="nav-link" type="button" mat-button
                         [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="item.link_options"
                         [matTooltip]="item.name" [matTooltipPosition]="'below'">
-                    <mat-icon [fontIcon]="item.icon" [attr.aria-label]="item.name"></mat-icon>
+                    <fa-icon [icon]="item.icon" [attr.aria-label]="item.name"></fa-icon>
                 </button>
             </ng-template>
         </li>
@@ -87,7 +87,7 @@
 
         <button class="sidebar-toggle" mat-button *ngIf="!reduced"
             (click)="sidebarCollapsed = !sidebarCollapsed">
-            <mat-icon fontIcon="fa-angle-left"></mat-icon>
+            <fa-icon icon="fa-angle-left"></fa-icon>
         </button>
     </div>
 </nav>

@@ -5,15 +5,17 @@ import { NavbarItemFilterPipe } from "./navbar-item-filter.pipe";
 import { MatButtonModule, MatIconModule, MatIconRegistry, MatRippleModule, MatTooltipModule } from "@angular/material";
 import { NavbarItemIsMenuPipe } from './navbar-item-is-menu.pipe';
 import { RouterModule } from "@angular/router";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 
 @NgModule({
     declarations: [
         NavbarLayoutComponent,
         NavbarItemFilterPipe,
-        NavbarItemIsMenuPipe
+        NavbarItemIsMenuPipe,
     ],
     imports: [
         CommonModule, RouterModule,
+        FontAwesomeModule,
         MatButtonModule, MatIconModule, MatRippleModule, MatTooltipModule
     ],
     providers: [

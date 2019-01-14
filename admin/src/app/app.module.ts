@@ -10,7 +10,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { SenderModule } from "./sender/sender.module";
 import { ContactsService } from "./sender/contacts.service";
 import { ReactiveFormsModule } from "@angular/forms";
-import { MatButtonModule, MatCardModule, MatInputModule } from "@angular/material";
+import {
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatTreeModule
+} from "@angular/material";
 import { AuthService } from "./auth.service";
 import { LoginComponent } from './login/login.component';
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
@@ -24,7 +31,7 @@ library.add(fas);
 @NgModule({
     imports: [
         BrowserModule, BrowserAnimationsModule, ReactiveFormsModule,
-        MatButtonModule, MatCardModule, MatInputModule,
+        MatButtonModule, MatCardModule, MatInputModule, MatSidenavModule, MatToolbarModule, MatTreeModule,
         FontAwesomeModule,
 
         NavbarModule, SenderModule,

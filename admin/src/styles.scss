@@ -12,7 +12,10 @@ html, body {
 
 body {
   margin: 0;
+
+  color: map-get(map-get($app-theme, foreground), text);
   background: map-get(map-get($app-theme, background), background);
+
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
