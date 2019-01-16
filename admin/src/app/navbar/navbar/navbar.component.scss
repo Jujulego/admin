@@ -1,0 +1,22 @@
+/*
+ * navbar.component.scss
+ */
+@import "~src/app/navbar/variables";
+
+// Style
+:host {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: $navbar_height;
+  width: 100%;
+
+  display: block;
+}
+
+.navbar {
+  .navbar-brand:last-child {
+    margin-right: auto;
+  }
+}

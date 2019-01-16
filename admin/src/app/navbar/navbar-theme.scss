@@ -22,288 +22,33 @@ $mini-sidebar-height: calc(24px + 1rem);
   $primary:    map-get($theme, primary);
 
   // Style
-  .navbar {
-    @include mat-apply-color($primary, 800);
+  app-navbar-layout {
+    min-height: 100vh;
+  }
+
+  app-navbar {
+    @include mat-apply-color($primary, 500);
 
     .navbar-brand a {
-      color: mat-contrast($primary, 800);
-    }
+      color: mat-contrast($primary, 500);
 
-    > .navbar-toggler span {
-      background-color: mat-contrast($primary, 800);
-    }
-
-    > .sidebar {
-      @include mat-apply-color($primary, 200);
-
-      .nav-link {
-        @include mat-apply-color($primary, 200);
-        border-right-color: mat-color($primary, 400);
-
-        &.active {
-          border-right: solid .25rem mat-color($primary, 600);
-
-          .menu-status {
-            left: .5rem !important;
-          }
-        }
-
-        &:not(.active):hover .menu-status {
-          left: .5rem;
-        }
-      }
-
-      > .sidebar-toggle {
-        @include mat-apply-color($primary, 600);
-      }
-    }
-  }
-}
-
-// Style (hors theme)
-:host {
-  overflow: hidden;
-}
-
-.navbar {
-  .navbar-brand a.active:hover {
-    text-decoration: none;
-    cursor: default;
-  }
-
-  > .navbar-toggler {
-    display: flex;
-    height: 40px;
-    min-width: 40px;
-
-    flex-direction: column;
-    justify-content: center;
-
-    padding: .3125rem 0;
-    border: none;
-
-    // Ecarts
-    &:not(:first-child) {
-      margin-left: .675rem;
-    }
-
-    &:not(:last-child) {
-      margin-right: .675rem;
-    }
-
-    // Symbole
-    span {
-      display: block;
-      width: 1.4rem;
-      height: .2rem;
-
-      flex: 0 0 auto;
-
-      margin: 0 auto;
-      border-radius: .075rem;
-
-      transition: transform $sidebar-anim ease, opacity $sidebar-anim ease;
-
-      &:nth-child(1) {
-        transform: translate(0px, .45rem) rotate(45deg);
-      }
-
-      &:nth-child(2) {
-        margin: .25rem auto;
-        opacity: 0;
-      }
-
-      &:nth-child(3) {
-        transform: translate(0px, -.45rem) rotate(-45deg);
-      }
-    }
-
-    // Tranformations
-    &.collapsed span {
-      &:nth-child(1),&:nth-child(3) {
-        transform: translate(0px, 0px) rotate(0deg);
-      }
-
-      &:nth-child(2) {
-        opacity: 1;
-      }
-    }
-  }
-  > .navbar-brand {
-    flex: 1;
-  }
-  > .nav button {
-    min-width: 36px;
-    padding: 0;
-  }
-
-  > .sidebar {
-    position: fixed;
-    top: calc(40px + 1rem);
-    left: 0;
-
-    display: flex;
-    height: calc(100% - 40px - 1rem);
-    width: $sidebar-width;
-    flex-direction: column;
-
-    > div {
-      flex: 1;
-      max-height: calc(100% - calc(24px + 1rem));
-
-      > .nav {
-        display: flex;
-        flex-direction: column;
-
-        .nav-item {
-          position: relative;
-          width: 100%;
-
-          .nav-link {
-            display: flex;
-
-            white-space: nowrap;
-            overflow-x: hidden;
-
-            border-right-width: 0;
-            border-right-style: solid;
-
-            &:not(.active):hover, &.active {
-              border-right-width: .25rem;
-
-              .menu-status {
-                left: .5rem;
-              }
-            }
-
-            span {
-              flex: 1;
-            }
-
-            mat-icon {
-              position: relative;
-              flex-shrink: 0;
-
-              text-align: center;
-
-              &:first-child {
-                right: .5rem;
-              }
-
-              &.menu-status {
-                left: .25rem;
-                margin-left: auto;
-
-                transition: transform $sidebar-anim ease;
-              }
-            }
-
-            + .sidebar-hover {
-              position: absolute;
-              top: 0; left: 0;
-              z-index: -1;
-
-              width: 100%;
-              height: calc(24px + 1rem);
-
-              background-color: white;
-              opacity: 0;
-            }
-
-            &:hover + .sidebar-hover {
-              opacity: .04;
-            }
-          }
-
-          > .nav {
-            height: calc(100% - 24px - 1rem);
-
-            margin-left: 1rem;
-            overflow: hidden;
-
-            transition: height $sidebar-anim ease;
-          }
-
-          &.menu-collapsed {
-            .menu-status {
-              transform: rotate(180deg);
-            }
-
-            .nav {
-              height: 0;
-            }
-          }
-        }
-      }
-    }
-
-    .sidebar-toggle {
-      height: $mini-sidebar-height;
-      min-width: auto;
-
-      padding: 0;
-      border-radius: 0;
-    }
-  }
-
-  &.navbar-reduced {
-    > .sidebar {
-      transition: left $sidebar-anim ease;
-    }
-
-    &.navbar-collapsed {
-      > .sidebar {
-        left: -$sidebar-width;
+      &.active:hover {
+        cursor: default;
+        text-decoration: none;
       }
     }
   }
 
-  &:not(.navbar-reduced) > .sidebar {
-    transition: width $sidebar-anim ease;
-
-    .nav-link > span {
-      transition: opacity $sidebar-anim ease;
-    }
-
-    > .sidebar-toggle mat-icon {
-      transition: transform $sidebar-anim ease;
-    }
-
-    &.sidebar-collapsed {
-      width: $mini-sidebar-width;
-
-      .nav-link > span {
-        position: absolute;
-        left: calc(24px + 1rem);
-
-        opacity: 0;
-      }
-
-      .nav-link > .menu-status {
-        left: -.875rem !important;
-      }
-
-      > .sidebar-toggle mat-icon {
-        transform: rotate(180deg);
-      }
-    }
+  app-sidebar {
+    background-color: mat-color($background, dialog);
+    color: mat-color($foreground, text);
   }
-}
 
-.content-wrapper {
-  height: calc(100% - 40px - 1rem);
-  overflow: auto;
+  .sidebar-toggler-icon span {
+    background-color: mat-contrast($primary, 500);
+  }
 
-  padding-top: 1rem;
-  padding-left: 1rem;
-
-  transition: margin-left $sidebar-anim ease;
-
-  .navbar:not(.navbar-reduced) + & {
-    margin-left: $sidebar-width;
-
-    &.sidebar-collapsed {
-      margin-left: $mini-sidebar-width;
-    }
+  .sidebar-active {
+    border-right: solid .325rem mat-color($primary, 500);
   }
 }

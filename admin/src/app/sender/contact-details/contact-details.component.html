@@ -1,37 +1,41 @@
-<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
-    <mat-card>
-        <mat-card-header>
-            <mat-card-title>Contact #{{ (contact$ | async).id }} :</mat-card-title>
-        </mat-card-header>
+<section class="container-fluid">
+    <article class="row">
+        <form class="col-12" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>Contact #{{ (contact$ | async).id }} :</mat-card-title>
+                </mat-card-header>
 
-        <mat-card-content class="container-fluid mb-0">
-            <div class="row mb-0">
-                <mat-form-field class="col-md-6">
-                    <input matInput name="nom" placeholder="Nom"
-                           formControlName="nom" />
+                <mat-card-content class="container-fluid mb-0">
+                    <div class="row mb-0">
+                        <mat-form-field class="col-md-6">
+                            <input matInput name="nom" placeholder="Nom"
+                                   formControlName="nom" />
 
-                    <mat-error *ngIf="formGroup.controls['nom'].hasError('required')">
-                        Nom est <strong>requis</strong>
-                    </mat-error>
-                </mat-form-field>
-                <mat-form-field class="col-md-6">
-                    <input matInput name="email" type="email" placeholder="Email"
-                           formControlName="email" />
+                            <mat-error *ngIf="formGroup.controls['nom'].hasError('required')">
+                                Nom est <strong>requis</strong>
+                            </mat-error>
+                        </mat-form-field>
+                        <mat-form-field class="col-md-6">
+                            <input matInput name="email" type="email" placeholder="Email"
+                                   formControlName="email" />
 
-                    <mat-error *ngIf="formGroup.controls['email'].hasError('email') && !formGroup.controls['email'].hasError('required')">
-                        Adresse email invalide
-                    </mat-error>
-                    <mat-error *ngIf="formGroup.controls['email'].hasError('required')">
-                        Email est <strong>requis</strong>
-                    </mat-error>
-                </mat-form-field>
-            </div>
-        </mat-card-content>
+                            <mat-error *ngIf="formGroup.controls['email'].hasError('email') && !formGroup.controls['email'].hasError('required')">
+                                Adresse email invalide
+                            </mat-error>
+                            <mat-error *ngIf="formGroup.controls['email'].hasError('required')">
+                                Email est <strong>requis</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </mat-card-content>
 
-        <mat-card-actions class="text-right">
-            <button mat-button type="submit" [disabled]="formGroup.invalid">ENREGISTRER</button>
-            <button class="text-danger" mat-button type="button"
-                    [disabled]="formGroup.invalid" (click)="onDelete()">SUPPRIMER</button>
-        </mat-card-actions>
-    </mat-card>
-</form>
+                <mat-card-actions class="text-right">
+                    <button mat-button type="submit" [disabled]="formGroup.invalid">ENREGISTRER</button>
+                    <button mat-button type="button" color="warn"
+                            [disabled]="formGroup.invalid" (click)="onDelete()">SUPPRIMER</button>
+                </mat-card-actions>
+            </mat-card>
+        </form>
+    </article>
+</section>

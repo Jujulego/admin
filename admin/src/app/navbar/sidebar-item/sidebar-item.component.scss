@@ -1,0 +1,20 @@
+/*
+ * sidebar-item.component.scss
+ */
+
+// Style
+div {
+  display: flex;
+
+  padding: .6rem;
+
+  fa-icon {
+    font-size: 18px;
+  }
+
+  span {
+    flex: 1;
+
+    margin-left: .6rem;
+  }
+}

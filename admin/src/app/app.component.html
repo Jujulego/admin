@@ -1,9 +1,16 @@
-<app-navbar-layout
-        *ngIf="isAuthenticated | async; else unauth"
-        brand="Admin" brandLink="/" [items]="navbarItems">
-    <router-outlet></router-outlet>
-</app-navbar-layout>
+<app-navbar-layout>
+    <app-navbar *ngIf="isAuthenticated" class="mat-elevation-z4" brand="Admin">
+        <button mat-icon-button class="ml-auto">
+            <fa-icon icon="home"></fa-icon>
+        </button>
+    </app-navbar>
 
-<ng-template #unauth>
-    <router-outlet></router-outlet>
-</ng-template>
+    <app-sidebar *ngIf="isAuthenticated" class="mat-elevation-z3">
+        <app-sidebar-item icon="home" text="Accueil" link="/" linkExact></app-sidebar-item>
+        <app-sidebar-item icon="users" text="Contacts" link="/contacts"></app-sidebar-item>
+    </app-sidebar>
+
+    <app-navbar-content>
+        <router-outlet></router-outlet>
+    </app-navbar-content>
+</app-navbar-layout>

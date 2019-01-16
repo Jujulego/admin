@@ -1,0 +1,12 @@
+<nav class="navbar">
+    <!-- Sidebar-toggler -->
+    <app-sidebar-toggler *ngIf="hasSidebar | async"></app-sidebar-toggler>
+
+    <!-- Brand -->
+    <span class="navbar-brand">
+        <a [routerLink]="brandLink" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ brand }}</a>
+    </span>
+
+    <!-- Items -->
+    <ng-content></ng-content>
+</nav>

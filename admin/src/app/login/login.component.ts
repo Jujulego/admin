@@ -24,10 +24,11 @@ export class LoginComponent implements OnInit {
 
     // Méthodes
     ngOnInit() {
-        this.auth.isAuthenticated
-            .subscribe(authenticated => {
-                if (authenticated) this.router.navigate(['',])
-            })
+        this.auth.$isAuth.subscribe(isauth => {
+            if (isauth) {
+                this.router.navigate(['',])
+            }
+        });
     }
 
     onSubmit() {
