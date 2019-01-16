@@ -42,6 +42,10 @@ $mini-sidebar-height: calc(24px + 1rem);
   app-sidebar {
     background-color: mat-color($background, dialog);
     color: mat-color($foreground, text);
+
+    a, a:hover {
+      color: mat-color($foreground, text);
+    }
   }
 
   .sidebar-toggler-icon span {

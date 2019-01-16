@@ -8,13 +8,13 @@ import { NavbarLayoutComponent } from "./navbar-layout/navbar-layout.component";
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SidebarTogglerComponent } from './sidebar-toggler/sidebar-toggler.component';
 import { NavbarService } from "./navbar.service";
-import { SidebarItemComponent } from './sidebar-item/sidebar-item.component';
+import { SidebarLinkComponent } from './sidebar-link/sidebar-link.component';
 import { NavbarContentComponent } from './navbar-content/navbar-content.component';
 
 @NgModule({
     declarations: [
         NavbarLayoutComponent, NavbarContentComponent,
-        NavbarComponent, SidebarComponent, SidebarItemComponent, SidebarTogglerComponent,
+        NavbarComponent, SidebarComponent, SidebarLinkComponent, SidebarTogglerComponent,
     ],
     imports: [
         CommonModule, RouterModule,
@@ -26,7 +26,7 @@ import { NavbarContentComponent } from './navbar-content/navbar-content.componen
     ],
     exports: [
         NavbarLayoutComponent, NavbarContentComponent,
-        NavbarComponent, SidebarComponent, SidebarItemComponent,
+        NavbarComponent, SidebarComponent, SidebarLinkComponent,
     ]
 })
 export class NavbarModule {}
