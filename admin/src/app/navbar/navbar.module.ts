@@ -1,34 +1,32 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from "@angular/common";
-import { NavbarLayoutComponent } from "./navbar-layout.component";
-import { NavbarItemFilterPipe } from "./navbar-item-filter.pipe";
-import { MatButtonModule, MatIconModule, MatIconRegistry, MatRippleModule, MatTooltipModule } from "@angular/material";
-import { NavbarItemIsMenuPipe } from './navbar-item-is-menu.pipe';
+import { MatButtonModule, MatRippleModule, MatTooltipModule } from "@angular/material";
 import { RouterModule } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarLayoutComponent } from "./navbar-layout/navbar-layout.component";
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { SidebarTogglerComponent } from './sidebar-toggler/sidebar-toggler.component';
+import { NavbarService } from "./navbar.service";
+import { SidebarItemComponent } from './sidebar-item/sidebar-item.component';
+import { NavbarContentComponent } from './navbar-content/navbar-content.component';
 
 @NgModule({
     declarations: [
-        NavbarLayoutComponent,
-        NavbarItemFilterPipe,
-        NavbarItemIsMenuPipe,
+        NavbarLayoutComponent, NavbarContentComponent,
+        NavbarComponent, SidebarComponent, SidebarItemComponent, SidebarTogglerComponent,
     ],
     imports: [
         CommonModule, RouterModule,
         FontAwesomeModule,
-        MatButtonModule, MatIconModule, MatRippleModule, MatTooltipModule
+        MatButtonModule, MatRippleModule, MatTooltipModule
     ],
     providers: [
-        MatIconRegistry
+        NavbarService,
     ],
     exports: [
-        NavbarLayoutComponent,
-        NavbarItemFilterPipe,
-        NavbarItemIsMenuPipe
+        NavbarLayoutComponent, NavbarContentComponent,
+        NavbarComponent, SidebarComponent, SidebarItemComponent,
     ]
 })
-export class NavbarModule {
-    constructor(iconRegistry: MatIconRegistry) {
-        iconRegistry.setDefaultFontSetClass("fas");
-    }
-}
+export class NavbarModule {}

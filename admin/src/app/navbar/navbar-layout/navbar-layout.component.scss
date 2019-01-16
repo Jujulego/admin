@@ -1,0 +1,12 @@
+/*
+ * navbar-layout.component.scss
+ */
+@import "~src/app/navbar/variables";
+
+// Style
+:host {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-top: $navbar_height;
+}

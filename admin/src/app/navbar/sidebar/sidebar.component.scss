@@ -1,0 +1,17 @@
+/*
+ * sidebar.component.scss
+ */
+
+:host {
+  display: block;
+  min-width: 250px;
+}
+
+.sidebar {
+  padding-top: .325rem;
+
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+}

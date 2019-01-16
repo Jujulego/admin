@@ -29,7 +29,6 @@
               "admin/src/assets"
             ],
             "styles": [
-              "node_modules/@fortawesome/fontawesome-free/css/all.css",
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "admin/src/styles.scss"
             ],
@@ -87,7 +86,6 @@
             "tsConfig": "admin/src/tsconfig.spec.json",
             "karmaConfig": "admin/src/karma.conf.js",
             "styles": [
-              "node_modules/@fortawesome/fontawesome-free/css/all.css",
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "admin/src/styles.scss"
             ],

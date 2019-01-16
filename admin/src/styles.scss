@@ -1,9 +1,12 @@
 // Importations
 @import "theme";
+@import "app/navbar/navbar-theme";
 
 // Theme
 @include mat-core();
 @include angular-material-theme($app-theme);
+
+@include navbar-theme($app-theme);
 
 // Style
 html, body {
@@ -19,8 +22,6 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.mat-icon {
-  &.fab, &.fas, &.far {
-    line-height: 24px;
-  }
+.mat-icon-button fa-icon {
+  font-size: 18px;
 }
