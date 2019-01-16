@@ -5,11 +5,15 @@ import { ContactDetailsComponent } from "./contact-details/contact-details.compo
 import { AuthGuard } from "../auth.guard";
 
 const routes: Routes = [
-    { path: 'contacts', canActivate: [AuthGuard],
+    { path: 'sender', canActivate: [AuthGuard],
         children: [
-            { path: '',    component: ContactListComponent },
-            { path: ':id', component: ContactDetailsComponent },
-        ]
+            { path: 'contacts',
+                children: [
+                    { path: '',    component: ContactListComponent },
+                    { path: ':id', component: ContactDetailsComponent },
+                ]
+            },
+        ],
     },
 ];
 

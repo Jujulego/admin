@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from "../auth.service";
-import { Router } from "@angular/router";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
 
 @Component({
@@ -20,25 +19,19 @@ export class LoginComponent implements OnInit {
     });
 
     // Constructeur
-    constructor(private auth: AuthService, private router: Router) { }
+    constructor(private auth: AuthService) { }
 
     // Méthodes
     ngOnInit() {
         this.auth.$isAuth.subscribe(isauth => {
-            if (isauth) {
-                this.router.navigate(['',])
-            }
+            if (isauth) this.auth.redirectToPrevious()
         });
     }
 
     onSubmit() {
         this.auth.login(this.formGroup.value)
-            .subscribe(authenticated => {
-                if (authenticated) {
-                    this.router.navigate(['',])
-                } else {
-                    this.formGroup.reset()
-                }
+            .subscribe(state => {
+                if (!state) this.formGroup.reset()
             })
     }
 }

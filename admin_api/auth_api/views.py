@@ -1,5 +1,5 @@
 # Importations
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
@@ -24,3 +24,10 @@ def api_login(request):
         login(request, user)
 
     return Response(user is not None)
+
+@api_view(['GET'])
+def api_logout(request):
+    # Logout user
+    logout(request)
+
+    return Response()

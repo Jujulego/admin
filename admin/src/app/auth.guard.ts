@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
+import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { Observable } from 'rxjs';
 import { AuthService } from "./auth.service";
 
@@ -8,15 +8,17 @@ import { AuthService } from "./auth.service";
 })
 export class AuthGuard implements CanActivate {
     // Constructeur
-    constructor(private auth: AuthService, private router: Router) {}
+    constructor(private auth: AuthService) {}
 
     // Méthodes
     canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
+        // Coonnecté ?
         if (this.auth.isAuth) {
             return true;
         }
 
-        this.router.navigate(["/login"])
+        // Redirection sur la page de connexion
+        this.auth.needAuth(state.url);
 
         return false;
     }
