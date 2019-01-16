@@ -10,8 +10,13 @@ export class AppComponent {
     // Constructeur
     constructor(private auth: AuthService) {}
 
+    // Méthodes
+    public logout() {
+        this.auth.logout().subscribe()
+    }
+
     // Propriétés
-    get isAuthenticated(): boolean {
+    get isAuth(): boolean {
         return this.auth.isAuth;
     }
 }
