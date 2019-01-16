@@ -2,8 +2,13 @@
  * navbar-content.component.scss
  */
 
+@import "../variables";
+
 // Style
 :host {
+  height: calc(100vh - #{$navbar_height});
+  overflow: auto;
+
   display: block;
   flex: 1;
 
