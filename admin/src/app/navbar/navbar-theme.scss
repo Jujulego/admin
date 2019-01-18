@@ -46,6 +46,10 @@ $mini-sidebar-height: calc(24px + 1rem);
     a, a:hover {
       color: mat-color($foreground, text);
     }
+
+    a:hover:not(.sidebar-active) .mat-button-focus-overlay {
+      opacity: .04;
+    }
   }
 
   .sidebar-toggler-icon span {

@@ -1,4 +1,6 @@
 <a mat-ripple [class.sidebar-active]="isActive" (click)="onClick()">
     <fa-icon [icon]="icon" fixedWidth></fa-icon>
     <span>{{ text }}</span>
+
+    <div class="mat-button-focus-overlay"></div>
 </a>

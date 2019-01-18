@@ -20,4 +20,9 @@
   .navbar-brand:last-child {
     margin-right: auto;
   }
+
+  .navbar-brand a.active:hover {
+    cursor: default;
+    text-decoration: none;
+  }
 }
