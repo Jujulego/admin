@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnDestroy } from '@angular/core';
 import { NavbarService } from "../navbar.service";
+import { Observable } from "rxjs";
 
 @Component({
     selector: 'app-sidebar',
@@ -17,5 +18,10 @@ export class SidebarComponent implements AfterViewInit, OnDestroy {
 
     ngOnDestroy(): void {
         setTimeout(() => this.service.sidebar = null, 0);
+    }
+
+    // Propriétés
+    get $reduce(): Observable<boolean> {
+        return this.service.$reduceSidebar;
     }
 }

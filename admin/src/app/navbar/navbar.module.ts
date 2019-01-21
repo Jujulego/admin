@@ -10,6 +10,7 @@ import { SidebarTogglerComponent } from './sidebar-toggler/sidebar-toggler.compo
 import { NavbarService } from "./navbar.service";
 import { SidebarLinkComponent } from './sidebar-link/sidebar-link.component';
 import { NavbarContentComponent } from './navbar-content/navbar-content.component';
+import { LayoutModule } from "@angular/cdk/layout";
 
 @NgModule({
     declarations: [
@@ -18,7 +19,7 @@ import { NavbarContentComponent } from './navbar-content/navbar-content.componen
     ],
     imports: [
         CommonModule, RouterModule,
-        FontAwesomeModule,
+        FontAwesomeModule, LayoutModule,
         MatButtonModule, MatRippleModule, MatTooltipModule
     ],
     providers: [

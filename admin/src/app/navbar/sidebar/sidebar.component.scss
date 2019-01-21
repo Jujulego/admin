@@ -2,16 +2,31 @@
  * sidebar.component.scss
  */
 
-:host {
-  display: block;
-  min-width: 250px;
-}
+@import "../variables";
 
+// Style
 .sidebar {
+  display: block;
+
+  width: $sidebar-width;
+  height: calc(100vh - #{$navbar_height});
+
   padding-top: .325rem;
 
   .items {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    position: absolute;
+    left: 0;
+    transition: left $sidebar-anim ease;
+
+    &.collapsed {
+      left: -$sidebar-width;
+    }
   }
 }
