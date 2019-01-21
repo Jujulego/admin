@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NavbarService } from "../navbar.service";
+import { Observable } from "rxjs";
 
 @Component({
-  selector: 'app-sidebar-toggler',
-  templateUrl: './sidebar-toggler.component.html',
-  styleUrls: ['./sidebar-toggler.component.scss']
+    selector: 'app-sidebar-toggler',
+    templateUrl: './sidebar-toggler.component.html',
+    styleUrls: ['./sidebar-toggler.component.scss']
 })
-export class SidebarTogglerComponent implements OnInit {
+export class SidebarTogglerComponent {
+    // Constructeur
+    constructor(private service: NavbarService) {}
 
-  constructor() { }
+    // Méthodes
+    onClick() {
+        this.service.$reduceSidebar.next(
+            !this.service.$reduceSidebar.value
+        )
+    }
 
-  ngOnInit() {
-  }
-
+    // Propriétés
+    get $reduce(): Observable<boolean> {
+        return this.service.$reduceSidebar;
+    }
 }

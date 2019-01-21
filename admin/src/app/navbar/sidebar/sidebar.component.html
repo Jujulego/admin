@@ -1,4 +1,4 @@
-<nav class="sidebar">
+<nav class="sidebar" [class.collapsed]="$reduce | async">
     <div class="items">
         <ng-content></ng-content>
     </div>

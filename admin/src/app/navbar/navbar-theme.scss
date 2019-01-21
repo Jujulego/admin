@@ -8,11 +8,7 @@
 @import '~@angular/material/theming';
 @import "~src/utils";
 
-// Variables
-$sidebar-anim:  250ms;
-$sidebar-width: 300px;
-$mini-sidebar-width:  calc(24px + 1.5rem);
-$mini-sidebar-height: calc(24px + 1rem);
+@import "variables";
 
 // Theme mixin
 @mixin navbar-theme($theme) {
@@ -39,12 +35,16 @@ $mini-sidebar-height: calc(24px + 1rem);
     }
   }
 
-  app-sidebar {
+  .sidebar {
     background-color: mat-color($background, dialog);
     color: mat-color($foreground, text);
 
     a, a:hover {
       color: mat-color($foreground, text);
+    }
+
+    a:hover:not(.sidebar-active) .mat-button-focus-overlay {
+      opacity: .04;
     }
   }
 

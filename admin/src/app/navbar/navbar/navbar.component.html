@@ -1,6 +1,6 @@
 <nav class="navbar">
     <!-- Sidebar-toggler -->
-    <app-sidebar-toggler *ngIf="hasSidebar | async"></app-sidebar-toggler>
+    <app-sidebar-toggler *ngIf="$showToggler | async"></app-sidebar-toggler>
 
     <!-- Brand -->
     <span class="navbar-brand">

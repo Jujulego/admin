@@ -25,7 +25,7 @@ export class NavbarComponent implements AfterViewInit, OnDestroy {
     }
 
     // Propriétés
-    get hasSidebar(): Observable<boolean> {
-        return this.service.$hasSidebar;
+    get $showToggler(): Observable<boolean> {
+        return this.service.$showToggler;
     }
 }

@@ -8,6 +8,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1000;
 
   height: $navbar_height;
   width: 100%;
@@ -18,5 +19,10 @@
 .navbar {
   .navbar-brand:last-child {
     margin-right: auto;
+  }
+
+  .navbar-brand a.active:hover {
+    cursor: default;
+    text-decoration: none;
   }
 }

@@ -6,7 +6,12 @@
 a {
   display: flex;
 
+  cursor: pointer;
   padding: .6rem;
+
+  &.sidebar-active {
+    cursor: default;
+  }
 
   fa-icon {
     font-size: 18px;
