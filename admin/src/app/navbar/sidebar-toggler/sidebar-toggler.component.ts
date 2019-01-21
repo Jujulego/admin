@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavbarService } from "../navbar.service";
+import { Observable } from "rxjs";
 
 @Component({
     selector: 'app-sidebar-toggler',
@@ -15,5 +16,10 @@ export class SidebarTogglerComponent {
         this.service.$reduceSidebar.next(
             !this.service.$reduceSidebar.value
         )
+    }
+
+    // Propriétés
+    get $reduce(): Observable<boolean> {
+        return this.service.$reduceSidebar;
     }
 }

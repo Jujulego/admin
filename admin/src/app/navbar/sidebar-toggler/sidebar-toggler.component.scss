@@ -2,6 +2,8 @@
  * sidebar-toggler.component.scss
  */
 
+@import "../variables";
+
 // Style
 :host {
   display: flex;
@@ -31,6 +33,8 @@ i.sidebar-toggler-icon {
   border: none;
   background: inherit;
 
+  transition: transform $sidebar-anim ease;
+
   span {
     display: block;
     width: 1.4rem;
@@ -41,8 +45,24 @@ i.sidebar-toggler-icon {
     margin: 0 auto;
     border-radius: .075rem;
 
+    transition: width $sidebar-anim ease, transform $sidebar-anim ease;
+
     &:nth-child(2) {
       margin: .25rem auto;
+    }
+  }
+
+  &.arrow {
+    transform: rotate(180deg);
+
+    span:nth-child(1) {
+      width: .8rem;
+      transform: translate(.4rem, .2rem) rotate(45deg);
+    }
+
+    span:nth-child(3) {
+      width: .8rem;
+      transform: translate(.4rem, -.2rem) rotate(-45deg);
     }
   }
 }

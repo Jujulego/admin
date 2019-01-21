@@ -1,5 +1,5 @@
 <button mat-icon-button (click)="onClick()">
-    <i class="sidebar-toggler-icon">
+    <i class="sidebar-toggler-icon" [class.arrow]="!($reduce | async)">
         <span></span><span></span><span></span>
     </i>
 </button>
